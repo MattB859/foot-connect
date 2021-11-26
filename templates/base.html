@@ -32,7 +32,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
+    <title>footconnect.com {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
@@ -94,6 +94,30 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+        </div>
+        <div class="row bg-white">
+            <nav class="navbar bg-color navbar-expand-lg w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
+        <div id="delivery-banner" class="row text-center">
+            <div class="col-4 banner-color text-white">
+                <h4 class="banner-font my-1">Orders Shipped Within 3-5 Days</h4>
+                <h4 class="banner-font my-1"><span>Next Day Available</span></h4>                    
+            </div>
+            <div class="col-4 banner-color text-white">
+                <h4 class="banner-font my-1">Online Student Discoun</h4>
+                <h4 class="banner-font my-1"><span>Students Get 10% Off</span></h4>                 
+            </div>
+            <div class="col-4 banner-color text-white">
+                <h4 class="banner-font my-1">Free Standard UK Delivery</h4> 
+                <h4 class="banner-font my-1"><span>On All Orders Over £{{ free_delivery_threshold }}!</span></h4>                   
+            </div>             
         </div>
     </header>
 
@@ -110,6 +134,6 @@
     {% block postloadjs %}
     {% endblock %}
 
-    
+
   </body>
 </html>

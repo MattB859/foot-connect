@@ -68,8 +68,9 @@ body {
 }
 
 .bg-color {
-    background: var(--bs-body-color) !important;
+    background: black !important;
 }
+
 
 /* from Bulma */
 .icon {
@@ -84,7 +85,16 @@ body {
     text-transform: uppercase;
 }
 
+.banner-font{
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--bs-info);
+}
 
+.banner-font span{
+    color: white;
+}
+    
 .main-logo-link {
     width: fit-content;
 }
@@ -117,6 +127,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.banner-color{
+    background: var(--bs-gray-dark);
 }
 
 /* -------------------------------- Media Queries */
