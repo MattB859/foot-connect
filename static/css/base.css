@@ -1,4 +1,4 @@
-/* Code sourced from the code institute tutorials 
+/* Code sourced from the code institute tutorial 
 and edited by developer to fit the projects needs*/
 
 :root {
@@ -51,7 +51,7 @@ and edited by developer to fit the projects needs*/
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
+    --bs-body-color: #0c0e0f;
     --bs-body-bg: #fff;
 }
 
@@ -60,17 +60,31 @@ html {
 }
 
 body {
-    background: url('/media/pexels-lee-chinyama-9638823.jpg') no-repeat center center fixed;
+    position: relative;
+    height: calc(100vh - 164px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h5{
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 5px;
+    font-size: 15px;
+    width: 40%;
+}
+
+.home{
+    position: relative;
+    background: url('/media/pexels-ali-pazani-2832465.jpg') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .bg-color {
-    background: black !important;
+    background: var(--bs-body-color) !important;
+    color: white !important;
 }
-
 
 /* from Bulma */
 .icon {
@@ -80,6 +94,11 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+.crown-logo{
+    position: relative;
+    bottom: 4px;
+    width: 50px;
+}
 
 .logo-font {
     text-transform: uppercase;
@@ -88,7 +107,7 @@ body {
 .banner-font{
     font-size: 18px;
     line-height: 1.2;
-    color: var(--bs-info);
+    color: var(--bs-cyan);
 }
 
 .banner-font span{
@@ -96,7 +115,7 @@ body {
 }
     
 .main-logo-link {
-    width: fit-content;
+    text-align: center;
 }
 
 .shop-now-button {
@@ -120,9 +139,21 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.font-size a{
+    width: 150px;
+    border: 1px solid white;
+    font-size: 14px;
+}
+
+.font-size a:hover{
+    text-decoration: underline;
+}
+
 .text-black {
-    font-weight: 600;
-    color: #000 !important;
+    font-weight: 700;
+    font-size: 80px;
+    text-shadow: 2px 5px 5px black;
+    color: var(--bs-white) !important;
 }
 
 .border-black {
@@ -132,6 +163,57 @@ body {
 .banner-color{
     background: var(--bs-gray-dark);
 }
+
+.list li{
+	margin: 5px 10px;
+    display: inline-block;
+}
+
+.list{
+    text-align: right;
+    background: var(--bs-body-color);
+	font-weight: 100;
+	font-size: 13px;
+}
+
+.list a{
+    color: white;
+}
+
+.list a:hover{
+	text-decoration: underline;}
+
+.category-1{
+    margin-top: 40px;
+    height: 400px;
+    background: url('/media/category-3.jpg') no-repeat;
+    background-size: contain;
+  
+}
+
+.category-2{
+    margin-top: 40px;
+    height: 400px;
+    background: url('/media/category-05.jpg') no-repeat;
+    background-size: contain;
+    
+}
+
+.category-3{
+    margin-top: 40px;
+    height: 400px;
+    background: url('/media/category-4.jpg') no-repeat;
+    background-size: contain;
+    
+}
+.category-4{
+    margin-top: 40px;
+    height: 400px;
+    background: url('/media/category-6.jpg') no-repeat;
+    background-size: contain;
+    
+}
+
 
 /* -------------------------------- Media Queries */
 
