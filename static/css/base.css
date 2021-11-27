@@ -77,7 +77,7 @@ h5{
     position: relative;
     background: url('/media/pexels-ali-pazani-2832465.jpg') no-repeat center center;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
