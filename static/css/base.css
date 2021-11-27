@@ -86,7 +86,6 @@ h5{
     color: white !important;
 }
 
-/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -184,12 +183,15 @@ h5{
 .list a:hover{
 	text-decoration: underline;}
 
+.category{
+    height: 100vh;
+} 
+
 .category-1{
     margin-top: 40px;
     height: 400px;
     background: url('/media/category-3.jpg') no-repeat;
-    background-size: contain;
-  
+    background-size: contain; 
 }
 
 .category-2{
@@ -197,7 +199,6 @@ h5{
     height: 400px;
     background: url('/media/category-05.jpg') no-repeat;
     background-size: contain;
-    
 }
 
 .category-3{
@@ -205,63 +206,43 @@ h5{
     height: 400px;
     background: url('/media/category-4.jpg') no-repeat;
     background-size: contain;
-    
 }
+
 .category-4{
     margin-top: 40px;
     height: 400px;
     background: url('/media/category-6.jpg') no-repeat;
     background-size: contain;
-    
 }
 
-/* ---------------------- */
 /*-------Footer-------*/
 .footer{
 	background: var( --bs-body-color);
 	color: var(--bs-white);
 	font-size: 15px;
+    bottom: 0;
+    left: 0;
 	padding: 60px 0 20px;}
 
 .footer p{
 	color: var(--bs-white);
 }
 
-.footer h3{
+.footer h4{
 	color: var(--bs-white);;
-	margin-bottom: 20px;}
-
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-	min-width: 250px;
-	margin-bottom: 20px;}
-
-.footer-col-1{
-	flex-basis: 30%;}
-
-.footer-col-2{
-	flex: 1;
-	-ms-flex-align: center;}
-
-.footer-col-2{
-	flex-basis: 12%;
-	text-align: center;}
+	margin-bottom: 20px;
+    font-size: 20px;
+}
 
 .footer ul{
 	list-style-type: none;
-	cursor: pointer;
-	line-height: 30px;}
+	line-height: 30px;
+}
 
-.footer li:hover{
+.links:hover{
+    cursor: pointer;
+    text-decoration: underline;
 	color: var(--bs-cyan)}	
-
-
-.app-logo{
-	cursor: pointer;
-	margin-top: 20px;}
-
-.app-logo img{
-	padding: 0 5px 0;
-	width:60px;}
 
 .footer hr{
 	border: none;
@@ -269,6 +250,11 @@ h5{
 	height: 1px;
 	margin: 20px 0;}
 
+.social-media{
+    font-size: 20px;
+    margin: 40px 20px 0;
+    color: var(--bs-white);
+}
 
 /* -------------------------------- Media Queries */
 
