@@ -99,8 +99,11 @@ h5{
     width: 50px;
 }
 
-.logo-font {
+.logo-font strong{
     text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'Gruppo', cursive;
+
 }
 
 .banner-font{
@@ -184,42 +187,28 @@ h5{
 	text-decoration: underline;}
 
 .category{
-    height: 100vh;
+    height: 1200px;
+
 } 
 
-.category-1{
-    margin-top: 40px;
-    height: 400px;
-    background: url('/media/category-3.jpg') no-repeat;
-    background-size: contain; 
-}
-
-.category-2{
-    margin-top: 40px;
-    height: 400px;
-    background: url('/media/category-05.jpg') no-repeat;
-    background-size: contain;
-}
-
-.category-3{
-    margin-top: 40px;
-    height: 400px;
-    background: url('/media/category-4.jpg') no-repeat;
-    background-size: contain;
-}
-
+.category-1,
+.category-2,
+.category-3,
 .category-4{
     margin-top: 40px;
-    height: 400px;
-    background: url('/media/category-6.jpg') no-repeat;
-    background-size: contain;
+    width: 100%;
+    height: 500px;
+    background: url('/media/sneakers1.jpg') no-repeat;
+    background-size: contain; 
 }
 
 /*-------Footer-------*/
 .footer{
+    position: relative;
 	background: var( --bs-body-color);
 	color: var(--bs-white);
 	font-size: 15px;
+    width: 100%;
     bottom: 0;
     left: 0;
 	padding: 60px 0 20px;}
@@ -278,4 +267,31 @@ h5{
     .header-container {
         padding-top: 164px;
     }
+}
+
+/* fixed top navbar only on medium and up */
+@media (max-width: 500px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+
+    .text-black {
+        font-weight: 700;
+        font-size: 40px;
+        text-shadow: 2px 5px 5px black;
+        color: var(--bs-white) !important;
+    }
+
+    
+    .category{
+        height: 3000px;
+    } 
 }

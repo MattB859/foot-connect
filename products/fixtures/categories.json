@@ -1,41 +1,26 @@
-[{
-        "pk": 1,
-        "model": "products.category",
-        "fields": {
-            "name": "activewear",
-            "friendly_name": "Activewear"
-        }
-    },
-    {
-        "pk": 3,
-        "model": "products.category",
-        "fields": {
-            "name": "tracksuits",
-            "friendly_name": "Tracksuits"
-        }
-    },
+[
     {
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "special_offers",
-            "friendly_name": "Special Offers"
+            "name": "deals",
+            "friendly_name": "Deals"
         }
     },
     {
         "pk": 6,
         "model": "products.category",
         "fields": {
-            "name": "denim_jeans",
+            "name": "mens_denim_jeans",
             "friendly_name": "Denim Jeans"
         }
     },
     {
-        "pk": 7,
+        "pk": 16,
         "model": "products.category",
         "fields": {
-            "name": "hoodies",
-            "friendly_name": "Hoodies"
+            "name": "womens_denim_jeans",
+            "friendly_name": "Denim Jeans"
         }
     },
     {
@@ -50,16 +35,8 @@
         "pk": 9,
         "model": "products.category",
         "fields": {
-            "name": "t_shirts",
+            "name": "mens_shirts",
             "friendly_name": "T-Shirts"
-        }
-    },
-    {
-        "pk": 10,
-        "model": "products.category",
-        "fields": {
-            "name": "sweatshirts",
-            "friendly_name": "Sweatshirts"
         }
     },
     {
@@ -82,24 +59,16 @@
         "pk": 13,
         "model": "products.category",
         "fields": {
-            "name": "trainers",
-            "friendly_name": "Trainers"
+            "name": "mens_shoes",
+            "friendly_name": "Shoes"
         }
     },
     {
         "pk": 14,
         "model": "products.category",
         "fields": {
-            "name": "shoes",
+            "name": "womens_shoes",
             "friendly_name": "Shoes"
-        }
-    },
-    {
-        "pk": 15,
-        "model": "products.category",
-        "fields": {
-            "name": "sunglasses",
-            "friendly_name": "Sunglasses"
         }
     },
     {
@@ -111,26 +80,18 @@
         }
     },
     {
-        "pk": 17,
-        "model": "products.category",
-        "fields": {
-            "name": "shirts",
-            "friendly_name": "Shirts"
-        }
-    },
-    {
         "pk": 18,
         "model": "products.category",
         "fields": {
-            "name": "dresses_skirts",
-            "friendly_name": "Dresses & Skirts"
+            "name": "mens_sportswear",
+            "friendly_name": "Sportswaer"
         }
     },
     {
         "pk": 19,
         "model": "products.category",
         "fields": {
-            "name": "track_top",
-            "friendly_name": "Dresses & Skirts"
+            "name": "womens_sportswear",
+            "friendly_name": "Sportswear"
         }  
 }]
