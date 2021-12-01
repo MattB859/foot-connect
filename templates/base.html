@@ -45,9 +45,12 @@
 </head>
 
 <body>
-    <header class="container-fluid">
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <header class="container-fluid sticky">
         <div class="row list">
-            <div class="col-12 col-lg-12">
+            <div class="col-12 col-lg-12 ">
                 <li><a href="#">contact us</a></li>
                 <li><a href="#">help & info</a></li>
                 <li><a href="#">deliver & returns</a></li>
@@ -155,9 +158,68 @@
     {% endblock %}
 
     {% block content %}
+        <!--Footer-->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-3 text-center">
+                        <ul>
+                            <li class="h5 mb-3">Payment methods we accept</li>
+                            <div class="app-logo">
+                                <img src="media/visa.png" alt="payment">
+                                <img src="media/mastercard.png" alt="payment">
+                                <img src="media/visa.png" alt="payment">
+                                <img src="media/mastercard.png" alt="payment">
+                            </div>
+                            <i class="fab fa-facebook-f social-media"></i>
+                            <i class="fab fa-twitter social-media"></i>
+                            <i class="fab fa-instagram social-media"></i>
+                            <i class="fab fa-pinterest-p social-media"></i>
+                            <i class="fab fa-youtube social-media"></i>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
+                        <ul>
+                            <li class="h5">Useful Links</li>
+                            <li>Coupons</li>
+                            <li>Blog post</li>
+                            <li>Careers</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
+
+                        <ul>
+                            <li class="h5">Follow us</li>
+                            <li class="links">Facebook</li>
+                            <li class="links">Twitter</li>
+                            <li class="links">Instagram</li>
+                            <li class="links">YouTube</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
+                        <ul>
+                            <li class="h5">Customer Help</li>
+                            <li>Contact Us</li>
+                            <li>Returns</li>
+                            <li>Help & FAQs</li>
+                            <li>Store Finder</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    Copyright Limited &copy; 2020. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
     {% endblock %}
 
     {% block postloadjs %}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/static/js/main.js"></script>
     {% endblock %}
 
 
