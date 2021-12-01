@@ -73,8 +73,6 @@ h5{
     width: 40%;
 }
 
-
-
 .home{
     position: relative;
     background: url('/media/womens-banner.jpg') no-repeat center center;
@@ -154,11 +152,8 @@ h5{
     text-decoration: underline;
 }
 
-.text-black {
-    font-weight: 700;
-    font-size: 80px;
-    text-shadow: 2px 5px 5px black;
-    color: var(--bs-white) !important;
+.text-black{
+    color: black;
 }
 
 .border-black {
@@ -217,6 +212,11 @@ h5{
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 
@@ -312,14 +312,6 @@ h5{
         padding-top: 164px;
     }
 
-    .text-black {
-        font-weight: 700;
-        font-size: 40px;
-        text-shadow: 2px 5px 5px black;
-        color: var(--bs-white) !important;
-    }
-
-    
     .category{
         height: 3000px;
     } 
