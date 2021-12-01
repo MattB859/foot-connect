@@ -1,29 +1,49 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
 
 {% block content %}
 <!-- home page section -->
-<section class="home">
-    <div class="container h-100">
+<section class="container h-100">
+    <div class="home mt-5">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    20% off everything + free delivery
+                <!--<h1 class="display-4 logo-font text-black">
+                    20% off everything + free delivery-->
                 </h1>
-                <h5 class="text-white display-6">t&cs apply. minimum spend £50</h5>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        <a href="{% url 'products' %}"
+                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
                     </h4>
                 </div>
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-sm-6 col-lg-3">
+                <a href="{% url 'products' %}">
+                    <img class="category-1" src="/media/sneakers1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <a href="{% url 'products' %}">
+                    <img class="category-2" src="/media/sneakers2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <a href="{% url 'products' %}">
+                    <img class="category-3" src="/media/sneakers5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <a href="{% url 'products' %}">
+                    <img class="category-4" src="/media/sneakers6.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <a href="{% url 'products' %}">
+                    <img class="banner" src="/media/women-header.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -31,36 +51,7 @@
 
 <!-- category section -->
 
-    <div class="container-fluid category">
-        <div class="row align-items-start">
-            <div class="col-sm-6 col-lg-3">
-                <a href="#">
-                    <img class="category-1" src="/media/sneakers1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <a href="#">
-                    <img class="category-2" src="/media/sneakers2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <a href="#">
-                    <img class="category-3" src="/media/sneakers5.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <a href="#">
-                    <img class="category-4" src="/media/sneakers6.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <a href="#">
-                    <img class="category-4" src="/media/category-05.jpg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>    
-
+<div class="container category"></div>
 
 <!--Footer-->
 <footer>
@@ -76,7 +67,7 @@
                             <img src="media/visa.png" alt="payment">
                             <img src="media/mastercard.png" alt="payment">
                         </div>
-                       
+
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-3 text-center">
