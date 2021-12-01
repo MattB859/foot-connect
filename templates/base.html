@@ -105,8 +105,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item font-size">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link"
-                            href="">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center ">
                                 <div></div>
                                 <p class="my-0 ">
@@ -143,8 +142,8 @@
                 <h4 class="banner-font my-1"><span>Students Get 10% Off</span></h4>
             </div>
             <div class="col-4 banner-color text-white">
-                <h4 class="banner-font my-1">Free Standard UK Delivery</h4>
-                <h4 class="banner-font my-1"><span>On All Orders Over £{{ free_delivery_threshold }}!</span></h4>
+                <h4 class="banner-font my-1">Free Standard UK Delivery</h4>            
+                <h4 class="banner-font my-1"><span>On All Orders Over £{{ free_delivery_threshold }}</span></h4>
             </div>
         </div>
     </header>

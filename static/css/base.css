@@ -102,13 +102,13 @@ h5{
 
 .logo-font strong{
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Gruppo', cursive;
 
 }
 
 .banner-font{
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.2;
     color: var(--bs-cyan);
 }
@@ -172,7 +172,6 @@ h5{
 .list{
     text-align: right;
     background: var(--bs-body-color);
-	font-weight: 100;
 	font-size: 13px;
 }
 
