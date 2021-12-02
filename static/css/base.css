@@ -121,6 +121,7 @@ body {
     text-align: center;
 }
 
+/* All Buttons */
 .shop-now-button {
     background: var(--bs-body-color);
     color: white;
@@ -128,8 +129,8 @@ body {
 }
 
 .btn-black {
-    background: white;
-    color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .btn-outline-black{
@@ -152,9 +153,29 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background: var(--bs-success);
+    color: rgb(247, 247, 247);
 }
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+/* End */
+
 
 .font-size a{
     width: 150px;
@@ -207,8 +228,6 @@ body {
     background-size: contain;  
 }
 
-
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -217,11 +236,6 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
-}
-
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
 }
 
 .sticky{
