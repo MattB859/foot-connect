@@ -133,6 +133,11 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.btn-black2 {
+    background: white !important;
+    color: var(--bs-body-color);
+}
+
 .btn-outline-black{
     background: white;
     color: black !important;
