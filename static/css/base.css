@@ -65,6 +65,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header{
+    z-index: 3;
+}
+
 .home{
     position: relative;
     background: url('/media/womens-banner.jpg') no-repeat center center;
@@ -86,6 +90,8 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+
+
 .crown-logo{
     position: relative;
     bottom: 4px;
@@ -131,6 +137,7 @@ body {
 .btn-black {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+    z-index: 0 !important;
 }
 
 .btn-black2 {
@@ -150,6 +157,7 @@ body {
     background: black;
     color: white !important;
 }
+
 
 
 .shop-now-button:hover,
@@ -175,7 +183,9 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item{
     cursor: pointer;
 }
 

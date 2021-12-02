@@ -50,7 +50,7 @@
     </div>
     <header class="container-fluid sticky">
         <div class="row list">
-            <div class="col-12 col-lg-12 ">
+            <div class="col-12 d-none d-sm-block-none d-lg-block col-lg-12 ">
                 <li><a href="#">contact us</a></li>
                 <li><a href="#">help & info</a></li>
                 <li><a href="#">deliver & returns</a></li>
@@ -132,16 +132,16 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col-4 banner-color text-white">
-                <h4 class="banner-font my-1">Orders Shipped Within 3-5 Days</h4>
+        <div id="delivery-banner" class="row banner-color text-center">
+            <div class="col-lg-4 col-md-4 d-none d-sm-block-none d-lg-block d-md-block text-white">
+                <h4 class=" banner-font my-1">Orders Shipped Within 3-5 Days</h4>
                 <h4 class="banner-font my-1"><span>Next Day Available</span></h4>
             </div>
-            <div class="col-4 banner-color text-white">
-                <h4 class="banner-font my-1">Online Student Discoun</h4>
+            <div class="col-lg-4 col-md-4 d-none d-sm-block-none d-md-block d-lg-block text-white">
+                <h4 class=" banner-font my-1">Online Student Discoun</h4>
                 <h4 class="banner-font my-1"><span>Students Get 10% Off</span></h4>
             </div>
-            <div class="col-4 banner-color text-white">
+            <div class="col-lg-4 col-md-4 col-sm-12 text-white d-sm-block">
                 <h4 class="banner-font my-1">Free Standard UK Delivery</h4>            
                 <h4 class="banner-font my-1"><span>On All Orders Over £{{ free_delivery_threshold }}</span></h4>
             </div>
