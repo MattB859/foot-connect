@@ -15,7 +15,7 @@
     {% endblock %}
 
     {% block corecss %}
-    <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
@@ -148,80 +148,38 @@
         </div>
     </header>
 
-
     {% if messages %}
-    <div class="message-container"></div>
+    <div class="message-container">
+        {% for message in messages %}
+            {% with message.level as level %}
+                {% if level == 40 %}
+                    {% include 'includes/toasts/toast_error.html' %}
+                {% elif level == 30 %}
+                    {% include 'includes/toasts/toast_warning.html' %}
+                {% elif level == 25 %}
+                    {% include 'includes/toasts/toast_success.html' %}
+                {% else %}
+                    {% include 'includes/toasts/toast_info.html' %}
+                {% endif %}
+            {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
     {% endblock %}
 
     {% block content %}
-        <!--Footer-->
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-3 text-center">
-                        <ul>
-                            <li class="h5 mb-3">Payment methods we accept</li>
-                            <div class="app-logo">
-                                <img src="media/visa.png" alt="payment">
-                                <img src="media/mastercard.png" alt="payment">
-                                <img src="media/visa.png" alt="payment">
-                                <img src="media/mastercard.png" alt="payment">
-                            </div>
-                            <i class="fab fa-facebook-f social-media"></i>
-                            <i class="fab fa-twitter social-media"></i>
-                            <i class="fab fa-instagram social-media"></i>
-                            <i class="fab fa-pinterest-p social-media"></i>
-                            <i class="fab fa-youtube social-media"></i>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
-                        <ul>
-                            <li class="h5">Useful Links</li>
-                            <li>Coupons</li>
-                            <li>Blog post</li>
-                            <li>Careers</li>
-                            <li>Affiliates</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
-
-                        <ul>
-                            <li class="h5">Follow us</li>
-                            <li class="links">Facebook</li>
-                            <li class="links">Twitter</li>
-                            <li class="links">Instagram</li>
-                            <li class="links">YouTube</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
-                        <ul>
-                            <li class="h5">Customer Help</li>
-                            <li>Contact Us</li>
-                            <li>Returns</li>
-                            <li>Help & FAQs</li>
-                            <li>Store Finder</li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <div class="text-center">
-                    Copyright Limited &copy; 2020. All Rights Reserved
-                </div>
-            </div>
-        </div>
-    </footer>
     {% endblock %}
+
 
     {% block postloadjs %}
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="/static/js/main.js"></script>
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
     {% endblock %}
 
-
 </body>
-
 </html>

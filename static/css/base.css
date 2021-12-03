@@ -65,9 +65,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    z-index: 3;
-}
 
 .home{
     position: relative;
@@ -127,7 +124,7 @@ header{
     text-align: center;
 }
 
-/* All Buttons */
+/* -------------------------- all buttons */
 .shop-now-button {
     background: var(--bs-body-color);
     color: white;
@@ -158,8 +155,6 @@ header{
     color: white !important;
 }
 
-
-
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -189,7 +184,7 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* End */
+
 
 
 .font-size a{
@@ -260,7 +255,7 @@ a.category-badge > span.badge:hover {
     z-index: 1;
 }
 
-/* scroll up button */
+/* ----------------- scroll up button */
 .scroll-up-btn {
     position: fixed;
     height: 48px;
@@ -292,6 +287,7 @@ a.category-badge > span.badge:hover {
     color: rgb(240, 240, 240);
 }
 
+/* ----------------------- product card hover */
 .hover1 figure img {
     -webkit-transform: scale(1);
 	transform: scale(1);
@@ -309,8 +305,7 @@ figure {
 	overflow: hidden;
 }
 
-
-/*-------Footer-------*/
+/* ------------------------------ Footer */
 .footer{
     position: relative;
 	background: var( --bs-body-color);
@@ -351,6 +346,23 @@ figure {
     font-size: 20px;
     margin: 40px 20px 0;
     color: var(--bs-white);
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
 
 /* -------------------------------- Media Queries */
