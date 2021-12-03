@@ -65,7 +65,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .home{
     position: relative;
     background: url('/media/womens-banner.jpg') no-repeat center center;
@@ -87,7 +86,6 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
 
 .crown-logo{
     position: relative;
@@ -183,9 +181,6 @@ a.category-badge > span.badge:hover {
 .remove-item{
     cursor: pointer;
 }
-
-
-
 
 .font-size a{
     width: 150px;
@@ -352,7 +347,7 @@ figure {
 
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 92px;
     right: 15px;
     z-index: 99999999999;
 }
@@ -364,6 +359,58 @@ figure {
 .toast-capper {
     height: 2px;
 }
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* color variables from Bootstrap */
+.arrow-primary {
+    border-bottom-color: var(--bs-primary) !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: var(--bs-gray-600) !important;
+}
+
+.arrow-success {
+    border-bottom-color: var(--bs-success) !important;
+}
+
+.arrow-danger {
+    border-bottom-color: var(--bs-danger) !important;
+}
+
+.arrow-warning {
+    border-bottom-color: var(--bs-warning) !important;
+}
+
+.arrow-info {
+    border-bottom-color: var(--bs-info) !important;
+}
+
+.arrow-light {
+    border-bottom-color: var(--bs-light) !important;
+}
+
+.arrow-dark {
+    border-bottom-color: var(--bs-gray-900) !important;
+}
+
+.bag-notification-wrapper {
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 
 /* -------------------------------- Media Queries */
 
