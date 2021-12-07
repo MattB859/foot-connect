@@ -96,6 +96,8 @@ body {
 .logo-font strong{
     text-transform: uppercase;
     font-size: 40px;
+    padding: 5px 10px;
+    background-color: var(--bs-white) !important;
     font-family: 'Gruppo', cursive;
 
 }
