@@ -7,7 +7,7 @@ This is the main website for Foot Connect. A well established online athletic fo
 
 <img align="center" src="media/footconnect-2.png">
 
-## User Experience (UX)
+# User Experience (UX)
 
 | User Story   | As a..   | I want to be able to.. | So that i can.|
 | ---------    | -------  |   ------------         | ------------- |
@@ -40,7 +40,56 @@ This is the main website for Foot Connect. A well established online athletic fo
 |         |              | Delete a product | Remove items no longer on <br> offer or out of stock |
  
 
+# Technologies Used
 
+## Languages Used
+
+-  ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-  ### [CSS3](https://en.wikipedia.org/wiki/CSS)
+-  ### [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+-  ### [Python](https://en.wikipedia.org/wiki/Python)
+
+## Frameworks
+
+-  ### [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/download/)
+
+-  ### [Django](https://www.djangoproject.com/)
+
+-  ### [JQuery](https://jquery.com/)
+
+## PACKAGES
+
+-  ### [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+
+-  ### [django-countries](https://pypi.org/project/django-countries/)
+    
+-  ### [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+
+-  ### [pillow](https://pillow.readthedocs.io/en/stable/)
+    
+-  ### [stripe](https://stripe.com/docs)
+
+## PROJECT MANAGEMENT
+
+-  ### [GitHub](https://github.com/)
+   
+-  ### [GitPod](https://www.gitpod.io/)
+
+-  ### [Heroku](https://heroku.com/)
+
+-  ### [Git](https://git-scm.com/)
+
+   
+##  Tools 
+
+-  ### [Google Fonts](https://fonts.google.com/)
+   
+-  ### [Font Awesome](https://fontawesome.com/) 
+
+-  ### [Balsamiq](https://balsamiq.com/)
+
+-  ### [Am I Responsive](http://ami.responsivedesign.is/)
+   
 
 ## Testing
 
