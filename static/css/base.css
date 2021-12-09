@@ -413,7 +413,16 @@ figure {
     overflow-y: auto;
 }
 
+
 /* Allauth form formatting */
+.overlay-2{
+    background: var(--bs-gray-200) !important;
+}
+
+.account{
+    padding: 50px;
+    background: white;
+}
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -467,8 +476,6 @@ figure {
 	color: #17a2b8; /* text-info */
 }
 
-
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -489,14 +496,14 @@ figure {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 100px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 50px;
     }
 
     body {
@@ -515,7 +522,7 @@ figure {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 0;
     }
 
     .category{
