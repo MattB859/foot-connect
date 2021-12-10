@@ -61,7 +61,7 @@ Bootstrap variables were chosen to keep the colour scheme of the site clean and 
 
 -  ### [Google Fonts](https://fonts.google.com/specimen/Squada+One)
 
-    -  ### Squada One font has been choosen to represent for the Foot Connect logo.
+Squada One font has been selected to represent for the Foot Connect logo.
 
 -  ## Imagery
 
@@ -71,16 +71,106 @@ Bootstrap variables were chosen to keep the colour scheme of the site clean and 
 -  ### [pexels](https://www.pexels.com/)
 -  ### [unsplash](https://unsplash.com/)
 
+# FEATURES
+
+## CURRENT 
+
+### Navigation 
+
+<details><summary>Click to see</summary>
+    <p>
+<img align="center" src="media/navigation.png">
+</p>
+</details>
+
+- As users entering the website, they are greeted with a clean and easy to read navigation bar which contains menu links and a search bar for quick and easy access to products.
+
+### Search 
+
+- All users are able to search the site using a search query to identify products by category or specific product details.
+
+### Home Page
+
+- A promotional add banner can be seen
+- Product cards showcasing the different footwear categories, 
+- Users will find a call-to-action button underneath the product cards that will direct them to the products page.
+- A scroll up buttom will display as users scroll down for easy access back to the top page.
+
+
+### User Profile
+
+- A users delivery information and order history is saved to their profile.
+- A user is able to view their order history.
+- A user is able to Update their delivery information.
+
+
+### Registration
+
+- User are able to register their details by providing an email address, user name and password to create an account.
+
+
+### Log In
+
+- Users can log in to accsess their profile page, order history, and make any changes to their delivery information.
+
+
+### Products
+    
+#### Every user has complete access to view and purchase products
+
+| Men | Women | Kids | Accessories | Special Offers |
+| --- | ----- | ---- | ----------- | -------------- |
+| Sportswear | Sportswear | Sportswear | Hat & Caps | New Arrivals |
+| Jeans | Jeans | Jeans | Bags & Wallets | Deals |
+| Shoes | Shoes | Shoes | All Accessories | Clearance  |
+| Hoodies | Hoodies | Hoodies |        | All Specials  |
+| Tracksuits | Tracksuits | Tracksuits |     |         |
+| Sweatshirt | Sweatshirt | Sweatshirt |     |         |    
+| T-Shirts   | T-Shirts   | T-Shirts   |     |         |    
+| All Clothing | Dresses  | All Clothing  |     |      | 
+|      |  All Clothing |     |      |      |
+
+ 
+### Product Details Page 
+
+### users are able to:
+
+- Click an image which will direct them to the products detail page. Here users will find more product information, sizes, and the quantity they can purchase. 
+
+### Shopping Bag
+
+### Users are able to:
+
+- View any products they have added to their shopping bad.
+- Have the option to update or remove an item.
+
+### Checkout
+
+### Users are able to:
+
+- Enter in a name and delivery address. 
+- Registered users (if logged in, are able to save their delivery details for easy access)
+- Update their profile with the new delivery information (if they registered and logged in)
+- Checkout and pay securely via the Stripe Payment system
+- Input new delivery information if necessary or because they checking out as a guest
+- Users are sent out order confirmation emails
+
+
+### Footer 
+
+- The footer can be seen on all pages, and provides users additional link options.
+
+
 # TECHNOLOGIES
 
-## LANGUAGES 
+### LANGUAGES 
 
 -  ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -  ### [CSS3](https://en.wikipedia.org/wiki/CSS)
 -  ### [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 -  ### [Python](https://en.wikipedia.org/wiki/Python)
 
-## FRAMEWORKS
+### FRAMEWORKS
 
 -  ### [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/download/)
 
@@ -88,7 +178,7 @@ Bootstrap variables were chosen to keep the colour scheme of the site clean and 
 
 -  ### [JQuery](https://jquery.com/)
 
-## PACKAGES
+### PACKAGES
 
 -  ### [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
@@ -100,7 +190,7 @@ Bootstrap variables were chosen to keep the colour scheme of the site clean and 
     
 -  ### [stripe](https://stripe.com/docs)
 
-## PROJECT MANAGEMENT
+### PROJECT MANAGEMENT
 
 -  ### [GitHub](https://github.com/)
    
@@ -111,7 +201,7 @@ Bootstrap variables were chosen to keep the colour scheme of the site clean and 
 -  ### [Git](https://git-scm.com/)
 
    
-##  TOOLS 
+###  TOOLS 
 
 -  ### [Google Fonts](https://fonts.google.com/)
    
@@ -121,7 +211,7 @@ Bootstrap variables were chosen to keep the colour scheme of the site clean and 
 
 -  ### [Am I Responsive](http://ami.responsivedesign.is/)
    
-## TESTING
+# TESTING
 
 -  ### Bug's found and fixed
 
