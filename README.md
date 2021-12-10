@@ -42,11 +42,13 @@ This is the main website for Foot Connect. A well established online athletic fo
 
 # DESIGN CHOICES 
 
--  ## Colour Scheme
-
-Bootstrap variables were chosen to keep the colour scheme of the site clean and consistent.
+## Colour Scheme
 
 <img align="center" src="media/foot-connect-pallet.png">
+
+## Variables
+
+- Bootstrap variables were chosen to keep the colour scheme of the site clean and consistent.
 
 | variable | Hex |
 | -------- | --- |
@@ -57,13 +59,13 @@ Bootstrap variables were chosen to keep the colour scheme of the site clean and 
 | --bs-body-bg | #fff |
   
 
--  ## Typography
+## Typography
 
 -  ### [Google Fonts](https://fonts.google.com/specimen/Squada+One)
 
 Squada One font has been selected to represent for the Foot Connect logo.
 
--  ## Imagery
+## Imagery
 
 -  ### All images on the site were sourced from 
 -  ### [Laced](https://www.laced.co.uk/)
@@ -116,7 +118,7 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 ### Products
     
-#### Every user has complete access to view and purchase products
+- Every user has complete access to view and purchase products
 
 | Men | Women | Kids | Accessories | Special Offers |
 | --- | ----- | ---- | ----------- | -------------- |
@@ -159,6 +161,29 @@ Squada One font has been selected to represent for the Foot Connect logo.
 ### Footer 
 
 - The footer can be seen on all pages, and provides users additional link options.
+
+# Wireframes
+
+### Desktop view
+
+- [Home](https://balsamiq.cloud/seqremb/pvddy51/r2278)
+- [Product Page](https://balsamiq.cloud/seqremb/pvddy51/r7F40)
+- [Sign In](https://balsamiq.cloud/seqremb/pvddy51/r73F5)
+- [Registration](https://balsamiq.cloud/seqremb/pvddy51/r5D8B)
+- [Product Description](https://balsamiq.cloud/seqremb/pvddy51/r7B0C)
+- [Profile](https://balsamiq.cloud/seqremb/pvddy51/rC400)
+- [Shopping Bag](https://balsamiq.cloud/seqremb/pvddy51/rBCCD)
+
+### Mobile view
+
+- [Home]()
+- [Product Page]()
+- [Sign In]()
+- [Registration]()
+- [Product Description]()
+- [Profile]()
+- [Shopping Bag]()
+
 
 
 # TECHNOLOGIES
