@@ -162,6 +162,11 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 - The footer can be seen on all pages, and provides users additional link options.
 
+# FUTURE FEATURES
+
+- Allow users to register with their social media accounts
+- Add photo Carousel on all product images
+
 # Wireframes
 
 ### Desktop view
@@ -173,17 +178,18 @@ Squada One font has been selected to represent for the Foot Connect logo.
 - [Product Description](https://balsamiq.cloud/seqremb/pvddy51/r7B0C)
 - [Profile](https://balsamiq.cloud/seqremb/pvddy51/rC400)
 - [Shopping Bag](https://balsamiq.cloud/seqremb/pvddy51/rBCCD)
+- [Checkout](https://balsamiq.cloud/seqremb/pvddy51/r64C9)
 
 ### Mobile view
 
-- [Home]()
-- [Product Page]()
-- [Sign In]()
-- [Registration]()
-- [Product Description]()
-- [Profile]()
-- [Shopping Bag]()
-
+- [Home](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Product Page](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Sign In](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Registration](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Product Description](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Profile](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Shopping Bag](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Checkout](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
 
 
 # TECHNOLOGIES
