@@ -1,4 +1,4 @@
-<h1 align="center">Foot Connect Website</h1>
+<h1 align="center">Foot Connect</h1>
 
 This is the main website for Foot Connect. A well established online athletic footwear and apparel retailer. Our aim is to bring you the hottest fashion on the market. The site is designed to be responsive and accessible on multiple devices, making it easy to navigate for new and existing visitors.
 
@@ -40,16 +40,47 @@ This is the main website for Foot Connect. A well established online athletic fo
 |         |              | Delete a product | Remove items no longer on <br> offer or out of stock |
  
 
-# Technologies Used
+# DESIGN CHOICES 
 
-## Languages Used
+-  ## Colour Scheme
+
+Bootstrap variables were chosen to keep the colour scheme of the site clean and consistent.
+
+<img align="center" src="media/foot-connect-pallet.png">
+
+| variable | Hex |
+| -------- | --- |
+| --bs-yellow | #ffc107 |
+| --bs-gray-700 | #495057 |
+| --bs-info | #0dcaf0 |
+| --bs-body-color | #0c0e0f |
+| --bs-body-bg | #fff |
+  
+
+-  ## Typography
+
+-  ### [Google Fonts](https://fonts.google.com/specimen/Squada+One)
+
+    -  ### Squada One font has been choosen to represent for the Foot Connect logo.
+
+-  ## Imagery
+
+-  ### All images on the site were sourced from 
+-  ### [Laced](https://www.laced.co.uk/)
+-  ### [kaggle](https://www.kaggle.com/)
+-  ### [pexels](https://www.pexels.com/)
+-  ### [unsplash](https://unsplash.com/)
+
+# TECHNOLOGIES
+
+## LANGUAGES 
 
 -  ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -  ### [CSS3](https://en.wikipedia.org/wiki/CSS)
 -  ### [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 -  ### [Python](https://en.wikipedia.org/wiki/Python)
 
-## Frameworks
+## FRAMEWORKS
 
 -  ### [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/download/)
 
@@ -80,7 +111,7 @@ This is the main website for Foot Connect. A well established online athletic fo
 -  ### [Git](https://git-scm.com/)
 
    
-##  Tools 
+##  TOOLS 
 
 -  ### [Google Fonts](https://fonts.google.com/)
    
@@ -90,8 +121,7 @@ This is the main website for Foot Connect. A well established online athletic fo
 
 -  ### [Am I Responsive](http://ami.responsivedesign.is/)
    
-
-## Testing
+## TESTING
 
 -  ### Bug's found and fixed
 

@@ -95,17 +95,20 @@ body {
 
 .logo-font strong{
     text-transform: uppercase;
-    font-size: 40px;
-    padding: 5px 10px;
+    font-size: 45px;
+    padding: 1px 40px;
     background-color: var(--bs-white) !important;
-    font-family: 'Gruppo', cursive;
+    /*font-family: 'Gruppo', cursive;*/
+    font-family: 'Squada One', cursive;
+   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 
 }
 
 .title{
     font-size: 35px;
     margin-top: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    font-family: 'Squada One', cursive;
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -113,11 +116,11 @@ body {
 .banner-font{
     font-size: 16px;
     line-height: 1.2;
-    color: var(--bs-cyan);
+    color: var(--bs-info);
 }
 
 .banner-font span{
-    color: white;
+    color: var(--bs-white);
 }
     
 .main-logo-link {
@@ -127,23 +130,23 @@ body {
 /* -------------------------- all buttons */
 .shop-now-button {
     background: var(--bs-body-color);
-    color: white;
+    color: var(--bs-white);
     min-width: 260px;
 }
 
 .btn-black {
     background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: var(--bs-white);
     z-index: 0 !important;
 }
 
 .btn-black2 {
-    background: white !important;
+    background: var(--bs-white) !important;
     color: var(--bs-body-color);
 }
 
 .btn-outline-black{
-    background: white;
+    background: var(--bs-white);
     color: black !important;
     border: 1px solid black;
 }
@@ -152,7 +155,7 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus{
     background: black;
-    color: white !important;
+    color: var(--bs-white) !important;
 }
 
 .shop-now-button:hover,
@@ -161,7 +164,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: var(--bs-success);
+    background: var(--bs-gray-700);
     color: rgb(247, 247, 247);
 }
 
@@ -374,7 +377,7 @@ figure {
     right: 36px;
 }
 
-/* color variables from Bootstrap */
+/* variables from Bootstrap */
 .arrow-primary {
     border-bottom-color: var(--bs-primary) !important;
 }
@@ -474,6 +477,11 @@ figure {
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
+}
+
+.fa-star{
+    color: var(--bs-yellow);
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
