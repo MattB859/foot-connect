@@ -75,7 +75,7 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 # FEATURES
 
-## CURRENT 
+### CURRENT 
 
 ### Navigation 
 
