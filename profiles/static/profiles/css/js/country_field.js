@@ -10,3 +10,6 @@ $('#id_default_country').change(function() {
         $(this).css('color', '#000');
     }
 });
+
+console.log("Hello hello Matthew")
+
