@@ -43,6 +43,16 @@
     </script>
     <!-- Stripejs -->
     <script src="https://js.stripe.com/v3/"></script>
+    <!-- email.js -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+           emailjs.init("user_F3UfqKUDzIE58j7Y5nU9B");
+        })();
+    </script>
     {% endblock %}
 
     {% block extra_js %}
@@ -61,7 +71,7 @@
     <header class="container-fluid sticky">
         <div class="row list">
             <div class="col-12 d-none d-sm-block-none d-lg-block col-lg-12 ">
-                <li><a href="#">contact us</a></li>
+                <li><a href="{% url 'contact_view' %}">contact us</a></li>
                 <li><a href="#">help & info</a></li>
                 <li><a href="#">deliver & returns</a></li>
                 <li><a href="#">find a store</a></li>
@@ -190,6 +200,7 @@
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="/static/js/main.js"></script>
+    <script src="/static/js/send_email.js"></script>
     {% endblock %}
 
 </body>
