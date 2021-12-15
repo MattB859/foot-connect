@@ -417,7 +417,7 @@ figure {
 }
 
 
-/* Allauth form formatting */
+/* --------------- Allauth form formatting */
 .overlay-2{
     background: var(--bs-gray-200) !important;
 }
@@ -484,7 +484,7 @@ figure {
     cursor: pointer;
 }
 
-/* Product Form */
+/* ------------------- Product Form */
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -511,6 +511,27 @@ figure {
     border-radius: 0;
 }
 
+/* ------------------ Contact Form */
+.input-border textarea,
+.input-border input{
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.overlay-bg{
+    background: var(--bs-gray-200);
+}
+
+.overlay-bg-2 button{
+    border-radius: 0;
+}
+
+.overlay-bg-2{
+    position: relative;
+    top: 100px;
+    background: white;
+    padding:  40px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -518,6 +539,10 @@ figure {
     .container {
         max-width: 80%;
     }
+
+    .max-width{
+        max-width: 50% !important;
+    } 
 }
 
 /* fixed top navbar only on medium and up */
@@ -563,5 +588,11 @@ figure {
     .category{
         height: 3000px;
     } 
+
+    .overlay-bg-2{
+        top: 0;
+        background: white;
+        padding:  5px;
+    }
 }
 

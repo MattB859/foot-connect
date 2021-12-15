@@ -31,7 +31,8 @@ SECRET_KEY = 'django-insecure-(q)0m^lss_=ffy6o(r%-uvx)cdi$*soy_-j=oz33u+pn5nr=3p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['foot-connect.herokuapp.com' 'localhost']
+
+ALLOWED_HOSTS = ['foot-connect.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -129,7 +130,7 @@ WSGI_APPLICATION = 'foot_connect.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -138,7 +139,6 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-
 
 
 # Password validation

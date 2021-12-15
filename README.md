@@ -1,6 +1,8 @@
 <h1 align="center">Foot Connect</h1>
 
-This is the main website for Foot Connect. A well established online athletic footwear and apparel retailer. Our aim is to bring you the hottest fashion on the market. The site is designed to be responsive and accessible on multiple devices, making it easy to navigate for new and existing visitors.
+This is the fourth and final milestone (Full Stack Frameworks With Django) project as a Full Stack Software Developer student with code institute.
+
+Foot Connect is a well established online athletic footwear and apparel retailer. Our aim is to bring you the hottest fashion on the market. The site is designed to be responsive and accessible on multiple devices, making it easy to navigate for new and existing visitors.
 
 [visit website here](#)
 
@@ -243,17 +245,3 @@ Squada One font has been selected to represent for the Foot Connect logo.
 -  ### [Am I Responsive](http://ami.responsivedesign.is/)
    
 # TESTING
-
--  ### Bug's found and fixed
-
-<details><summary>CLICK ME</summary>
-<p>
-
-<img align="center"  src="media/code-bug.png">
-
-</p>
-</details>
-
-
-
-
