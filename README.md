@@ -245,3 +245,5 @@ Squada One font has been selected to represent for the Foot Connect logo.
 -  ### [Am I Responsive](http://ami.responsivedesign.is/)
    
 # TESTING
+
+### Find all testing [here](TESTING.md)

@@ -25,11 +25,6 @@
 
 
 
-
-
-
-
-
 -  ### Bug's found and fixed
 
 <details><summary>CLICK ME</summary>
