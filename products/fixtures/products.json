@@ -2001,7 +2001,7 @@
             "gender": "Unisex",
             "description": "MCM Hat",
             "price": 555.00,
-            "category": 16,
+            "category": 3,
             "rating": 4.6,
             "image": "915.jpg"
         }
@@ -2015,7 +2015,7 @@
             "gender": "Unisex",
             "description": "A sweet spin on a passionate colorway, the Candy Red line sets the tone by uniting scarlet Visetos and nappa leather. An uncompromising merger of form and function, the Stark backpack features multiple exterior pockets as well as polished side stud embellishments. Made for the modern global nomad, the soft cotton twill interior features spacious compartments for your laptop and tablet.",
             "price": 555.00,
-            "category": 16,
+            "category": 3,
             "rating": 4.6,
             "image": "916.jpg"
         }
