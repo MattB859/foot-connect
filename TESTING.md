@@ -5,8 +5,8 @@
 | User Stories | Expectation | Testing | Results | Pass/Fail |
 | ------------ | ----------- | ------- | ------- | :------:  |
 | Shopper      | I want to be able to... |    |  |           |
-| | "Understand the main  purpose of the site" | On entering the site shoppers are greeted <br> with fashion images and four product cards <br> displaying footware categories | Shoppers can click on a product card <br> which will take them to the products page | Pass |
-| | "View individual product details" | Shoppers can use the navigation menu <br> and/or search bar to find a specific <br> category or product| Shoppers will click on the product <br> which takes them to the products detail  <br> page where they can find the products <br> rating, product description, images, pricing, <br> and available sizes. | Pass |
+| | "Understand the main  purpose of the site" | On entering the site shoppers are greeted <br>  with fashion images and four product cards displaying footware categories | Click the product card  <br> 'Shop Now' button to view products | Pass |
+| | "View individual product details" | Shoppers can use the navigation menu <br> and/or search bar to find a specific <br> category or product| Navigate to the products detail's <br> page there shoppers can find <br> the product rating, product<br> description, images, pricing, <br> and available sizes. | Pass |
 | | "Quickly identify deals, clearance <br> items and special offers." | On the navigation bar there is a <br> Special Offers link | Shopper can click on the link to find deals, <br> clearences, and new arrivals | Pass |
 | | "Easily view the total of <br> my purchases at any time." | Shoppers can add products to their <br> shopping cart to view the total amount. | On the navigation bar to the right <br> Shopppers will find the total sum of their order | Pass |
 | Site User | "Easily register for an account" | Click Register, fill in a username, <br> email-address, password, click register. | Registration successful | Pass | 
