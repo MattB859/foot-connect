@@ -223,6 +223,11 @@ Squada One font has been selected to represent for the Foot Connect logo.
     
 -  ### [stripe](https://stripe.com/docs)
 
+-  ### [boto3]()
+
+-  ### [django-storages]()
+
+
 ### PROJECT MANAGEMENT
 
 -  ### [GitHub](https://github.com/)
