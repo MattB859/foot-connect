@@ -69,9 +69,23 @@ body {
     position: relative;
     background: url('/media/womens-banner.jpg') no-repeat center center;
     background-size: cover;
-    height: 60%;
+    height: 70%;
     width: 100%;
+    margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.offers{
+    width: 100%;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    color: var(--bs-light);
+ 
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
 }
 
 .bg-color {
@@ -96,12 +110,10 @@ body {
 .logo-font strong{
     text-transform: uppercase;
     font-size: 45px;
-    padding: 1px 40px;
+    padding: 1px 0px 0px 30px;
     background-color: var(--bs-white) !important;
-    /*font-family: 'Gruppo', cursive;*/
     font-family: 'Squada One', cursive;
-   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-
+   
 }
 
 .title{
@@ -149,6 +161,7 @@ body {
     background: var(--bs-white);
     color: black !important;
     border: 1px solid black;
+  
 }
 
 .btn-outline-black:hover,
@@ -248,12 +261,6 @@ a.category-badge > span.badge:hover {
 	z-index: -1;
 }
 
-.sticky{
-    transition: 0.5s ease-out;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
 
 /* ----------------- scroll up button */
 .scroll-up-btn {
@@ -346,6 +353,12 @@ figure {
     font-size: 20px;
     margin: 40px 20px 0;
     color: var(--bs-white);
+}
+
+
+.card1{
+    background: url("/media/sneakers6.jpg");
+    width: 50px;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -533,7 +546,7 @@ figure {
     padding:  40px;
 }
 /* new contact form */
-.field {
+/*.field {
     margin-bottom: 10px;
   }
   
@@ -558,6 +571,33 @@ figure {
     color: #fff;
     border: none
   }
+
+ /* -------------- W3school toggler */
+ .mobile-container {
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--bs-white);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -569,6 +609,12 @@ figure {
     .max-width{
         max-width: 50% !important;
     } 
+
+    .shop-now-button{
+        position: relative;
+        width: 50%;  
+    }
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -595,6 +641,73 @@ figure {
     body {
         height: calc(100vh - 116px);
     }
+
+    .home{
+        position: relative;
+        background: url('/media/streetware-8.jpg') no-repeat center center;
+        background-size: cover;
+        height: 35%;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        position: relative;
+        top: 8px;
+        margin: 0 2px;
+        font-size: 1.1rem;
+    }
+
+    .nav-link p{
+        position: relative;
+        display: none;
+        top: 20px;
+        font-size: 10px;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+
+    .logo-font strong {
+        text-transform: uppercase;
+        font-size: 25px;
+        padding: 2px 20px;
+        background-color: var(--bs-white) !important;
+        font-family: 'Squada One', cursive;
+    }
+    
+    .navbar{
+        top: 0;
+        position: fixed;
+        z-index: 999999999;
+    }
+
+    #delivery-banner{
+        position: relative;
+        top: 61px;
+    }
+
+    .home{
+        position: relative;
+        margin-top: 0;
+    }
+
+    .offers{
+        margin-top: 60px;
+        width: 100%;
+        height: 120px;
+        font-size: 30px;
+    }
+
+    .offers img{
+        display: none;
+    }
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -607,18 +720,75 @@ figure {
         z-index: 1030;
     }
 
+    ul {
+        padding: 0;
+    }
+    
     .header-container {
         padding-top: 0;
     }
 
-    .category{
-        height: 3000px;
-    } 
+    .footer{
+       
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
 
     .overlay-bg-2{
         top: 0;
         background: white;
         padding:  5px;
     }
+
+    .logo-font strong {
+        position: relative;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 20px;
+        bottom: 4px;
+        padding: 3px 15px;
+        background-color: var(--bs-white) !important;
+        font-family: 'Squada One', cursive;
+       
+    }
+
+    .offers{
+        margin-top: 60px;
+        width: 100%;
+        height: 60px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .banner{
+        margin: 20px 0;
+    }
+
+    .banner-font{
+        font-size: 12px;
+    }
+
+    .title{
+        margin: 20px 0 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .btn {
+        border: 1px solid black;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .title-font{
+        margin-top: 50px !important;
+    }
+    
+    .decrement-qty,
+    .increment-qty{
+        padding: 0 10px;
+    }
+
 }
 

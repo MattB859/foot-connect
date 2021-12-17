@@ -96,9 +96,10 @@
             </div>
             <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>FOOTCONNECT
-                  <!--<img class="crown-logo" src="/media/crown-2.png" alt="crown logo">-->
-                   </strong>
+                    <h2 class="logo-font text-black my-0">
+                    <strong>FOOTCONNECT<img class="crown-logo" 
+                        src="/media/xmas-7.png" alt="crown logo"> </strong>
+                  
                 </h2>
                 </a>
             </div>
@@ -145,10 +146,13 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar bg-color navbar-expand-lg w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- w3school toggle -->
+                <div class="mobile-container navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
@@ -159,7 +163,7 @@
                 <h4 class="banner-font my-1"><span>Next Day Available</span></h4>
             </div>
             <div class="col-lg-4 col-md-4 d-none d-sm-block-none d-md-block d-lg-block text-white">
-                <h4 class=" banner-font my-1">Online Student Discount</h4>
+                <h4 class="banner-font my-1">Online Student Discount</h4>
                 <h4 class="banner-font my-1"><span>Students Get 10% Off</span></h4>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 text-white d-sm-block">
@@ -193,10 +197,71 @@
     {% block content %}
     {% endblock %}
 
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-3 text-center">
+                        <ul>
+                            <li class="h5 mb-3">Payment methods we accept</li>
+                            <div class="app-logo">
+                                <img src="media/visa.png" alt="payment">
+                                <img src="media/mastercard.png" alt="payment">
+                                <img src="media/visa.png" alt="payment">
+                                <img src="./media/mastercard.png" alt="payment">
+                            </div>
+                            <i class="fab fa-facebook-f social-media"></i>
+                            <i class="fab fa-twitter social-media"></i>
+                            <i class="fab fa-instagram social-media"></i>
+                            <i class="fab fa-pinterest-p social-media"></i>
+                            <i class="fab fa-youtube social-media"></i>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
+                        <ul>
+                            <li class="h5">Useful Links</li>
+                            <li>Coupons</li>
+                            <li>Blog post</li>
+                            <li>Careers</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
+
+                        <ul>
+                            <li class="h5">Follow us</li>
+                            <li class="links">Facebook</li>
+                            <li class="links">Twitter</li>
+                            <li class="links">Instagram</li>
+                            <li class="links">YouTube</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
+                        <ul>
+                            <li class="h5">Customer Help</li>
+                            <li>Contact Us</li>
+                            <li>Returns</li>
+                            <li>Help & FAQs</li>
+                            <li>Store Finder</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    Copyright Limited &copy; 2020. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="/static/js/main.js"></script>

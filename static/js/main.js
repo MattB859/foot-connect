@@ -22,3 +22,8 @@ $('.scroll-up-btn').click(function () {
     });
 
 });
+
+// W3school
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
