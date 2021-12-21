@@ -11,7 +11,6 @@ $(document).ready(function () {
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
 });
 
 
@@ -27,3 +26,21 @@ $('.scroll-up-btn').click(function () {
 function myFunction(x) {
     x.classList.toggle("change");
   }
+
+const triggers = document.querySelectorAll('.menu-trigger'),
+    activeClass = 'active';
+triggers.forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+        e.currentTarget.classList.toggle(activeClass);
+    });
+});
+
+function openNav() {
+    document.getElementById("myNav").style.width = "90%";
+   
+}
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+

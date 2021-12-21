@@ -1,6 +1,12 @@
 /* Code sourced from the code institute tutorial 
 and edited by developer to fit the projects needs*/
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -74,6 +80,7 @@ body {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* ------------ navbar */
 
 .offers{
     width: 100%;
@@ -113,7 +120,6 @@ body {
     padding: 1px 0px 0px 30px;
     background-color: var(--bs-white) !important;
     font-family: 'Squada One', cursive;
-   
 }
 
 .title{
@@ -572,31 +578,15 @@ figure {
     border: none
   }
 
- /* -------------- W3school toggler */
- .mobile-container {
-    display: inline-block;
-    cursor: pointer;
-}
-  
-.bar1, .bar2, .bar3 {
+ 
+/* -------- Mobile menu-bar */
+.menu-bar {
     width: 35px;
-    height: 5px;
+    height: 3px;
     background-color: var(--bs-white);
     margin: 6px 0;
-    transition: 0.4s;
 }
-  
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-  
-.change .bar2 {opacity: 0;}
-  
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
+
 
 /* -------------------------------- Media Queries */
 
@@ -691,6 +681,11 @@ figure {
         position: relative;
         top: 61px;
     }
+    
+    .dropdown-item {
+        font-size: 15px !important;
+      
+    }
 
     .home{
         position: relative;
@@ -707,6 +702,78 @@ figure {
     .offers img{
         display: none;
     }
+
+    /* ---------- nav menu curtain*/
+    .nav-overlay a {font-size: 20px}
+    .nav-overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+     
+    .nav-overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--bs-white);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+     
+    .nav-overlay-content {
+        position: absolute;
+        top: 17%;
+        left: 20px;
+        text-align: left;
+        margin-top: 30px;
+        transition: 0.5s;
+    }
+     
+    .nav-overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        font-weight: 100 !important;
+        display: block;
+       
+    }
+     
+    .nav-overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+     
+    .nav-overlay .closebtn{
+        position: absolute;
+        color: black;
+        margin: 0;
+        padding: 0;
+        right: 20px;
+        top: 0;
+        font-size: 38.5px;
+    }
+
+
+    #specials-link,
+    #accessories-link,
+    #clothing-link,
+    #all-products-link {
+        color: black !important;
+        font-size: 17px;
+    }
+
+
+    .mobile-search-bar{
+        margin-top: 80px;
+    }
+
+    /* ----------------- footer accordion */
+    .card-header{
+        background: #000;
+    }
+   
 
 }
 
@@ -749,8 +816,7 @@ figure {
         bottom: 4px;
         padding: 3px 15px;
         background-color: var(--bs-white) !important;
-        font-family: 'Squada One', cursive;
-       
+        font-family: 'Squada One', cursive;    
     }
 
     .offers{
@@ -774,14 +840,10 @@ figure {
         font-size: 25px;
         text-align: center;
     }
-
-    .btn {
-        border: 1px solid black;
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .title-font{
+   
+    .title-font,
+    .title-font strong{
+        text-align: center;
         margin-top: 50px !important;
     }
     
@@ -789,6 +851,20 @@ figure {
     .increment-qty{
         padding: 0 10px;
     }
-
+   
 }
+
+@keyframes text {
+    0%,
+    25% {
+      transform: translateX(0%);
+      left: 0%;
+    }
+    75%,
+    100% {
+      transform: translateX(-100%);
+      left: 100%;
+    }
+  }
+  
 

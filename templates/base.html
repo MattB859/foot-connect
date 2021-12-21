@@ -68,7 +68,7 @@
     </div>
 
     <!-- header -->
-    <header class="container-fluid sticky">
+    <header class="container-fluid">
         <div class="row list">
             <div class="col-12 d-none d-sm-block-none d-lg-block col-lg-12 ">
                 <li><a href="{% url 'contact_view' %}">contact us</a></li>
@@ -78,7 +78,7 @@
                 <li><a href="{% url 'account_signup' %}">sign in | register</a></li>
             </div>
         </div>
-        <div id="topnav" class="row bg-color pt-lg-2 d-none d-lg-flex">
+        <div class="row bg-color pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -119,9 +119,11 @@
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <hr class="dropdown-divider">
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>                   
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <hr class="dropdown-divider">
                                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
@@ -146,15 +148,16 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar bg-color navbar-expand-lg w-100">
-                <!-- w3school toggle -->
-                <div class="mobile-container navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+                <div class="item mobile-container navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                    <div class="menu-trigger">
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                    </div>
                 </div>
                 {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}
+                {% include 'includes/main-nav.html' %}     
             </nav>
         </div>
         <div id="delivery-banner" class="row banner-color text-center">
@@ -198,7 +201,7 @@
     {% endblock %}
 
     <!--Footer-->
-    <footer>
+    <footer class="d-none d-lg-block">
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -254,8 +257,9 @@
             </div>
         </div>
     </footer>
-
-
+    
+    {% include 'includes/mobile-footer.html' %}  
+   
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
