@@ -1,15 +1,15 @@
-    <div class="container text-center">
+    <div class="d-lg-none container text-center">
         <div class="h5">Payment methods we accept</div>
         <div class="app-logo mb-4 ">
-            <img src="media/visa.png" alt="payment">
-            <img src="media/mastercard.png" alt="payment">
-            <img src="media/visa.png" alt="payment">
-            <img src="./media/mastercard.png" alt="payment">
+            <img src="{{ MEDIA_URL }}visa.png" alt="payment card">
+            <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
+            <img src="{{ MEDIA_URL }}visa.png" alt="payment card">
+            <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
         </div>
     </div>
 
     <div class="d-lg-none text-center text-white" id="accordion">
-        <div class="card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+        <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
             aria-controls="collapseOne">
             <div class="card-header" id="headingOne">
                 <h6 class="mb-0 ">
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+        <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
             aria-controls="collapseTwo">
             <div class="card-header" id="headingTwo">
                 <h6 class="mb-0">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="card" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+        <div data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
             aria-controls="collapseOne">
             <div class="card-header" id="headingThree">
                 <h6 class="mb-0 ">
@@ -81,7 +81,4 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="text-center bg-color">
-        Copyright Limited &copy; 2020. All Rights Reserved
     </div>

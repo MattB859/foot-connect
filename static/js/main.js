@@ -35,12 +35,15 @@ triggers.forEach((trigger) => {
     });
 });
 
+
 function openNav() {
-    document.getElementById("myNav").style.width = "90%";
-   
+    document.getElementById("myNav").style.width = "90%"; 
 }
   
-  function closeNav() {
+function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+AOS.init({
+    duration: 800,
+});

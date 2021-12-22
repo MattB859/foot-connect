@@ -5,9 +5,9 @@
 
     <!-- offer banner -->
     <div class="col-lg-12 offers">
-        <img src="/media/sale.png" width="200px" alt="sales">
+        <img src="{{ MEDIA_URL }}sale.png" width="10%" alt="sales">
             up to 50% off don't miss out 
-        <img src="/media/sale.png" width="200px" alt="sales">
+        <img src="{{ MEDIA_URL }}sale.png" width="10%" alt="sales">
     </div>
   
     <!-- home page section -->
@@ -17,70 +17,70 @@
     <section class="container">
         <h2 class="title">shop the latest</h2>
         <div class="row align-items-start">
-            <div class="col-sm-6 mt-4 col-lg-3">
-                <div class="card w-100">
+            <div class="col-sm-6 col-6 mt-4 col-lg-3">
+                <div class="card w-100" data-aos="fade-up">
                     <div class="hover1">
                         <figure>
-                            <img src="/media/sneakers1.jpg" class="card-img-top category-1" alt="shoes">
+                            <img src="{{ MEDIA_URL }}sneakers1.jpg" class="card-img-top category-1" alt="shoes">
                         </figure>
                     </div>
                    
                     <div class="card-body">
-                        <h5 class="card-title">Men's Footwear</h5>
+                        <h5 class="card-title text-center">Men</h5>
                         <p class="card-text"></p>
                         <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6 mt-4 col-lg-3">
-                <div class="card w-100">
+            <div class="col-sm-6 col-6 mt-4 col-lg-3">
+                <div class="card w-100" data-aos="fade-up">
                     <div class="hover1">
                         <figure>
-                            <img src="/media/sneakers2.jpg" class="card-img-top category-1" alt="shoes">
+                            <img src="{{ MEDIA_URL }}sneakers2.jpg" class="card-img-top category-1" alt="shoes">
                         </figure>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title ">Women's Footwear</h5>
+                    <div class="card-body text-center">
+                        <h5 class="card-title ">Women</h5>
                         <p class="card-text"></p>
                         <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6 mt-4 col-lg-3">
-                <div class="card w-100">
+            <div class="col-sm-6 col-6 mt-4 col-lg-3">
+                <div class="card w-100 w-150" data-aos="fade-up">
                     <div class="hover1">
                         <figure>
-                            <img src="/media/sneakers5.jpg" class="card-img-top category-1" alt="shoes">
+                            <img src="{{ MEDIA_URL }}sneakers5.jpg" class="card-img-top category-1" alt="shoes">
                         </figure>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Boy's Footwear</h5>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Boy</h5>
                         <p class="card-text"></p>
                         <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
 
-            <div class="h-100 col-sm-6 mt-4 col-lg-3">
-                <div class="card w-100">
+            <div class="h-100 col-sm-6 col-6 mt-4 col-lg-3">
+                <div class="card w-100" data-aos="fade-up">
                     <div class="hover1">
-                        <figure><img src="/media/sneakers6.jpg" class="card-img-top category-1" alt="shoes">
+                        <figure><img src="{{ MEDIA_URL }}sneakers6.jpg" class="card-img-top category-1" alt="shoes">
                         </figure>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Girls's Footwear</h5>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Girl</h5>
                         <p class="card-text"></p>
                         <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-12 mb-4 col-lg-12">
+            <div class="col-sm-12 mb-4 col-lg-12" data-aos="fade-up">
                <h2 class="title">womens top picks</h2> 
                 <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans,womens_shoes">
-                    <img class="banner" src="/media/women-header.jpg" alt="">
+                    <img class="banner" src="{{ MEDIA_URL }}women-header.jpg" alt="fashion banner">
                 </a>
             </div>
         </div>

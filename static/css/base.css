@@ -75,7 +75,7 @@ body {
     position: relative;
     background: url('/media/womens-banner.jpg') no-repeat center center;
     background-size: cover;
-    height: 70%;
+    height: calc(700px - 20%);
     width: 100%;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -86,10 +86,9 @@ body {
     width: 100%;
     padding: 20px;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 3vw;
     text-align: center;
     color: var(--bs-light);
- 
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     background: black;
@@ -145,11 +144,21 @@ body {
     text-align: center;
 }
 
+.hover1 img{
+    height: calc(500px - 10vh);
+}
+
 /* -------------------------- all buttons */
 .shop-now-button {
     background: var(--bs-body-color);
     color: var(--bs-white);
-    min-width: 260px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.card-body{
+    padding: 0;
+ 
 }
 
 .btn-black {
@@ -282,6 +291,7 @@ a.category-badge > span.badge:hover {
     z-index: 9999;
     font-size: 30px;
     background: black;
+    border: 2px solid white;
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
@@ -365,6 +375,10 @@ figure {
 .card1{
     background: url("/media/sneakers6.jpg");
     width: 50px;
+}
+
+.card-title{
+    font-weight: 600;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -632,13 +646,24 @@ figure {
         height: calc(100vh - 116px);
     }
 
+    .navbar{
+        padding: 2px 20px;
+    }
+
     .home{
         position: relative;
         background: url('/media/streetware-8.jpg') no-repeat center center;
         background-size: cover;
-        height: 35%;
-        width: 100%;
+        max-width: 100% !important;
+        height: 60%;
+        top: 10px;
+        width: 100%; 
         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .fa-user{
+        position: relative;
+        left: 10px;
     }
 
     .nav-link {
@@ -663,11 +688,23 @@ figure {
         padding: 0;
     }
 
+    .mobile-icon{
+        position: relative;
+        bottom: 7px;   
+    }
+
+    .app-logo img{
+        height: 20px;
+        font-size: 10px;
+    }
+
     .logo-font strong {
         text-transform: uppercase;
         font-size: 25px;
+        top: 4px;
         padding: 2px 20px;
-        background-color: var(--bs-white) !important;
+        width: 100%;
+        color: var(--bs-body-color) !important;
         font-family: 'Squada One', cursive;
     }
     
@@ -704,14 +741,17 @@ figure {
     }
 
     /* ---------- nav menu curtain*/
-    .nav-overlay a {font-size: 20px}
+    .nav-overlay a {
+        font-size: 20px
+    }
+
     .nav-overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
      
-    .nav-overlay {
+    #myNav{
         height: 100%;
         width: 0;
         position: fixed;
@@ -722,10 +762,44 @@ figure {
         overflow-x: hidden;
         transition: 0.5s;
     }
+
+    .social-media {
+        padding: 8px;
+        position: relative;
+        margin: 0 10px !important;
+        top: 75%; 
+        color: rgb(0, 92, 197);
+        
+    }
+
+    .fa-instagram{
+        color: rgb(119, 15, 204);
+    }
+
+    .fa-youtube{
+        color: red;
+    }
+
+    .mobile-menu-header{
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 27px;
+        margin: auto 0;
+        width: 100%;
+        text-align: center;
+        top: 12px;
+        background-color: var(--bs-white) !important;
+        font-family: 'Squada One', cursive;
+    }
+    
+    .menu-social{
+        margin: 0 auto;
+        display: inline;
+    }
      
     .nav-overlay-content {
         position: absolute;
-        top: 17%;
+        top: 20%;
         left: 20px;
         text-align: left;
         margin-top: 30px;
@@ -736,7 +810,6 @@ figure {
         padding: 8px;
         text-decoration: none;
         font-size: 36px;
-        font-weight: 100 !important;
         display: block;
        
     }
@@ -762,6 +835,7 @@ figure {
     #all-products-link {
         color: black !important;
         font-size: 17px;
+        padding: 0;
     }
 
 
@@ -772,6 +846,10 @@ figure {
     /* ----------------- footer accordion */
     .card-header{
         background: #000;
+    }
+
+    .collapse{
+        border-radius: 0 !important;
     }
    
 
@@ -785,6 +863,16 @@ figure {
         right: 0;
         left: 0;
         z-index: 1030;
+    }
+
+    .home{
+        position: relative;
+        background: url('/media/streetware-8.jpg') no-repeat center center;
+        background-size: cover;
+        height: 35%;
+        top: 10px;
+        width: 100%; 
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     ul {
@@ -812,7 +900,7 @@ figure {
         position: relative;
         width: 100%;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 25px;
         bottom: 4px;
         padding: 3px 15px;
         background-color: var(--bs-white) !important;
@@ -851,20 +939,27 @@ figure {
     .increment-qty{
         padding: 0 10px;
     }
+
+    .shop-now-button {
+        font-size: 3vw;
+    }
+
+    .card-title{
+        font-size: 4vw;
+    }
+
+    .hover1 img{
+        height: 190px;
+    }
+
+    .btn{
+        font-size: 10px;
+    }
    
 }
 
-@keyframes text {
-    0%,
-    25% {
-      transform: translateX(0%);
-      left: 0%;
+@media (max-width: 360px) {
+    .logo-font strong {
+        font-size: 15px;   
     }
-    75%,
-    100% {
-      transform: translateX(-100%);
-      left: 100%;
-    }
-  }
-  
-
+}
