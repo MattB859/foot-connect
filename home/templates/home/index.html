@@ -6,7 +6,7 @@
     <!-- offer banner -->
     <div class="col-lg-12 offers">
         <img src="{{ MEDIA_URL }}sale.png" width="10%" alt="sales">
-            up to 50% off don't miss out 
+            up to 50% off - end soon!
         <img src="{{ MEDIA_URL }}sale.png" width="10%" alt="sales">
     </div>
   
@@ -14,21 +14,23 @@
     <section class="container home"></section>
 
     <!-- category section -->
+    
     <section class="container">
         <h2 class="title">shop the latest</h2>
+        <div class="carousel">
         <div class="row align-items-start">
             <div class="col-sm-6 col-6 mt-4 col-lg-3">
                 <div class="card w-100" data-aos="fade-up">
                     <div class="hover1">
                         <figure>
-                            <img src="{{ MEDIA_URL }}sneakers1.jpg" class="card-img-top category-1" alt="shoes">
+                            <img src="{{ MEDIA_URL }}900.jpg" class="card-img-top category-1" alt="shoes">
                         </figure>
                     </div>
                    
                     <div class="card-body">
-                        <h5 class="card-title text-center">Men</h5>
+                        <h5 class="card-title text-center">footwear</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -37,13 +39,13 @@
                 <div class="card w-100" data-aos="fade-up">
                     <div class="hover1">
                         <figure>
-                            <img src="{{ MEDIA_URL }}sneakers2.jpg" class="card-img-top category-1" alt="shoes">
+                            <img src="{{ MEDIA_URL }}111.jpg" class="card-img-top category-1" alt="womens clothing">
                         </figure>
                     </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title ">Women</h5>
+                        <h5 class="card-title ">women's Collection</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -52,13 +54,13 @@
                 <div class="card w-100 w-150" data-aos="fade-up">
                     <div class="hover1">
                         <figure>
-                            <img src="{{ MEDIA_URL }}sneakers5.jpg" class="card-img-top category-1" alt="shoes">
+                            <img src="{{ MEDIA_URL }}404.jpg" class="card-img-top category-1" alt="Sportswear">
                         </figure>
                     </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title">Boy</h5>
+                        <h5 class="card-title">Men's Collection</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -66,13 +68,14 @@
             <div class="h-100 col-sm-6 col-6 mt-4 col-lg-3">
                 <div class="card w-100" data-aos="fade-up">
                     <div class="hover1">
-                        <figure><img src="{{ MEDIA_URL }}sneakers6.jpg" class="card-img-top category-1" alt="shoes">
+                        <figure><img src="{{ MEDIA_URL }}950.jpg" class="card-img-top category-1" alt="shoes">
                         </figure>
                     </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title">Girl</h5>
+                        <h5 class="card-title">
+                            Bags</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=bags" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -84,6 +87,7 @@
                 </a>
             </div>
         </div>
-        </div>
+    </div>    
     </section>
+    
 {% endblock %}

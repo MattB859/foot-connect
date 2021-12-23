@@ -3,7 +3,7 @@
         <div class="app-logo mb-4 ">
             <img src="{{ MEDIA_URL }}visa.png" alt="payment card">
             <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
-            <img src="{{ MEDIA_URL }}visa.png" alt="payment card">
+            <img src="{{ MEDIA_URL }}pngwing.com(7).png" style="height: 35px;" alt="payment card">
             <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
         </div>
     </div>
@@ -24,7 +24,7 @@
                     <a href="#">
                         <ol class="text-black">Blog post</ol>
                     </a>
-                    <a href="#">
+                    <a href="{% url 'contact_view' %}">
                         <ol class="text-black">Careers</ol>
                     </a>
                     <a href="#">
@@ -66,10 +66,10 @@
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="collapseThree" data-parent="#accordion">
                 <div class="card-body">
-                    <a href="#">
+                    <a href="{% url 'contact_view' %}">
                         <ol class="text-black">Contact Us</ol>
                     </a>
-                    <a href="#">
+                    <a href="{% url 'contact_view' %}">
                         <ol class="text-black">Returns</ol>
                     </a>
                     <a href="#">

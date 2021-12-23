@@ -15,13 +15,13 @@
             </div>
         </div>
     </form>
-    <div class="menu-social d-lg-none">
+    <!-- <div class="menu-social d-lg-none">
         <i class="fab fa-facebook-f social-media"></i>
         <i class="fab fa-twitter social-media"></i>
         <i class="fab fa-instagram social-media"></i>
         <i class="fab fa-pinterest-p social-media"></i>
         <i class="fab fa-youtube social-media"></i>
-    </div>
+    </div> -->
     <ul class="navbar-nav w-auto mx-auto nav-overlay-content">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link"
@@ -104,8 +104,9 @@
                 <a href="{% url 'products' %}?category=bags, deals" class="dropdown-item">All Accessories</a>
             </div>
         </li>
-        <hr>
+        <hr>   
         <li class="nav-item dropdown">
+           
             <a class="logo-font font-weight-bold nav-link text-white" href="#" id="specials-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Special Offers
@@ -119,5 +120,19 @@
         </li>
         <hr>
     </ul>
-
+   
+    <hr>
+    <div class="text-center mobile-footer text-white d-lg-none d-sm-block">
+        <img src="{{ MEDIA_URL }}pngwing.com(12).png" width="12%" alt="social icon">
+        <img src="{{ MEDIA_URL }}pngwing.com(11).png" width="12%" alt="social icon">
+        <img src="{{ MEDIA_URL }}pngwing.com(8).png" width="10%" alt="social icon">
+        <img src="{{ MEDIA_URL }}pngwing.com(13).png" width="12%" alt="social icon">
+        <hr class="line-white">
+       <p>Copyright Limited &copy; 2022. All Rights Reserved</p> 
+    </div>
+    <div class="text-center menu-app d-lg-none">
+        <p class="text-black">Download Our App!</p>
+       </a> <img src="{{ MEDIA_URL }}pngwing.com(9).png" style="width: 40%" alt="clothing">
+        <img src="{{ MEDIA_URL }}pngwing.com(10).png" style="width: 40%" alt="clothing">
+    </div>
 </div>

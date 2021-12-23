@@ -1,12 +1,5 @@
-/* Code sourced from the code institute tutorial 
-and edited by developer to fit the projects needs*/
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* The code in this file has been sourced from the code institute tutorial 
+and customized by the developer to fit the projects needs*/
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -61,6 +54,12 @@ and edited by developer to fit the projects needs*/
     --bs-body-bg: #fff;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -80,8 +79,8 @@ body {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* ------------ navbar */
 
+/* ------------ Header styling */
 .offers{
     width: 100%;
     padding: 20px;
@@ -107,16 +106,16 @@ body {
     width: 1.5rem;
 }
 
-.crown-logo{
+/*.crown-logo{
     position: relative;
     bottom: 4px;
     width: 55px;
-}
+}*/
 
 .logo-font strong{
     text-transform: uppercase;
     font-size: 45px;
-    padding: 1px 0px 0px 30px;
+    padding: 1px 30px;
     background-color: var(--bs-white) !important;
     font-family: 'Squada One', cursive;
 }
@@ -148,17 +147,17 @@ body {
     height: calc(500px - 10vh);
 }
 
+.card-body{
+    padding: 0;
+ 
+}
+
 /* -------------------------- all buttons */
 .shop-now-button {
     background: var(--bs-body-color);
     color: var(--bs-white);
     border-radius: 0;
     width: 100%;
-}
-
-.card-body{
-    padding: 0;
- 
 }
 
 .btn-black {
@@ -379,6 +378,10 @@ figure {
 
 .card-title{
     font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--bs-body-color);
+    font-family: 'Squada One', cursive;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -565,33 +568,40 @@ figure {
     background: white;
     padding:  40px;
 }
-/* new contact form */
-/*.field {
-    margin-bottom: 10px;
-  }
-  
-  .field label {
-    display: block;
-    font-size: 12px;
-    color: #777;
-  }
-  
-  .field input {
-    display: block;
-    min-width: 250px;
-    line-height: 1.5;
-    font-size: 14px;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    padding: 6px 30px;
-    font-size: 14px;
-    background-color: #4460AA;
-    color: #fff;
-    border: none
-  }
 
+/* carousel -------- */
+.box{
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 18%;
+    width: auto;
+    padding: 16px;
+    color: white !important;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: var(--bs-info);
+}
  
 /* -------- Mobile menu-bar */
 .menu-bar {
@@ -796,6 +806,39 @@ figure {
         margin: 0 auto;
         display: inline;
     }
+
+    .social-img {
+        position: absolute;
+        text-align: center;
+        padding: 0;
+        top: 80%;  
+    }
+
+    .menu-app{
+        position: relative;
+        top: 40%;
+        padding: 15px;
+        font-family: 'Squada One', cursive; 
+    }
+
+    .menu-app p{
+        font-size: 5vw;
+    }
+
+    .mobile-footer{
+        position: relative;
+        top: 70%;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 8px;
+        width: 100%;
+        background: var(--bs-body-color); 
+    }
+
+    .line-white{
+        color: white;
+        background: white;
+    }
      
     .nav-overlay-content {
         position: absolute;
@@ -955,11 +998,52 @@ figure {
     .btn{
         font-size: 10px;
     }
+
+    .overlay-bg{
+        background: none;
+    }
+
+    .menu-social{
+        margin: 0 auto;
+        display: inline;
+    }
+
+    .social-img {
+        position: absolute;
+        text-align: center;
+        padding: 0;
+        top: 90%;  
+    }
+
+    .mobile-footer{
+        position: relative;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 8px;
+        width: 100%;
+        background: var(--bs-body-color);
+        top: 80%;  
+    }
+    .menu-app{
+        position: relative;
+        top: 40%;
+        padding: 15px;
+        font-family: 'Squada One', cursive;
+     
+    }
    
 }
 
 @media (max-width: 360px) {
     .logo-font strong {
         font-size: 15px;   
+    }
+
+    .menu-app{
+        position: relative;
+        top: 34%;
+        padding: 15px;
+        font-family: 'Squada One', cursive;
+        background: var(--bs-gray-200);
     }
 }
