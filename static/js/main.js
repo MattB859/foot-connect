@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('selector').flickity()
     $(window).scroll(function () {
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
@@ -13,6 +14,12 @@ $(document).ready(function () {
     });
 });
 
+// Flickity
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
 
 // slide up Script //
 $('.scroll-up-btn').click(function () {

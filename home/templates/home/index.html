@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block content %}
-
     <!-- offer banner -->
     <div class="col-lg-12 offers">
         <img src="{{ MEDIA_URL }}sale.png" width="10%" alt="sales">
@@ -14,10 +13,8 @@
     <section class="container home"></section>
 
     <!-- category section -->
-    
     <section class="container">
         <h2 class="title">shop the latest</h2>
-        <div class="carousel">
         <div class="row align-items-start">
             <div class="col-sm-6 col-6 mt-4 col-lg-3">
                 <div class="card w-100" data-aos="fade-up">
@@ -79,15 +76,111 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <h2 class="title mb-4">picks for you</h2>
+        <div class="row align-items-start">
+            <!-- Flickity carousel -->
+            <div class="col-lg-12 col-sm-12" data-aos="fade-up">
+                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}401.jpg" class="carousel-img" alt="Sportswear"> 
+                        <p class="lead mb-0 text-left font-weight-bold mt-2">£50.00</p>
+                        <p class="lead mb-4 text-left ">Adidas Tracksuit</p>
+                    </div>     
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}402.jpg" class="carousel-img" alt="Sportswear">
+                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                        <p class="lead mb-4 text-left ">Puma Top</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}403.jpg" class="carousel-img" alt="Sportswear">
+                        <p class="lead mb-0 text-left font-weight-bold mt-2">£55.00</p>
+                        <p class="lead mb-4 text-left ">Adidas Tacksuit</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}404.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}405.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}903.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}911.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                </div>
+            </div>
 
-            <div class="col-sm-12 mb-4 col-lg-12" data-aos="fade-up">
+            <!-- Flickity carousel -->
+            <div class="col-lg-12 col-sm-12" data-aos="fade-up">
+                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}101.jpg" class="carousel-img" alt="Sportswear"> 
+                        <p class="lead mb-0 text-left font-weight-bold mt-2">£50.00</p>
+                        <p class="lead mb-4 text-left ">Adidas Tracksuit</p>
+                    </div>     
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}102.jpg" class="carousel-img" alt="Sportswear">
+                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                        <p class="lead mb-4 text-left ">Puma Top</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}108.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}104.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}116.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}112.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="{{ MEDIA_URL }}107.jpg" class="carousel-img" alt="Sportswear">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col col-sm-6" data-aos="fade-up">
+                <div class="ads mt-4">
+                    <div class="hover1 find-us">
+                        <figure>
+                            <h4 class="text-center mt-4 font-weight-bold">Our Store</h4>
+                            <img src="{{ MEDIA_URL }}9045.jpg" class="card-img-top category-1" alt="store">
+                        </figure>
+                        <p class="container text-center">Find your local store, view opening hours
+                            and find out where you can get free delivery
+                            to collect your order from!
+                        </p>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col col-sm-6" data-aos="fade-up">
+                <div class="ads mt-4">
+                    <div class="hover1 find-us">
+                        <figure>
+                            <h4 class="text-center mt-4 font-weight-bold">Find Us</h4>
+                          
+                        </figure>
+                        <p class="container text-center">Find your local store, view opening hours
+                            and find out where you can get free delivery
+                            to collect your order from!
+                        </p>
+                    </div>
+                </div>   
+            </div>
+            
+            <div class="col-sm-12 mb-4 col-lg-12">
                <h2 class="title">womens top picks</h2> 
                 <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans,womens_shoes">
                     <img class="banner" src="{{ MEDIA_URL }}women-header.jpg" alt="fashion banner">
                 </a>
             </div>
-        </div>
-    </div>    
+        </div> 
     </section>
     
 {% endblock %}
