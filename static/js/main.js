@@ -14,6 +14,14 @@ $(document).ready(function () {
     });
 });
 
+// slide up Script //
+$('.scroll-up-btn').click(function () {
+    $('html').animate({
+        scrollTop: 0
+    });
+
+}); 
+
 // Flickity
 $('.main-carousel').flickity({
     // options
@@ -21,18 +29,10 @@ $('.main-carousel').flickity({
     contain: true
   });
 
-// slide up Script //
-$('.scroll-up-btn').click(function () {
-    $('html').animate({
-        scrollTop: 0
-    });
-
-});
-
 // W3school
 function myFunction(x) {
     x.classList.toggle("change");
-  }
+}
 
 const triggers = document.querySelectorAll('.menu-trigger'),
     activeClass = 'active';
@@ -51,6 +51,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+// On scroll fade up
 AOS.init({
     duration: 800,
 });

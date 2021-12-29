@@ -11,5 +11,4 @@ $('#id_default_country').change(function() {
     }
 });
 
-console.log("Hello hello Matthew")
-
+console.log("Hello")

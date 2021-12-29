@@ -215,38 +215,48 @@
                                 <img src="{{ MEDIA_URL }}pngwing.com(7).png" style="width: 66px;">
                                 <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
                             </div>
-                            <i class="fab fa-facebook-f social-media"></i>
-                            <i class="fab fa-twitter social-media"></i>
-                            <i class="fab fa-instagram social-media"></i>
-                            <i class="fab fa-pinterest-p social-media"></i>
-                            <i class="fab fa-youtube social-media"></i>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook-f social-media"></i> 
+                            </a>
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <i class="fab fa-twitter social-media"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram social-media"></i>
+                            </a>
+                            <a href="https://www.pinterest.com/" target="_blank">
+                                <i class="fab fa-pinterest-p social-media"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="fab fa-youtube social-media"></i>
+                            </a>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-3 text-center">
                         <ul>
                             <li class="h5">Useful Links</li>
-                            <li>Coupons</li>
-                            <li>Blog post</li>
-                            <li>Careers</li>
-                            <li>Affiliates</li>
+                            <li><a href="https://en.wikipedia.org/wiki/Coupon" target="_blank">Coupons</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Blog" target="_blank">Blog post</a></li>
+                            <li><a href="{% url 'contact_view' %}">Careers</a></li>
+                            <li><a href="https://www.flexoffers.com/affiliate-programs/sports-and-fitness/sportswear/" target="_blank">Affiliates</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-3 text-center">
 
                         <ul>
                             <li class="h5">Follow us</li>
-                            <li class="links">Facebook</li>
-                            <li class="links">Twitter</li>
-                            <li class="links">Instagram</li>
-                            <li class="links">YouTube</li>
+                            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-3 text-center">
                         <ul>
                             <li class="h5">Customer Help</li>
-                            <li>Contact Us</li>
-                            <li>Returns</li>
-                            <li>Help & FAQs</li>
+                            <li><a href="{% url 'contact_view' %}">Contact Us</a></li>
+                            <li><a href="{% url 'contact_view' %}">Returns</a></li>
+                            <li><a href="{% url 'contact_view' %}">Help & FAQs</a></li>
                             <li>Store Finder</li>
                         </ul>
                     </div>
