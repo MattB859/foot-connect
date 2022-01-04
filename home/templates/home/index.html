@@ -169,41 +169,28 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="col col-sm-6">
-                <div class="ads mt-4">
-                    <div class="hover1 find-us">
-                        <figure>
-                            <h4 class="text-center mt-4 font-weight-bold">Our Store</h4>
-                            <img src="{{ MEDIA_URL }}9045.jpg" class="card-img-top category-1" alt="store">
-                        </figure>
-                        <p class="container text-center">Find your local store, view opening hours
-                            and find out where you can get free delivery
-                            to collect your order from!
-                        </p>
-                    </div>
+            <div class="col-sm-12 col-lg-6 mb-4 ">
+                <div class="mt-4">
+                    <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans,womens_shoes">
+                        <img class="banner" src="{{ MEDIA_URL }}sales-2.jpg" alt="fashion banner">
+                    </a>
                 </div>   
             </div>
-            <div class="col col-sm-6">
-                <div class="ads mt-4">
-                    <div class="hover1 find-us">
-                        <figure>
-                            <h4 class="text-center mt-4 font-weight-bold">Find Us</h4>
-                          
-                        </figure>
-                        <p class="container text-center">Find your local store, view opening hours
-                            and find out where you can get free delivery
-                            to collect your order from!
-                        </p>
-                    </div>
+            <div class="col-sm-12 col-lg-6 mb-4 ">
+                <div class="mt-4">
+                    <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans,womens_shoes">
+                        <img class="banner" src="{{ MEDIA_URL }}sales-2.jpg" alt="fashion banner">
+                    </a>
                 </div>   
             </div>
-            
-            <div class="col-sm-12 mb-4 col-lg-12">
-               <h2 class="title">womens top picks</h2> 
-                <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans,womens_shoes">
-                    <img class="banner" src="{{ MEDIA_URL }}women-header.jpg" alt="fashion banner">
-                </a>
+
+            <!-- add banner section -->
+            <div class="col-sm-12">
+                <div class="ads mb-4">
+                    <div>
+                    
+                    </div>
+                </div>   
             </div>
         </div> 
     </section>

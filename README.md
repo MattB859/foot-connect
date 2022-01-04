@@ -42,7 +42,7 @@ Foot Connect is a well established online athletic footwear and apparel retailer
 |         |              | Delete a product | Remove items no longer on <br> offer or out of stock |
  
 
-# DESIGN CHOICES 
+# Design Choices
 
 ## Colour Scheme
 
@@ -75,9 +75,9 @@ Squada One font has been selected to represent for the Foot Connect logo.
 -  ### [pexels](https://www.pexels.com/)
 -  ### [unsplash](https://unsplash.com/)
 
-# FEATURES
+# Features
 
-### CURRENT 
+### Current
 
 ### Navigation 
 
@@ -164,7 +164,8 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 - The footer can be seen on all pages, and provides users additional link options.
 
-# FUTURE FEATURES
+# Future Features
+    
 
 - Allow users to register with their social media accounts
 - Add photo Carousel on all product images
@@ -194,24 +195,26 @@ Squada One font has been selected to represent for the Foot Connect logo.
 - [Checkout](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
 
 
-# TECHNOLOGIES
+# Technologies Used
 
-### LANGUAGES 
+
+### Languages
+    
 
 -  ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -  ### [CSS3](https://en.wikipedia.org/wiki/CSS)
 -  ### [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 -  ### [Python](https://en.wikipedia.org/wiki/Python)
 
-### FRAMEWORKS
-
+### Frameworks
+    
 -  ### [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/download/)
 
 -  ### [Django](https://www.djangoproject.com/)
 
 -  ### [JQuery](https://jquery.com/)
 
-### PACKAGES
+### Packages
 
 -  ### [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
@@ -227,28 +230,160 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 -  ### [django-storages]()
 
+### Database
 
-### PROJECT MANAGEMENT
-
+-  ### [Heroku Postgres](https://www.heroku.com/postgres)
+   
+### Project Management
+    
 -  ### [GitHub](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
    
 -  ### [GitPod](https://www.gitpod.io/)
+    - GitPod was used for the projects workspace 
 
 -  ### [Heroku](https://heroku.com/)
+    - Heroku was used to deploy the website.
 
 -  ### [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
-   
-###  TOOLS 
+###  Tools 
 
 -  ### [Google Fonts](https://fonts.google.com/)
+    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
    
--  ### [Font Awesome](https://fontawesome.com/) 
+-  ### [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
 -  ### [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
 
 -  ### [Am I Responsive](http://ami.responsivedesign.is/)
-   
-# TESTING
+    - Am I Responsive was used capture the websites design on different screen size.
 
-### Find all testing [here](TESTING.md)
+-  ### [Flickity](https://flickity.metafizzy.co/)
+    - Flickity is used for the websites image carousels.
+   
+# Testing
+
+-  ### Find all testing [here](TESTING.md)
+
+# Heroku Deployment
+
+The project was deployed to Heroku using the following steps.
+
+1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt.`
+
+2. Create a `Procfile` with the terminal command `echo web: python3 > Procfile`.
+
+3. `git add .` and `git commit -m "add commit message here" ` commit the new requirements and Procfile and then `git push` the project to GitHub.
+
+4. Create a new app on the [Heroku Website](https://heroku.com/) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+
+5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+6. Click on the `Enable Automatic deploy` button and Every push to the branch you specify here will deploy a new version of this app.
+
+7. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+8. Set the following config vars:
+
+| Key                     | Value                          | 
+|   -------------------   |    ----------------------      |
+| AWS_ACCESS_KEY_ID       | <your_aws_access_key_id>       |
+| AWS_SECRET_ACCESS_KEY   | <your_aws_secret_access_key>   |
+| DATABASE_URL            | <database_url>                 |
+| EMAIL_HOST_PASS         | <your_email_host_pass>         |
+| EMAIL_HOST_USER         | <your_email_host_user>         |
+| SECRET_KEY              | <your_secret_key>              |
+| STRIPE_PUBLIC_KEY       | <your_stripe_public_key>       |
+| STRIPE_SECRET_KEY       | <your_stripe_secret_key>       |
+| STRIPE_WH_SECRET        | <your_stripe_wh_secret>        |
+| USE_AWS                 | True                           |
+| KEY                     | VALUE                          |
+
+9. In the heroku dashboard, click "Deploy".
+
+10. In the "Manual Deployment" section of this page, make sure the master branch is selected and then click "Deploy Branch".
+
+11. The site is now successfully deployed.
+
+# How to run this project locally
+
+To clone this project into Gitpod you will need:
+
+1. A Github account [Create a Github account here](https://github.com/)
+
+2. Use the Chrome browser
+
+Then follow these steps:
+
+1. Install the `Gitpod Browser Extentions for Chrome`.
+2. After installation, reset the browser.
+3. log into `Gitpod` with your gitpod account.
+4. Navigate to the `Project GitHub repository`.
+5. Click the green "Gitpod" button in the top right corner of the repository.
+6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
+
+### Making a Local Clone
+
+To work on the project code within a local IDE such as VSCode, Pycharm etc:
+
+1. Follow this link to the [Project GitHub repository](https://github.com/MattB859/foot-connect)
+2. Under the repository name, click "Clone or download".
+3. In the clone with HTTPS section, copy the clone URL for the repository.
+4. In your local IDE such as VSCode open the terminal.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+
+```
+
+# Credits
+
+-   ### Code
+
+    - The Code Institute material was the main source of information used to create this project.
+
+    - Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+
+-   ### Content
+
+    -  All content was written by the developer.
+
+    -  Psychological properties of colours text in the README.md was found - [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+
+    - w3schools was used as a general source of knowledge.
+
+    - Bootstrap for creating a responsive website.
+
+-   ### Media
+
+    -  Hero Image was created by the developer using affinity designer to crop and edit photo on to background [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+
+    - All Images on the site were sourced from [Pexels](https://www.pexels.com/)
+
+    - photographer -  
+    - photographer - 
+  
+-   ### Acknowledgements
+
+    - Tutor support at Code Institute for their support.
+
+
+

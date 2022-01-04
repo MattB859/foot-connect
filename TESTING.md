@@ -21,8 +21,9 @@
 |   | "Easily select the size and quantity <br> of a product when purchasing it." | Navigate to the products detail page | Select your size by clicking the input field, <br> Select the quantity by clicking plus or minus <br> to increase/decrease the quantity | Pass |
 |     | "View items in my cart to be purchased" | Bootstrap toast have been used <br> to show a preview of the shopping <br> cart each time a shopper adds a product | Success! message can be seen  with product <br> images and the total cost of the items   | Pass | 
 |       | "Change the quantity of items in my cart" | Navigate to the shopping cart | Shoppers can adjust the quantity <br> by pressing   plus or minus  | Pass |
-|    | "see my order confirmation upon checkout" |        |         | Pass |
-
+|    | "See my order confirmation upon checkout" |  Navigate to the checkout page,  <br> fill out the form, and enter a <br> valid and card number | shoppers are directed to the checkout success <br> page where they can view <br> their order information | Pass |
+|      | "Receive an email confirmation upon checkout" |  A success message is displayed upon checkout  | Order successfully processed! <br> Your  order number  is <br> ********. A confirmation email will be sent to test@gmail.com <br> | Pass |
+| Admin User | "Add a product" | Navigate to my account and select <br> product management from the drop down menu. | Users will need to fill <br> in the form to add a product to the store | Pass |
 
 
 -  ### Bug's found and fixed
