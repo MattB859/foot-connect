@@ -83,15 +83,19 @@ body {
 /* ------------ Header styling */
 .offers{
     width: 100%;
-    padding: 20px;
+    padding: 5px;
+    background: rgb(199, 31, 64);
+}
+
+.offers p{
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     color: var(--bs-light);
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-    background: black;
 }
+
 
 .bg-color {
     background: var(--bs-body-color) !important;
@@ -324,10 +328,10 @@ figure {
 	background: var( --bs-body-color);
 	color: var(--bs-white);
 	font-size: 15px;
+    border-top: 10px solid var(--bs-info);
     width: 100%;
     bottom: 0;
 	padding: 60px 0 20px;}
-
 
 .footer a{
     color: white;
@@ -357,9 +361,9 @@ figure {
 
 .social-media{
     padding: 0.5rem 0.5rem;
-    margin: 0.8rem 0.5rem;
+    margin: 0.8rem 0.2rem;
     font-size: 1rem;
-    border: 2px solid var(--bs-light);
+    border: 1px solid var(--bs-light);
     color: var(--bs-white);
     border-radius: 50%;
 }
@@ -377,6 +381,11 @@ figure {
 .social-media:hover{
     color: var(--bs-info);
     transform: translateY(3px);
+}
+
+/* card payment images */
+.app-logo img{
+    width: 40px;
 }
 
 .card1{
@@ -585,7 +594,7 @@ figure {
 }
 
 .carousel-cell {
-  width: 20%;
+  width: 290px;
   margin-right: 10px;
   background: none;
   border-radius: 5px;
@@ -655,6 +664,41 @@ figure {
 
 
 /* -------------------------------- Media Queries */
+@media (max-width: 1370px) {
+    .font-size a{
+        width: 100px;
+        border: 1px solid white;
+        font-size: 12px;
+    }
+    
+    .social-media{
+        padding: 0.5rem 0.5rem;
+        margin: 0.8rem 0.1rem;
+        font-size: 15px;
+        border: 1px solid var(--bs-light);
+        color: var(--bs-white);
+        border-radius: 50%;
+    }
+
+    .fa-facebook-f{
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .fa-twitter,
+    .fa-instagram,
+    .fa-pinterest-p{
+        padding: 0.5rem 0.6rem;
+    }
+
+    .app-logo img{
+        width: 40px;
+    }
+
+    .footer ul li{
+        font-size: 15px;
+    }
+
+}
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -670,7 +714,6 @@ figure {
         position: relative;
         width: 50%;  
     }
-
 }
 
 /* fixed top navbar only on medium and up */
@@ -783,13 +826,14 @@ figure {
 
     .offers{
         margin-top: 60px;
+        padding: 5px;
         width: 100%;
-        height: 120px;
-        font-size: 30px;
+        height: 50px;
     }
 
-    .offers img{
-        display: none;
+    .offers p{
+        font-size: 25px;
+
     }
 
     /* ---------- nav menu curtain*/
@@ -938,7 +982,7 @@ figure {
     }
 
     .carousel-cell {
-        width: 50%;
+        width: 180px;
         margin-right: 10px;
         background: none;
         border-radius: 5px;
@@ -967,9 +1011,12 @@ figure {
     .app h1{
         font-size: 30px;
     }
-    
-    
-   
+
+    .title-font,
+    .title-font strong{
+        text-align: center;
+        margin-top: 60px !important;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -1001,7 +1048,6 @@ figure {
     }
 
     .footer{
-       
         width: 100%;
         bottom: 0;
         left: 0;
@@ -1024,14 +1070,6 @@ figure {
         font-family: 'Squada One', cursive;    
     }
 
-    .offers{
-        margin-top: 60px;
-        width: 100%;
-        height: 60px;
-        font-weight: 500;
-        font-size: 14px;
-    }
-
     .banner{
         margin: 20px 0;
     }
@@ -1049,7 +1087,7 @@ figure {
     .title-font,
     .title-font strong{
         text-align: center;
-        margin-top: 50px !important;
+        margin-top: 60px !important;
     }
     
     .decrement-qty,

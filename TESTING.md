@@ -26,7 +26,32 @@
 | Admin User | "Add a product" | Navigate to my account and select <br> product management from the drop down menu. | Users will need to fill <br> in the form to add a product to the store | Pass |
 
 
--  ### Bug's found and fixed
+# Chrome Developer Tools
+
+Chrome Dev Tools was used for inspection of HTML, and CSS. It helped to diagnose problems, and debug issues right in the browers.
+
+## Responsive Testing
+
+-   The website was tested on a variety of devices to ensure all  pages render well on a variety of devices and window or screen sizes such as:
+
+    - Desktop 
+    - Laptop 
+    - Motorola G4 
+    - Galaxy S5/7
+    - Pixel 2
+    - Pixel 2 XL 
+    - iPhone 5/SE 
+    - iPhone 6/7/8/Plus 
+    - iPhone X, 
+    - ipad/Pro.
+
+The Website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
+
+A large amount of testing was done to ensure that all pages were linking correctly.
+
+Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+## Bug's found and fixed
 
 <details><summary>CLICK ME</summary>
 <p>
@@ -35,3 +60,26 @@
 
 </p>
 </details>
+
+- ### The bug in this code was causing carousel img width to be over stretched and unresponsive
+
+```
+.carousel-cell { 
+width: 20%;
+margin-right:10px; 
+background: none;
+border-radius: 5px;
+counter-increment: carousel-cell;
+}
+```
+- ### In this new code I simply changed the width with a 290px.
+
+```
+.carousel-cell { 
+width: 290px;
+margin-right:10px; 
+background: none;
+border-radius: 5px;
+counter-increment: carousel-cell;
+}
+```

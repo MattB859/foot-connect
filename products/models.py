@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Category(models.Model):
+    """
+    Category models
+    """
 
     class Meta:
         verbose_name_plural = 'Categories'
