@@ -141,6 +141,7 @@ body {
     text-align: center;
 }
 
+/* ---------------------- Category images */
 .hover1 img{
     height: calc(500px - 10vh);
 }
@@ -698,6 +699,23 @@ figure {
         font-size: 15px;
     }
 
+    .pad {
+        padding: 0 5px;
+      
+    }
+
+    .app-store-logo img{
+        width: 25%;
+    }
+
+    .app p{
+        color: #494949;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .app h1{
+        font-size: 60px;
+    }
 }
 
 /* Slightly larger container on xl screens */
@@ -750,8 +768,7 @@ figure {
         background: url('/media/streetware-8.jpg') no-repeat center center;
         background-size: cover;
         max-width: 100% !important;
-        height: 60%;
-        top: 10px;
+        height: 60%; 
         width: 100%; 
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -1000,16 +1017,16 @@ figure {
     }
 
     .app-store-logo img{
-        width: 50%;
+        width: 25%;
     }
 
     .app p{
         color: #494949;
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 20px;
     }
     .app h1{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .title-font,
@@ -1017,6 +1034,15 @@ figure {
         text-align: center;
         margin-top: 60px !important;
     }
+
+    .banner{
+        margin: 20px 0;
+    }
+
+    .banner-font{
+        font-size: 14px;
+    }
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -1034,7 +1060,6 @@ figure {
         background: url('/media/streetware-8.jpg') no-repeat center center;
         background-size: cover;
         height: 35%;
-        top: 10px;
         width: 100%; 
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -1053,6 +1078,7 @@ figure {
         left: 0;
     }
 
+
     .overlay-bg-2{
         top: 0;
         background: white;
@@ -1069,6 +1095,11 @@ figure {
         background-color: var(--bs-white) !important;
         font-family: 'Squada One', cursive;    
     }
+
+    .pad {
+        padding: 0 15px;
+    }
+
 
     .banner{
         margin: 20px 0;
@@ -1141,7 +1172,22 @@ figure {
         top: 40%;
         padding: 15px;
         font-family: 'Squada One', cursive;
-     
+    }
+
+    .app-store-logo img{
+        width: 30%;
+    }
+
+    .app p{
+        color: #494949;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .app h1{
+        font-size: 35px;
+    }
+    .app{
+        padding: 10px;
     }
    
 }
