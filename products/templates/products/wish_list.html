@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col saved-items text-center">
+                <h2 class="font-weight-bold title-font">Saved Items</h2>
+            </div>
+        </div>
+        
+        {% if item.product.image %}
+        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+        {% else %}
+        <div class="text-center">
+            <i class="fas fa-heart-broken"></i>
+            <p class="lead mb-5">No products were added to the wishlist</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <span class="icon ">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase ">Keep Shopping</span>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+       
+{% endblock %}
+

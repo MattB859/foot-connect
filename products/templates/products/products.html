@@ -47,10 +47,15 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0" data-aos="fade-up">
                                 {% if product.image %}
+                                <a href="#">
+                                    <i class="heart far fa-heart" onclick="myWishList()" id="wishList"></i>
+                                    <i class="heart fas fa-heart" onclick="addwishList()" id="addList"></i>
+                                </a>
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
+                                
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
@@ -117,7 +122,7 @@
 
 {% block postloadjs %}
     {{ block.super }}   
-    <script type="text/javascript">
+    <script>
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
