@@ -43,6 +43,20 @@ triggers.forEach((trigger) => {
 });
 
 
+// Custom function that toggles a heart icon
+function myWishList(){
+    var addList  = document.getElementById("addList");
+    addList.style.display = "block";
+    console.log("add to wishlist");
+}
+
+function addwishList(){
+    var addList  = document.getElementById("addList");
+        addList.style.display = "none"
+        console.log("remove from wishlist");
+    }
+
+
 function openNav() {
     document.getElementById("myNav").style.width = "90%"; 
 }
@@ -55,3 +69,4 @@ function closeNav() {
 AOS.init({
     duration: 800,
 });
+
