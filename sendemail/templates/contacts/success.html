@@ -2,11 +2,19 @@
 {% load static %}
 
 {% block content %}
-
-<h1 class="text-center success-message font-weight-bold mt-5 ">Thank you {{ message_name}}!</h1>
-<i class="fas fa-check"></i>
-<p class="text-center font-weight-bold mt-4">Your message has been received 
+<div class="container-fluid h-50">
+    <h1 class="text-center success-message font-weight-bold mt-5">Thank you!</h1>
+    <i class="fas fa-check mt-4"></i>
+    <p class="text-center font-weight-bold mt-3">Your message has been received 
     please allow up to 48 hours for a 
     response to be made.</p>
-
+    <div class="text-center">
+        <a href="{% url 'products' %}" class="mt-5 btn btn-outline-black rounded-0 btn-lg">
+            <span class="icon ">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase ">Keep Shopping</span>
+        </a>
+    </div>
+</div>
 {% endblock %}
