@@ -186,17 +186,19 @@ Squada One font has been selected to represent for the Foot Connect logo.
 ### Mobile view
 
 - [Home](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
-- [Product Page](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Product Page](https://balsamiq.cloud/seqremb/pvddy51/rE2B2)
+- [Sign In](https://balsamiq.cloud/seqremb/pvddy51/rBD6F)
+- [Registration](https://balsamiq.cloud/seqremb/pvddy51/r6990)
+
+### Tablet view
+
+- [Home](https://balsamiq.cloud/seqremb/pvddy51/rD80B)
+- [Product Page](https://balsamiq.cloud/seqremb/pvddy51/r91E1)
 - [Sign In](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
 - [Registration](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
-- [Product Description](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
-- [Profile](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
-- [Shopping Bag](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
-- [Checkout](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
 
 
 # Technologies Used
-
 
 ### Languages
     
