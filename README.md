@@ -1,8 +1,8 @@
 <h1 align="center">Foot Connect</h1>
 
-This is the fourth and final milestone (Full Stack Frameworks With Django) project as a Full Stack Software Developer student with code institute.
+This is the fourth and final milestone (Full Stack Frameworks with Django) project as a Full Stack Software Developer student with code institute.
 
-Foot Connect is a well established online athletic footwear and apparel retailer. Our aim is to bring you the hottest fashion on the market. The site is designed to be responsive and accessible on multiple devices, making it easy to navigate for new and existing visitors.
+Foot Connect is a well-established online athletic footwear and apparel retailer. Our aim is to bring you the hottest fashion on the market. The site is designed to be responsive and accessible on multiple devices, making it easy to navigate for new and existing visitors.
 
 [visit website here](#)
 
@@ -11,7 +11,7 @@ Foot Connect is a well established online athletic footwear and apparel retailer
 
 # User Experience (UX)
 
-| User Story   | As a..   | I want to be able to.. | So that i can.|
+| User Story   | As a...   | I want to be able to... | So that i can.|
 | ---------    | -------  |   ------------         | ------------- |
 |              |          | <h4 align="center">**Viewing and Navigation** </h4> |               |
 |              | Shopper  | Understand the main purpose <br> of the site. | Decide if i want to stay. | 
@@ -21,15 +21,15 @@ Foot Connect is a well established online athletic footwear and apparel retailer
 |              |          | <h4 align="center">**Registration and User Accounts** </h4>     |                 |      
 |              | Site User  | Easily register for an account | Have a personal account and view my profile. |
 |           | Site User | Login or Logout of my account |  Access my personal account information <br> and any previous order history | 
-|         | Site User | Easily recover my password <br> in case i forget it. | Recover access to my acccount. |
-|          | Site User | Receive an email confirmation <br> after registering. | Verify the my account registration <br> was successful |
-|          | Site User | Have a personalized user profile | View my order confirmation, <br> history, wishlist, reviews and  <br> view/update personal delivery details |
-|          |          | <h4 align="center"> **Sorting and Searching** </h4> |          | 
-|          | Shopper    | Sort the list of available products | Easily identify products by category, <br> name, rating and price |
+|         | Site User | Easily recover my password <br> in case i forget it. | Recover access to my account. |
+|          | Site User | Receive an email confirmation <br> after registering. | Verify my account registration <br> was successful |
+|          | Site User | Have a personalized user profile | View my order confirmation, <br> history, wish list, reviews and  <br> view/update personal delivery details |
+|          |          | <h4 align="center"> **Sorting and searching** </h4> |          | 
+|          | Shopper    | Sort the list of available products | Easily identify products by category, <br> name, rating, and price |
 |          | Shopper | Sort a specific category | Find the best-priced or best-rated product <br> or price within a category |
-|          | Shopper | Add a product to my wishlist | Quickly find a product I've saved, <br> or purchase again |
-|          | Shopper | Search for a product by <br> name or description | Find a specific product i'd like to purchase. |
-|          | Shopper | Easily see what I've searched <br> for and the results |Decide if the product i'm after is available |
+|          | Shopper | Add a product to my wish list | Quickly find a product I've saved, <br> or purchase again |
+|          | Shopper | Search for a product by <br> name or description | Find a specific product I'd like to purchase. |
+|          | Shopper | Easily see what I've searched <br> for and the results |Decide if the product I'm after is available |
 |         |          | <h4 align="center"> **Purchasing and Checkout**</h4> |       |
 |         | Shopper | Easily select the size and quantity <br> of a product when purchasing it. | Can be assured I'm selecting <br> size and quantity I want |
 |         | Shopper | View items in my cart to <br> be purchased | Identify the total cost of the <br> items i want to purchase |
@@ -91,31 +91,31 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 ### Search 
 
-- All users are able to search the site using a search query to identify products by category or specific product details.
+- All can search the site using a search query to identify products by category or specific product details.
 
 ### Home Page
 
 - A promotional add banner can be seen
 - Product cards showcasing the different footwear categories, 
 - Users will find a call-to-action button underneath the product cards that will direct them to the products page.
-- A scroll up buttom will display as users scroll down for easy access back to the top page.
+- A scroll up button will display as users scroll down for easy access back to the top page.
 
 
-### User Profile
+### Registered User Profile
 
-- A users delivery information and order history is saved to their profile.
-- A user is able to view their order history.
-- A user is able to Update their delivery information.
+- A users delivery information and order history are saved to their profile.
+- A user can view their order history.
+- A user can Update their delivery information.
 
 
 ### Registration
 
-- User are able to register their details by providing an email address, user name and password to create an account.
+- Users are able to register their details by providing an email address, username, and password to create an account.
 
 
 ### Log In
 
-- Users can log in to accsess their profile page, order history, and make any changes to their delivery information.
+- Users can log in to access their profile page, order history, and make any changes to their delivery information.
 
 
 ### Products
@@ -137,32 +137,32 @@ Squada One font has been selected to represent for the Foot Connect logo.
  
 ### Product Details Page 
 
-### users are able to:
+### users can:
 
 - Click an image which will direct them to the products detail page. Here users will find more product information, sizes, and the quantity they can purchase. 
 
 ### Shopping Bag
 
-### Users are able to:
+### Users can:
 
-- View any products they have added to their shopping bad.
+- View any products they have added to their shopping bag.
 - Have the option to update or remove an item.
 
 ### Checkout
 
-### Users are able to:
+### Users can:
 
 - Enter in a name and delivery address. 
-- Registered users (if logged in, are able to save their delivery details for easy access)
+- Registered users (if logged in, can save their delivery details for easy access)
 - Update their profile with the new delivery information (if they registered and logged in)
 - Checkout and pay securely via the Stripe Payment system
-- Input new delivery information if necessary or because they checking out as a guest
+- Input new delivery information if necessary or because they are checking out as a guest
 - Users are sent out order confirmation emails
 
 
 ### Footer 
 
-- The footer can be seen on all pages, and provides users additional link options.
+- The footer can be seen on all pages and provides users additional link options.
 
 # Future Features
     
@@ -194,8 +194,8 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 - [Home](https://balsamiq.cloud/seqremb/pvddy51/rD80B)
 - [Product Page](https://balsamiq.cloud/seqremb/pvddy51/r91E1)
-- [Sign In](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
-- [Registration](https://balsamiq.cloud/seqremb/pvddy51/rA2D1)
+- [Sign In](https://balsamiq.cloud/seqremb/pvddy51/r0CB3)
+- [Registration](https://balsamiq.cloud/seqremb/pvddy51/r11F0)
 
 
 # Technologies Used
@@ -205,7 +205,7 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 -  ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -  ### [CSS3](https://en.wikipedia.org/wiki/CSS)
--  ### [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+-  ### [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 -  ### [Python](https://en.wikipedia.org/wiki/Python)
 
 ### Frameworks
@@ -214,7 +214,7 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 -  ### [Django](https://www.djangoproject.com/)
 
--  ### [JQuery](https://jquery.com/)
+-  ### [jQuery](https://jquery.com/)
 
 ### Packages
 
@@ -228,9 +228,9 @@ Squada One font has been selected to represent for the Foot Connect logo.
     
 -  ### [stripe](https://stripe.com/docs)
 
--  ### [boto3]()
+-  ### [boto3](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html)
 
--  ### [django-storages]()
+-  ### [django-storages](https://django-storages.readthedocs.io/en/latest/)
 
 ### Database
 
@@ -242,18 +242,18 @@ Squada One font has been selected to represent for the Foot Connect logo.
     - GitHub is used to store the projects code after being pushed from Git.
    
 -  ### [GitPod](https://www.gitpod.io/)
-    - GitPod was used for the projects workspace 
+    - GitPod was used for the project's workspace 
 
 -  ### [Heroku](https://heroku.com/)
     - Heroku was used to deploy the website.
 
 -  ### [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+    - Git was used for version control by utilizing the GitPod terminal to commit to Git and Push to GitHub.
 
 ###  Tools 
 
 -  ### [Google Fonts](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Squada One' font into the style.css file which is used on all pages throughout the project.
    
 -  ### [Font Awesome](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
@@ -266,7 +266,20 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 -  ### [Flickity](https://flickity.metafizzy.co/)
     - Flickity is used for the websites image carousels.
-   
+
+-  ### [AWS](https://aws.amazon.com/) 
+    - A cloud application to hold media files
+
+-  ### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+    - Used to audit the site
+
+-  ### [PEP8 Online](http://pep8online.com/)   
+    - Used to check PEP8 compliance in the code
+
+-  ### [Flake8](https://flake8.pycqa.org/en/latest/)   
+    - Used to check compliance in python the code    
+
+
 # Testing
 
 -  ### Find all testing [here](TESTING.md)
@@ -330,7 +343,7 @@ Then follow these steps:
 
 ### Making a Local Clone
 
-To work on the project code within a local IDE such as VSCode, Pycharm etc:
+1. To work on the project code within a local IDE such as VSCode, Pycharm etc:
 
 1. Follow this link to the [Project GitHub repository](https://github.com/MattB859/foot-connect)
 2. Under the repository name, click "Clone or download".
@@ -362,6 +375,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
     - The Code Institute material was the main source of information used to create this project.
 
+    - w3schools was used as a general source of knowledge.
+
     - Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
 -   ### Content
@@ -370,22 +385,24 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
     -  Psychological properties of colours text in the README.md was found - [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
-    - w3schools was used as a general source of knowledge.
-
-    - Bootstrap for creating a responsive website.
-
 -   ### Media
 
-    -  Hero Image was created by the developer using affinity designer to crop and edit photo on to background [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+    - All Images on the site were sourced from 
 
-    - All Images on the site were sourced from [Pexels](https://www.pexels.com/)
+    - [Laced](https://www.laced.co.uk/)
+    - [kaggle](https://www.kaggle.com/)
+    - [pexels](https://www.pexels.com/)
+    - [unsplash](https://unsplash.com/)
 
-    - photographer -  
-    - photographer - 
-  
+    
 -   ### Acknowledgements
 
     - Tutor support at Code Institute for their support.
 
+    - John Traas
+    - Ed Bradley
+    - Jo Heyndels
+    - Sheryl Goldberg
+    - Alan Mc Gee
 
-
+    
