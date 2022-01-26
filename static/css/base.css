@@ -43,13 +43,9 @@ and customized by the developer to fit the projects needs*/
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     --bs-body-font-family: 'Squada One', cursive;
     --bs-body-font-size: 1rem;
-    --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
     --bs-body-color: #0c0e0f;
     --bs-body-bg: #fff;
 }
@@ -118,6 +114,7 @@ body {
     font-family: 'Squada One', cursive;
 }
 
+
 .title{
     font-size: 35px;
     margin-top: 60px;
@@ -162,6 +159,7 @@ body {
     background: rgb(0, 0, 0);
     color: var(--bs-white);
     z-index: 0 !important;
+   
 }
 
 .btn-black2 {
@@ -272,6 +270,17 @@ a.category-badge > span.badge:hover {
 }
 
 
+.dropdown-menu{
+    position: relative;
+    padding: 10px;
+}
+
+.dropdown-item{
+    padding: 5px;
+
+}
+
+
 /* ----------------- scroll up button */
 .scroll-up-btn {
     position: fixed;
@@ -328,7 +337,7 @@ figure {
     position: relative;
 	background: var( --bs-body-color);
 	color: var(--bs-white);
-	font-size: 15px;
+	font-size: 14px;
     border-top: 10px solid var(--bs-info);
     width: 100%;
     bottom: 0;
@@ -347,7 +356,11 @@ figure {
 
 .footer ul{
 	list-style-type: none;
-	line-height: 30px;
+	line-height: 35px;
+}
+
+.h5{
+    font-size: 17px !important;
 }
 
 .footer a:hover{
@@ -405,9 +418,9 @@ figure {
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
-    position: fixed;
-    top: 92px;
-    right: 15px;
+    position: absolute;
+    top: 95px;
+    right: 10px;
     z-index: 99999999999;
 }
 
@@ -428,7 +441,7 @@ figure {
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
-    right: 36px;
+    right: 70px;
 }
 
 /* variables from Bootstrap */
@@ -465,7 +478,7 @@ figure {
 }
 
 .bag-notification-wrapper {
-    height: 150px;
+    height: 250px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -635,9 +648,8 @@ figure {
 }
 
 /* ------------- App download */
-
 .app-store{
-	margin: 50px 0 50px 0;
+	margin: 25px 0 25px;
 	text-align: center;}
 	
 .app-store h1{
@@ -651,8 +663,8 @@ figure {
 
 .app {
 	width: 100%;
-	background: #f0f0f0;
-	padding: 50px;}
+	background: #f5f5f5;
+	padding: 10px;}
 
 .app h1{
 	font-size: 50px;}	
@@ -662,6 +674,157 @@ figure {
     margin-top: 10px;
     font-size: 20px;
 }
+/* ------------------ Message success!*/
+.fa-check{
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    position: relative;
+    color: var(--bs-success);
+}
+.success-message{
+    font-size: 50px;  
+}
+
+#accordion{
+    cursor: pointer;
+}
+
+#wishList:hover{
+    color: rgb(214, 39, 62); 
+}
+
+#wishList{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+    z-index: 9999999;
+    font-size: 20px;
+    background: rgb(235, 235, 235);
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+#addList{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(214, 39, 62);
+    z-index: 9999999;
+    font-size: 20px;
+    background: rgb(235, 235, 235);
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+#fa-heart{
+    top: 7px;
+    right: 22rem;
+    font-size: 22px;
+    position: absolute;
+    color: white;
+    transition: transform 0.2s;
+}
+
+#fa-heart:hover{
+    color: rgb(214, 39, 62);
+    transform: scale(1.5);
+    
+}
+
+.saved-items{
+    padding: 20px;
+    background: var(--bs-gray-300);
+}
+
+.fa-heart-broken{
+    color: rgba(71, 71, 71, 0.15);
+    margin-top: 40px;
+    font-size: 100px;
+}
+
+
+/* --------------------------- Email validation */
+
+.contact-form i{
+    position: absolute;
+    padding: 10px;
+}
+
+.form-control{ 
+    margin: 0 0 20px;
+}
+
+form input:focus, 
+form textarea:focus {
+    border: 3px solid var(--bs-info) !important;
+    box-shadow: none var(--bs-info) !important;
+    -moz-box-shadow: 0 0 3px var(--bs-info) !important;
+    -webkit-box-shadow: 0 0 3px var(--bs-info) !important;
+} 
+
+.success-icon,
+.failure-icon {
+    right: 15px;
+    opacity: 0;
+}
+  
+.failure-icon,
+.error,
+#emailSuccessIcon,
+#messageError {
+    color: red;
+}
+
+#errorMsg,
+#emailError{
+    position: absolute;
+    display: none;
+    z-index: 10;
+    font-size: 12px;
+    color: red;
+    bottom: -20px;
+}
+
+#messageError{
+    position: absolute;
+    display: none;
+    z-index: 10;
+    font-size: 12px;
+    bottom: 40px;
+    
+}
+
+.success-icon,
+#successIcon,
+#emailSuccessIcon,
+#msgSuccessIcon{
+    color: green;
+}
+  
+.failure-icon,
+.success-icon,
+#successIcon,
+#emailFailureIcon,
+#emailSuccessIcon{
+    font-size: 14.5px;
+    top: 2px;
+}
+
+.update-link small,
+.remove-item small{
+    border: 2px solid rgb(212, 212, 212);
+    padding: 5px 8px;
+    border-radius: 5%;
+    color: black !important;
+    font-weight: 600 !important;
+} 
 
 
 /* -------------------------------- Media Queries */
@@ -716,6 +879,7 @@ figure {
     .app h1{
         font-size: 60px;
     }
+
 }
 
 /* Slightly larger container on xl screens */
@@ -1043,10 +1207,46 @@ figure {
         font-size: 14px;
     }
 
+    .btn{
+        width: 100%;
+    }
+
+    .btn-mobile{
+        margin-top: 10px;
+        padding: 10px;
+        width: 100% !important;
+    }
+
+    .mobile-width-100{
+        width: 100% !important;
+    }
+    .custom-toast{
+        position: relative;
+        bottom: 45px;
+    }
+
+    .arrow-up {
+        width: 0; 
+        height: 0; 
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent; 
+        border-bottom: 10px solid black;
+        position: absolute;
+        top: -10px;
+        right: 25px;
+    }
+
+    .message-container {
+        position: fixed;
+        top: 95px;
+        right: 10px;
+        z-index: 99999999999;
+    }
+
 }
 
 /* fixed top navbar only on medium and up */
-@media (max-width: 500px) {
+@media (max-width: 527px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -1137,9 +1337,20 @@ figure {
     .hover1 img{
         height: 190px;
     }
-
+    
     .btn{
-        font-size: 10px;
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .btn-mobile{
+        margin-top: 10px;
+        padding: 10px;
+        width: 100% !important;
+    }
+
+    .mobile-width-100{
+        width: 100% !important;
     }
 
     .overlay-bg{
@@ -1189,6 +1400,29 @@ figure {
     .app{
         padding: 10px;
     }
+
+    .arrow-up {
+        width: 0; 
+        height: 0; 
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent; 
+        border-bottom: 10px solid black;
+        position: absolute;
+        top: -10px;
+        right: 25px;
+    }
+
+    .custom-toast{
+        position: relative;
+        bottom: 40px;
+    }
+
+    .message-container {
+        position: fixed;
+        top: 95px;
+        right: 10px;
+        z-index: 99999999999;
+    }
    
 }
 
@@ -1203,4 +1437,10 @@ figure {
         padding: 15px;
         font-family: 'Squada One', cursive;
     }
+    
+    .btn{
+        font-size: 4vw;
+        width: 100%;
+    }
+
 }
