@@ -56,7 +56,7 @@ function addwishList(){
         console.log("remove from wishlist");
     }
 
-
+    
 function openNav() {
     document.getElementById("myNav").style.width = "90%"; 
 }

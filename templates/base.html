@@ -1,13 +1,15 @@
 {% load static %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
     {% block meta %}
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
+    <meta name="description" content="eCommerce Store">
+    <meta name="keywords" content="Footwear, Fashion, Apparel, Sportswear, Clothing">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
@@ -19,11 +21,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <!-- Google Fonts --> 
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cherry+Cream+Soda&family=Gruppo&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display" rel="stylesheet">
     <!--- carousel -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- aos animate on scroll --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- CSS Stylesheet-->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
@@ -47,39 +50,37 @@
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     <!-- emailjs -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_F3UfqKUDzIE58j7Y5nU9B");
-        })();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
     {% endblock %}
 
     {% block extra_js %}
     {% endblock %}
 
     <title>Foot Connect{% block extra_title %}{% endblock %}</title>
+
 </head>
 
 <body>
-    <!-- scroll-up-btn-->
+    <!-- Custom scroll-up-btn-->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
 
-    <!-- header -->
+    <!-- Custom header -->
     <header class="container-fluid">
         <div class="row list">
-            <div class="col-12 d-none d-sm-block-none d-lg-block col-lg-12 ">
-                <li><a href="{% url 'contact_view' %}">contact us</a></li>
-                <li><a href="{% url 'contact_view' %}">help & info</a></li>
-                <li><a href="{% url 'contact_view' %}">deliver & returns</a></li>
-                <li><a href="{% url 'contact_view' %}">find a store</a></li>
+            <ul class="mb-0 col-12 d-none d-sm-block-none d-lg-block col-lg-12 ">
+                <li><a href="{% url 'contact' %}">contact us</a></li>
+                <li><a href="{% url 'contact' %}">help & info</a></li>
+                <li><a href="{% url 'contact' %}">deliver & returns</a></li>
+                <li><a href="{% url 'contact' %}">find a store</a></li>
+                {% if request.user.is_authenticated %}
+                <li><a href="{% url 'profile' %}">Hi, {{ user }}</a></li>
+                {% else %}
                 <li><a href="{% url 'account_signup' %}">sign in | register</a></li>
-            </div>
+                {% endif %}
+            </ul>
         </div>
         <div class="row bg-color pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
@@ -104,13 +105,14 @@
                 </h2>
                 </a>
             </div>
+
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">       
                     <li class="font-size list-inline-item dropdown">
+                        
                         <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                               <!-- <div></div>-->
                                 <p class="my-0 ">My Account</p>
                             </div>
                         </a>
@@ -120,6 +122,7 @@
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'wish_list' %}" class="dropdown-item">My Wish List</a>
                                 <hr class="dropdown-divider">
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>                   
                             {% else %}
@@ -129,6 +132,7 @@
                             {% endif %}
                         </div>
                     </li>
+
                     <li class="list-inline-item font-size">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center ">
@@ -148,15 +152,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
         </div>
         <div class="row bg-white">
-            <nav class="navbar bg-color navbar-expand-lg w-100">
-                <div class="item mobile-container navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
-                    <div class="menu-trigger">
-                        <div class="menu-bar"></div>
-                        <div class="menu-bar"></div>
-                        <div class="menu-bar"></div>
-                    </div>
-                </div>
+            <nav class="navbar bg-color navbar-expand-lg w-100"> 
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}     
             </nav>
@@ -201,104 +197,28 @@
     {% block content %}
     {% endblock %}
 
-    <!-- store apps download -->
-    <div class="app-store">
-		<div class="app">
-			<h1>Download Our App</h1>
-			<p>Get your sneaker fix anytime, anywhwere with the footconnect app.</p>
-			<div class="app-store-logo">
-                <a href="https://play.google.com/store/search?q=sneakers&hl=en_GB&gl=US" target="_blank">
-                   <img src="{{ MEDIA_URL }}pngwing.com(9).png" alt="app logo"> 
-                </a>
-                <a href="https://www.apple.com/uk/app-store/" target="_blank">
-                    <img src="{{ MEDIA_URL }}pngwing.com(10).png" alt="app logo">
-                </a>    
-			</div>
-		</div>
-	</div>
-
-    <!--Footer-->
-    <footer class="d-none d-lg-block">
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-3 text-center">
-                        <ul>
-                            <li class="h5 mb-3">Payment methods we accept</li>
-                            <div class="app-logo">
-                                <img src="{{ MEDIA_URL }}visa.png" alt="payment card">
-                                <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
-                                <img src="{{ MEDIA_URL }}pngwing.com(7).png" alt="payment card">
-                                <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
-                            </div>
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="fab fa-facebook-f social-media"></i> 
-                            </a>
-                            <a href="https://www.twitter.com/" target="_blank">
-                                <i class="fab fa-twitter social-media"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="fab fa-instagram social-media"></i>
-                            </a>
-                            <a href="https://www.pinterest.com/" target="_blank">
-                                <i class="fab fa-pinterest-p social-media"></i>
-                            </a>
-                            <a href="https://www.youtube.com/" target="_blank">
-                                <i class="fab fa-youtube social-media"></i>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
-                        <ul>
-                            <li class="h5">Useful Links</li>
-                            <li><a href="https://en.wikipedia.org/wiki/Coupon" target="_blank">Coupons</a></li>
-                            <li><a href="https://en.wikipedia.org/wiki/Blog" target="_blank">Blog post</a></li>
-                            <li><a href="{% url 'contact_view' %}">Careers</a></li>
-                            <li><a href="https://www.flexoffers.com/affiliate-programs/sports-and-fitness/sportswear/" target="_blank">Affiliates</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
-
-                        <ul>
-                            <li class="h5">Follow us</li>
-                            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-3 text-center">
-                        <ul>
-                            <li class="h5">Customer Help</li>
-                            <li><a href="{% url 'contact_view' %}">Contact Us</a></li>
-                            <li><a href="{% url 'contact_view' %}">Returns</a></li>
-                            <li><a href="{% url 'contact_view' %}">Help & FAQs</a></li>
-                            <li><a href="{% url 'contact_view' %}">Store Finder</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <div class="text-center">
-                    Copyright Limited &copy; 2022. All Rights Reserved
-                </div>
-            </div>
-        </div>
-    </footer>
-    
+    {% include 'includes/app-store-banner.html' %} 
+    {% include 'includes/base-footer.html' %} 
     {% include 'includes/mobile-footer.html' %}  
    
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     function myFunction(x) {
         x.classList.toggle("change");
     }
+
+    /*(function() {
+            emailjs.init("user_F3UfqKUDzIE58j7Y5nU9B");
+        })();*/
     </script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script type="text/javascript" src="/static/js/main.js"></script>
-    <script type="text/javascript" src="/static/js/send_email.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script defer src="/static/js/send_email.js"></script>
+
     {% endblock %}
 
 </body>

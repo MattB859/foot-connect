@@ -65,7 +65,7 @@ function validateEmail(x) {
 }
 
 function validateMessage(x) {
-  var expression = /[A-Za-z -']$/;
+  var expression = /[A-Za-z\\.,; -']$/;
   if (expression.test(document.getElementById(x).value)) {
     // Style green border
     document.getElementById("message").style.border = "2px solid green";

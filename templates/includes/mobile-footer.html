@@ -1,84 +1,81 @@
-    <div class="d-lg-none container text-center">
-        <div class="h5">Payment methods we accept</div>
-        <div class="app-logo mb-4 ">
-            <img src="{{ MEDIA_URL }}visa.png" alt="payment card">
-            <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
-            <img src="{{ MEDIA_URL }}pngwing.com(7).png" style="height: 35px;" alt="payment card">
-            <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
-        </div>
+<div class="d-lg-none container text-center">
+    <div class="h5">Payment methods we accept</div>
+    <div class="app-logo mb-4 ">
+        <img src="{{ MEDIA_URL }}visa.png" alt="payment card">
+        <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
+        <img src="{{ MEDIA_URL }}pngwing.com(7).png" style="height: 35px;" alt="payment card">
+        <img src="{{ MEDIA_URL }}mastercard.png" alt="payment card">
     </div>
+</div>
 
-    <div class="d-lg-none text-center text-white" id="accordion">
-        <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-            aria-controls="collapseOne">
-            <div class="card-header" id="headingOne">
-                <h6 class="mb-0 ">
-                    Useful Links
-                </h6>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <a href="#">
-                        <ol class="text-black">Coupons</ol>
-                    </a>
-                    <a href="#">
-                        <ol class="text-black">Blog post</ol>
-                    </a>
-                    <a href="{% url 'contact_view' %}">
-                        <ol class="text-black">Careers</ol>
-                    </a>
-                    <a href="#">
-                        <ol class="text-black">Affiliates</ol>
-                    </a>
-                </div>
-            </div>
+<div class="d-lg-none text-center text-white" id="accordion">
+    <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div class="card-header" id="headingOne">
+            <h6 class="mb-0 ">
+                Useful Links
+            </h6>
         </div>
-        <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-            aria-controls="collapseTwo">
-            <div class="card-header" id="headingTwo">
-                <h6 class="mb-0">
-                    Follow us
-                </h6>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    <a href="#">
-                        <ol class="text-black text-bold">Facebook</ol>
-                    </a>
-                    <a href="#">
-                        <ol class="text-black">Twitter</ol>
-                    </a>
-                    <a href="#">
-                        <ol class="text-black">Instagram</ol>
-                    </a>
-                    <a href="#">
-                        <ol class="text-black">YouTube</ol>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
-            aria-controls="collapseOne">
-            <div class="card-header" id="headingThree">
-                <h6 class="mb-0 ">
-                    Customer Help
-                </h6>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="collapseThree" data-parent="#accordion">
-                <div class="card-body">
-                    <a href="{% url 'contact_view' %}">
-                        <ol class="text-black">Contact Us</ol>
-                    </a>
-                    <a href="{% url 'contact_view' %}">
-                        <ol class="text-black">Returns</ol>
-                    </a>
-                    <a href="#">
-                        <ol class="text-black">Help & FAQs</ol>
-                    </a>
-                    <a href="#">
-                        <ol class="text-black">Store Finder</ol>
-                    </a>
-                </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <a href="https://en.wikipedia.org/wiki/Coupon" target="_blank">
+                    <ol class="text-black">Coupons</ol>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Blog" target="_blank">
+                    <ol class="text-black">Blog post</ol>
+                </a>
+                <a href="{% url 'contact' %}">
+                    <ol class="text-black">Careers</ol>
+                </a>
+                <a href="https://www.flexoffers.com/affiliate-programs/sports-and-fitness/sportswear/" target="_blank">
+                    <ol class="text-black">Affiliates</ol>
+                </a>
             </div>
         </div>
     </div>
+    <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <div class="card-header" id="headingTwo">
+            <h6 class="mb-0">
+                Follow us
+            </h6>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <a href="https://facebook.com/" target="_blank"">
+                    <ol class="text-black text-bold">Facebook</ol>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <ol class="text-black">Twitter</ol>
+                </a>
+                <a href="https://instagram.com/" target="_blank"">
+                    <ol class="text-black">Instagram</ol>
+                </a>
+                <a href="https://youtube.com/" target="_blank"">
+                    <ol class="text-black">YouTube</ol>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+        <div class="card-header" id="headingThree">
+            <h6 class="mb-0 ">
+                Customer Help
+            </h6>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="collapseThree" data-parent="#accordion">
+            <div class="card-body">
+                <a href="{% url 'contact' %}">
+                    <ol class="text-black">Contact Us</ol>
+                </a>
+                <a href="{% url 'contact' %}">
+                    <ol class="text-black">Returns</ol>
+                </a>
+                <a href="{% url 'contact' %}">
+                    <ol class="text-black">Help & FAQs</ol>
+                </a>
+                <a href="{% url 'contact' %}">
+                    <ol class="text-black">Store Finder</ol>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

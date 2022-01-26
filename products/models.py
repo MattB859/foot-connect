@@ -22,7 +22,7 @@ class Category(models.Model):
 
 class Product(models.Model):
 
-    """ A class defining a Product model """
+    """ Product model """
 
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
@@ -41,3 +41,4 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+

@@ -21,12 +21,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col ">
                 {% if bag_items %}
                 <!-- Mobile Screen -->
                     <div class="d-block d-md-none">
                         {% for item in bag_items %}
-                            <div class="row">
+                            <div class="row shopping-bag">
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "bag/product-image.html" %}
                                 </div>
@@ -55,6 +55,7 @@
                             </div>
                         </div>
                     </div>
+                   
                     <!-- Desktop Screen -->
                     <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless">
@@ -69,6 +70,7 @@
                             </thead>
 
                             {% for item in bag_items %}
+                            <div>
                                 <tr>
                                     <td class="p-3 w-25">
                                         {% include "bag/product-image.html" %}
@@ -86,6 +88,7 @@
                                         <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
+                            </div>    
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
