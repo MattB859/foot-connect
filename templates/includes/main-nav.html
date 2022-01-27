@@ -15,13 +15,6 @@
             </div>
         </div>
     </form>
-    <!-- <div class="menu-social d-lg-none">
-        <i class="fab fa-facebook-f social-media"></i>
-        <i class="fab fa-twitter social-media"></i>
-        <i class="fab fa-instagram social-media"></i>
-        <i class="fab fa-pinterest-p social-media"></i>
-        <i class="fab fa-youtube social-media"></i>
-    </div> -->
     <ul class="navbar-nav w-auto mx-auto nav-overlay-content">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link"
@@ -115,8 +108,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
         </li>

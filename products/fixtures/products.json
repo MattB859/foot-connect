@@ -1370,21 +1370,6 @@
          
     },
     {
-        "pk": 111,
-        "model": "products.product",
-        "fields": {
-            "sku": "504/268",
-            "name": "Nike",
-            "gender": "Womens",
-            "description": "Nike Tracksuit",
-            "price": 55.00,
-            "category": 19,
-            "rating": 4.6,
-            "image": "115.jpg"
-        }
-         
-    },
-    {
         "pk": 112,
         "model": "products.product",
         "fields": {
@@ -2018,62 +2003,6 @@
             "category": 3,
             "rating": 4.6,
             "image": "916.jpg"
-        }
-    },
-    {
-        "pk": 157,
-        "model": "products.product",
-        "fields": {
-            "sku": "504/314",
-            "name": "MCM",
-            "gender": "Unisex",
-            "description": "Sliders",
-            "price": 25.00,
-            "category": 4,
-            "rating": 4.6,
-            "image": "menswear-2.jpg"
-        }
-    },
-    {
-        "pk": 158,
-        "model": "products.product",
-        "fields": {
-            "sku": "504/315",
-            "name": "MCM",
-            "gender": "Unisex",
-            "description": "Sliders",
-            "price": 25.00,
-            "category": 4,
-            "rating": 4.6,
-            "image": "menswear-3.jpg"
-        }
-    },
-    {
-        "pk": 159,
-        "model": "products.product",
-        "fields": {
-            "sku": "504/316",
-            "name": "MCM",
-            "gender": "Unisex",
-            "description": "Sliders",
-            "price": 25.00,
-            "category": 4,
-            "rating": 4.6,
-            "image": "menswear-4.jpg"
-        }
-    },
-    {
-        "pk": 160,
-        "model": "products.product",
-        "fields": {
-            "sku": "504/317",
-            "name": "MCM",
-            "gender": "Unisex",
-            "description": "Sliders",
-            "price": 25.00,
-            "category": 4,
-            "rating": 4.6,
-            "image": "menswear-5.jpg"
         }
     }
 ]
