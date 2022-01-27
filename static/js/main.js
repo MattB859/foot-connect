@@ -1,5 +1,13 @@
 $(document).ready(function () {
     $('selector').flickity()
+    $('.scroll-up-btn').click(function () {
+    $('html').animate({
+        scrollTop: 0
+        });
+    });
+    AOS.init({
+    duration: 800,
+    });
     $(window).scroll(function () {
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
@@ -13,14 +21,6 @@ $(document).ready(function () {
         }
     });
 });
-
-// slide up Script //
-$('.scroll-up-btn').click(function () {
-    $('html').animate({
-        scrollTop: 0
-    });
-
-}); 
 
 // Flickity
 $('.main-carousel').flickity({
@@ -65,8 +65,4 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-// On scroll fade up
-AOS.init({
-    duration: 800,
-});
 
