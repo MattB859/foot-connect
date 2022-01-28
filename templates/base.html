@@ -65,7 +65,10 @@
 
 </head>
 
-<body>
+<body id="over-flow">
+
+    <div id="sidebar-overlay"></div>
+
     <!-- Custom scroll-up-btn-->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
@@ -158,7 +161,8 @@
         <div class="row bg-white">
             <nav class="navbar bg-color navbar-expand-lg w-100"> 
                 {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}     
+                {% include 'includes/main-nav.html' %} 
+                {% include 'includes/sidebar-nav.html' %}         
             </nav>
         </div>
         <div id="delivery-banner" class="row banner-color text-center">

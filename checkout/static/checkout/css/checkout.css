@@ -48,8 +48,8 @@ select option[value=""] {
 }
 
 #loading-overlay {
-	display: none;
-	position: fixed;
+	  display: none;
+	  position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -59,7 +59,7 @@ select option[value=""] {
 }
 
 .loading-spinner {
-	display: flex;
+	  display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;

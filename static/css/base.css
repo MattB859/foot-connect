@@ -66,6 +66,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#sidebar-overlay{
+    display: none;
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
 .home{
     position: relative;
     background: url('/media/womens-banner.jpg') no-repeat center center;
@@ -146,6 +159,7 @@ body {
 .card-body{
     padding: 0;
 }
+
 
 /* -------------------------- all buttons */
 .shop-now-button {
@@ -269,7 +283,6 @@ a.category-badge > span.badge:hover {
 	z-index: -1;
 }
 
-
 .dropdown-menu{
     padding: 10px;
 }
@@ -278,7 +291,6 @@ a.category-badge > span.badge:hover {
     padding: 5px;
 
 }
-
 
 /* ----------------- scroll up button */
 .scroll-up-btn {
@@ -638,13 +650,7 @@ figure {
     background: var(--bs-gray-900);
     color: white;
 }
-.find-us img{
-    padding-top: 25px;
-    display: flex;
-    margin: 0 auto;
-    height: 300px;
-    width: 400px;
-}
+
 
 /* ------------- App download */
 .app-store{
@@ -926,6 +932,30 @@ form textarea:focus {
         padding: 2px 20px;
     }
 
+    .navbar-nav {
+        position: relative;
+        padding: 0;
+    
+    }
+
+    
+    .nav-overlay-content {
+        width: 450px !important;
+        padding: 0 ;
+        top: 150px; 
+    }
+     
+    .mobile-search-bar{
+        top: 0;
+        position: absolute;
+        width: 470px;
+    }
+ 
+    .navbar-nav a{
+        padding: 0;
+        margin-top: 10px;
+    }
+
     .home{
         position: relative;
         background: url('/media/streetware-8.jpg') no-repeat center center;
@@ -1036,7 +1066,7 @@ form textarea:focus {
         left: 0;
         background-color: var(--bs-white);
         overflow-x: hidden;
-        transition: 0.5s;
+        transition: 0.2s;
     }
 
     .social-media {
@@ -1091,16 +1121,7 @@ form textarea:focus {
         font-size: 6vw;
     }
 
-    .mobile-footer{
-        position: relative;
-        top: 70%;
-        font-size: 13px;
-        font-weight: 600;
-        padding: 8px;
-        width: 100%;
-        background: var(--bs-body-color); 
-    }
-
+   
     .line-white{
         color: white;
         background: white;
@@ -1265,10 +1286,33 @@ form textarea:focus {
 
     ul {
         padding: 0;
+
+    }
+
+    .nav-overlay-content {
+       width: 250px !important;
+        padding: 0 ;
+        top: 150px; 
     }
     
+    .mobile-search-bar{
+        top: 0;
+        position: absolute;
+        width: 270px;
+    }
+
+    .navbar-nav a{
+        padding: 0;
+        margin-top: 10px;
+    }
+
     .header-container {
         padding-top: 0;
+    }
+
+    hr{
+        padding: 0;
+        margin: 7px 0;
     }
 
     .footer{
@@ -1442,4 +1486,21 @@ form textarea:focus {
         width: 100%;
     }
 
+    .nav-overlay-content {
+        width: 210px !important;
+        padding: 0 ;
+        top: 150px; 
+    }
+     
+    .mobile-search-bar{
+        top: 0;
+        position: absolute;
+        width: 220px;
+    }
+ 
+    .navbar-nav a{
+        padding: 0;
+        margin-top: 10px;
+    }
+ 
 }

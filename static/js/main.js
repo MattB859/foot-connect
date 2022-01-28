@@ -58,11 +58,18 @@ function addwishList(){
 
     
 function openNav() {
-    document.getElementById("myNav").style.width = "90%"; 
+    document.getElementById("myNav").style.width = "80%";
+    const hide = document.getElementById("over-flow")
+    const overlay = document.getElementById("sidebar-overlay");
+    overlay.style.display = "block";
+    hide.style.overflow = "hidden";
+
 }
   
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    document.getElementById("over-flow").style.overflow = "scroll";
+    const overlay = document.getElementById("sidebar-overlay");
+    overlay.style.display = "none";
 }
-
 
