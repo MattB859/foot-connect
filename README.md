@@ -4,7 +4,7 @@ This is the fourth and final milestone (Full Stack Frameworks with Django) proje
 
 Foot Connect is a well-established online athletic footwear and apparel retailer. Our aim is to bring you the hottest fashion on the market. The site is designed to be responsive and accessible on multiple devices, making it easy to navigate for new and existing visitors.
 
-[visit website here](#)
+[visit website here](https://foot-connect.herokuapp.com/)
 
 
 <img align="center" src="media/footconnect-2.png">
