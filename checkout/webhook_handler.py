@@ -60,6 +60,7 @@ class StripeWH_Handler:
         shipping_details = intent.shipping
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
+        print(grand_total)
         # Clean data in the shipping details
         for field, value in shipping_details.address.items():
             if value == "":
