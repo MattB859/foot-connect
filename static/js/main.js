@@ -1,5 +1,8 @@
 $(document).ready(function () {
     $('selector').flickity()
+    $('.carousel').carousel({
+        interval: false,
+      });
     $('.scroll-up-btn').click(function () {
     $('html').animate({
         scrollTop: 0
@@ -63,9 +66,9 @@ function openNav() {
     const overlay = document.getElementById("sidebar-overlay");
     overlay.style.display = "block";
     hide.style.overflow = "hidden";
-
 }
-  
+
+
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("over-flow").style.overflow = "scroll";

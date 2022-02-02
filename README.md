@@ -7,7 +7,7 @@ Foot Connect is a well-established online athletic footwear and apparel retailer
 [visit website here](https://foot-connect.herokuapp.com/)
 
 
-<img align="center" src="media/footconnect-2.png">
+<img align="center" src="media/website-responsive-layout.png">
 
 # User Experience (UX)
 

@@ -8,15 +8,116 @@
     </div>
   
     <!-- home page section -->
-    <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans">
-    <section class="container home"></section>
-    </a>
-
+   
+    <section class="container home d-none d-lg-block"></section>
+        
+    <!--<section class="container-fluid mt-3">
+        <div class="carousel d-lg-none d-sm-block" data-flickity='{ "wrapAround": true }'>
+            <div class="cell-hero">
+                <img src="{{ MEDIA_URL }}pexels-lee-chinyama-9638823.jpg" class="carousel-hero-img" alt="Sportswear">
+                <p class="font-weight-bold">Fresh drip</p>
+                <span>
+                    <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                </span>
+            </div>
+            <div class="cell-hero ">
+                <img src="{{ MEDIA_URL }}pexels-erik-mclean-4234768.jpg" class="carousel-hero-img" alt="Sportswear">
+                <p class="font-weight-bold">Fresh drip</p>
+                <span>
+                    <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                </span>
+            </div>
+            <div class="cell-hero ">
+                <img src="{{ MEDIA_URL }}pexels-oleg-magni-3582260.jpg" class="carousel-hero-img" alt="Sportswear">
+                <p class="font-weight-bold">Women's</p>
+                <span>
+                    <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                </span>
+            </div>
+            <div class="cell-hero ">
+                <img src="{{ MEDIA_URL }}pexels-ali-pazani-2755612.jpg" class="carousel-hero-img" alt="Sportswear">
+                <p class="font-weight-bold">Fresh Coats</p>
+                <span>
+                    <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                </span>
+            </div>
+        </div>
+    </section>-->
+   
+        <section class="container p-0">
+            <div id="carouselExampleIndicators" class="carousel slide d-lg-none d-sm-block" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="cell-hero carousel-item active">
+                        <img src="{{ MEDIA_URL }}pexels-erik-mclean-4234768.jpg" class="carousel-hero-img"
+                            alt="Sportswear">
+                        <p class="font-weight-bold">Fresh drip</p>
+                        <span>
+                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
+                                class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                        </span>
+                    </div>
+                    <div class="cell-hero carousel-item">
+                        <img src="{{ MEDIA_URL }}pexels-keletso-mphuthi-9773257.jpg" class="carousel-hero-img"
+                            alt="Sportswear">
+                        <p class="font-weight-bold">Sportswear</p>
+                        <span>
+                            <a href="{% url 'products' %}?category=womens_sportswear"
+                                class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                        </span>
+                    </div>
+                    <div class="cell-hero carousel-item">
+                        <img src="{{ MEDIA_URL }}pexels-oleg-magni-3582260.jpg" class="carousel-hero-img"
+                            alt="Sportswear">
+                        <p class="font-weight-bold">Latest Deals</p>
+                        <span>
+                            <a href="{% url 'products' %}?category=womens_sportswear"
+                                class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                        </span>
+                    </div>
+                    <div class="cell-hero carousel-item">
+                        <img src="{{ MEDIA_URL }}pexels-ilyas-chabli-6545637.jpg" class="carousel-hero-img"
+                            alt="Sportswear">
+                        <p class="font-weight-bold">Fresh drip</p>
+                        <span>
+                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
+                                class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                        </span>
+                    </div>
+                    <div class="cell-hero carousel-item">
+                        <img src="{{ MEDIA_URL }}pexels-vitaliy-izonin-10046261.jpg" class="carousel-hero-img"
+                            alt="Sportswear">
+                        <p class="font-weight-bold">Footwear</p>
+                        <span>
+                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
+                                class="btn-lg hero-btn btn-info">SHOP NOW</a>
+                        </span>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>    
+  
+   
+        
     <!-- category section -->
     <section class="container">
         <h2 class="title">shop by category</h2>
         <div class="row align-items-start">
-            <div class="col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
                 <div class="card">
                     <div class="hover1">
                         <figure>
@@ -33,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
                 <div class="card">
                     <div class="hover1">
                         <figure>
@@ -49,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
                 <div class="card">
                     <div class="hover1">
                         <figure>
@@ -65,7 +166,7 @@
                 </div>
             </div>
 
-            <div class="h-100 col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="custom-col h-100 col-sm-6 col-6 mt-4 col-lg-3 pad">
                 <div class="card">
                     <div class="hover1">
                         <figure>
@@ -85,7 +186,7 @@
         <h2 class="title mb-4">shop the latest</h2>
         <div class="row align-items-start">
             <!-- Flickity carousel -->
-            <div class="col-lg-12 col-sm-12">
+            <div class="custom-col col-lg-12 col-sm-12">
                 <div class="carousel" data-flickity='{ "wrapAround": true }'>
                     <div class="carousel-cell">
 
@@ -238,12 +339,10 @@
     </section>
 
     <div class="app-store">
-        <div class="app">
-            <h1>Free Delivery When You Spend Over £50</h1>
+        <div class="app delivery-img">
+            <h1><span>Free Delivery When You Spend Over £50</span></h1>
             <img src="{{ MEDIA_URL }}delivery.png"
-            style="width: 250px;" alt="app logo">
-            <div class="app-store-logo">
-            </div>
+                alt="app logo">
         </div>
     </div>
 {% endblock %}

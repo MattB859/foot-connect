@@ -830,8 +830,11 @@ form textarea:focus {
     border-radius: 5%;
     color: black !important;
     font-weight: 600 !important;
-} 
+}
 
+.delivery-img img{
+    width: 10%;
+}
 
 /* -------------------------------- Media Queries */
 @media (max-width: 1370px) {
@@ -885,6 +888,7 @@ form textarea:focus {
     .app h1{
         font-size: 60px;
     }
+
 
 }
 
@@ -957,7 +961,7 @@ form textarea:focus {
         margin-top: 10px;
     }
 
-    .home{
+    /*.home{
         position: relative;
         background: url('/media/streetware-8.jpg') no-repeat center center;
         background-size: cover;
@@ -965,7 +969,8 @@ form textarea:focus {
         height: 60%; 
         width: 100%; 
         font-family: Arial, Helvetica, sans-serif;
-    }
+        
+    }*/
 
     .fa-user{
         position: relative;
@@ -1077,14 +1082,6 @@ form textarea:focus {
         top: 75%; 
         color: rgb(0, 92, 197);
         
-    }
-
-    .fa-instagram{
-        color: rgb(119, 15, 204);
-    }
-
-    .fa-youtube{
-        color: red;
     }
 
     .mobile-menu-header{
@@ -1264,6 +1261,52 @@ form textarea:focus {
         z-index: 99999999999;
     }
 
+    .carousel-home {
+        background: none;
+        margin-bottom: 4rem;
+        height: 100%; 
+        width: 100%; 
+  }
+  
+    .cell-hero {
+        width: 100%;
+        background: none;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+    }
+  
+   
+    .carousel-hero-img{
+        width: 100%;
+        height: 900px;
+    }
+
+    .cell-hero p{
+        position: absolute;
+        top: 10%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 80%;
+        text-align: center;
+        font-size: 55px;
+        z-index: 99999;
+        color: #ffffff;
+        text-shadow: black 5px 10px 10px;
+        text-transform: uppercase;
+        font-family: 'Squada One', cursive;
+    
+    }
+
+    .cell-hero span{
+        position: absolute;
+        top: 80%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 60%;
+        text-align: center;
+        font-size: 30px;
+        z-index: 99999;
+        padding: 15px;
+    }
+  
 }
 
 /* fixed top navbar only on medium and up */
@@ -1276,13 +1319,17 @@ form textarea:focus {
         z-index: 1030;
     }
 
-    .home{
-        position: relative;
-        background: url('/media/streetware-8.jpg') no-repeat center center;
-        background-size: cover;
-        height: 35%;
-        width: 100%; 
-        font-family: Arial, Helvetica, sans-serif;
+/* -------------- code pen from flickity.com */
+    .cell-hero {
+        width: 100%;
+        background: none;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+    }
+  
+    .carousel-hero-img{
+        width: 100%;
+        height: 650px;
     }
 
     ul {
@@ -1321,8 +1368,6 @@ form textarea:focus {
         bottom: 0;
         left: 0;
     }
-
-
     .overlay-bg-2{
         top: 0;
         background: white;
@@ -1343,7 +1388,6 @@ form textarea:focus {
     .pad {
         padding: 0 15px;
     }
-
 
     .banner{
         margin: 20px 0;
@@ -1433,6 +1477,7 @@ form textarea:focus {
         width: 30%;
     }
 
+
     .app p{
         color: #494949;
         margin-top: 10px;
@@ -1441,9 +1486,19 @@ form textarea:focus {
     .app h1{
         font-size: 35px;
     }
+
+    .app h1 span{
+        font-size: 20px;
+    }
+
     .app{
         padding: 10px;
     }
+
+    .delivery-img img{
+        width: 20%;
+    }
+    
 
     .arrow-up {
         width: 0; 
@@ -1467,6 +1522,38 @@ form textarea:focus {
         right: 10px;
         z-index: 99999999999;
     }
+
+    
+    .cell-hero p{
+        position: absolute;
+        top: 10%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 80%;
+        text-align: center;
+        font-size: 45px;
+        z-index: 99999;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Squada One', cursive;
+    
+    }
+
+    .cell-hero span a{
+        position: absolute;
+        top: 90%; right: 50%;
+        transform: translate(50%,-50%);
+        text-align: center;
+        font-size: 20px;
+        z-index: 99999;
+        width: 80%;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .custom-col{
+        padding: 0 5px;
+    }
+ 
    
 }
 
@@ -1502,6 +1589,50 @@ form textarea:focus {
     .navbar-nav a{
         padding: 0;
         margin-top: 10px;
+    }
+
+    .cell-hero p{
+        position: absolute;
+        top: 10%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 70%;
+        text-align: center;
+        font-size: 35px;
+        z-index: 99999;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.329);
+        text-transform: uppercase;
+        font-family: 'Squada One', cursive;
+    
+    }
+
+    .cell-hero span a{
+        position: absolute;
+        top: 90%; right: 50%;
+        transform: translate(50%,-50%);
+        text-align: center;
+        font-size: 15px;
+        z-index: 99999;
+        width: 80%;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .cell-hero {
+        width: 100%;
+        background: none;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+    }
+  
+   
+    .carousel-hero-img{
+        width: 100%;
+        height: 420px;
+    }
+
+    .col-sm-6{
+        padding: 0 5px;
     }
  
 }
