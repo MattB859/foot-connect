@@ -57,7 +57,8 @@
                     <div class="cell-hero carousel-item active">
                         <img src="{{ MEDIA_URL }}pexels-erik-mclean-4234768.jpg" class="carousel-hero-img"
                             alt="Sportswear">
-                        <p class="font-weight-bold">Fresh drip</p>
+                        <p>Stay</p>
+                        <small>Fresh</small>
                         <span>
                             <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
                                 class="btn-lg hero-btn btn-info">SHOP NOW</a>
@@ -66,7 +67,7 @@
                     <div class="cell-hero carousel-item">
                         <img src="{{ MEDIA_URL }}pexels-keletso-mphuthi-9773257.jpg" class="carousel-hero-img"
                             alt="Sportswear">
-                        <p class="font-weight-bold">Sportswear</p>
+                        <span-1 class="font-weight-bold">Sportswear</span-1>
                         <span>
                             <a href="{% url 'products' %}?category=womens_sportswear"
                                 class="btn-lg hero-btn btn-info">SHOP NOW</a>
@@ -75,7 +76,7 @@
                     <div class="cell-hero carousel-item">
                         <img src="{{ MEDIA_URL }}pexels-oleg-magni-3582260.jpg" class="carousel-hero-img"
                             alt="Sportswear">
-                        <p class="font-weight-bold">Latest Deals</p>
+                        <span-2 class="font-weight-bold">Latest Deals</span-2>
                         <span>
                             <a href="{% url 'products' %}?category=womens_sportswear"
                                 class="btn-lg hero-btn btn-info">SHOP NOW</a>
@@ -84,16 +85,17 @@
                     <div class="cell-hero carousel-item">
                         <img src="{{ MEDIA_URL }}pexels-ilyas-chabli-6545637.jpg" class="carousel-hero-img"
                             alt="Sportswear">
-                        <p class="font-weight-bold">Fresh drip</p>
+                        <span-1 class="font-weight-bold">Activewear</span-1>
                         <span>
-                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
+                            <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts"
                                 class="btn-lg hero-btn btn-info">SHOP NOW</a>
                         </span>
                     </div>
                     <div class="cell-hero carousel-item">
                         <img src="{{ MEDIA_URL }}pexels-vitaliy-izonin-10046261.jpg" class="carousel-hero-img"
                             alt="Sportswear">
-                        <p class="font-weight-bold">Footwear</p>
+                        <span-2 class="font-weight-bold">Footwear</span-2>
+                       
                         <span>
                             <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
                                 class="btn-lg hero-btn btn-info">SHOP NOW</a>
@@ -111,8 +113,6 @@
             </div>
         </section>    
   
-   
-        
     <!-- category section -->
     <section class="container">
         <h2 class="title">shop by category</h2>
@@ -122,14 +122,14 @@
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
-                            <img src="{{ MEDIA_URL }}900.jpg" class="card-img-top category-1" alt="footwear"></a>
+                            <img src="{{ MEDIA_URL }}900.jpg" class="cat-top category-1" alt="footwear"></a>
                         </figure>
                     </div>
                    
                     <div class="card-body">
                         <h5 class="card-title text-center">footwear</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -139,13 +139,13 @@
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans">
-                            <img src="{{ MEDIA_URL }}111.jpg" class="card-img-top category-1" alt="womens category"></a>
+                            <img src="{{ MEDIA_URL }}111.jpg" class="cat-top category-1" alt="womens category"></a>
                         </figure>
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title ">women's</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
@@ -155,35 +155,35 @@
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts">
-                            <img src="{{ MEDIA_URL }}404.jpg" class="card-img-top category-1" alt="mens category"></a>
+                            <img src="{{ MEDIA_URL }}404.jpg" class="cat-top category-1" alt="mens category"></a>
                         </figure>
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title">Men's</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
 
-            <div class="custom-col h-100 col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="custom-col h-100 col-sm-6 col-6 mt-4 mb-4 col-lg-3 pad">
                 <div class="card">
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=bags">
-                            <img src="{{ MEDIA_URL }}950.jpg" class="card-img-top category-1" alt="bags"></a>
+                            <img src="{{ MEDIA_URL }}950.jpg" class="cat-top category-1" alt="bags"></a>
                         </figure>
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title">
-                            Bags</h5>
+                            Accessories</h5>
                         <p class="card-text"></p>
-                        <a href="{% url 'products' %}?category=bags" class="shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                        <a href="{% url 'products' %}?category=bags" class="shop-now-button d-none d-lg-block btn w-100 btn-dark">SHOP NOW</a>
                     </div>
                 </div>
             </div>
         </div>
-        <h2 class="title mb-4">shop the latest</h2>
+        <h2 class="title mb-4 ">shop the latest</h2>
         <div class="row align-items-start">
             <!-- Flickity carousel -->
             <div class="custom-col col-lg-12 col-sm-12">
@@ -261,7 +261,7 @@
         <h2 class="title mb-4 mt-0">Our Top Picks</h2>
         <div class="row align-items-start">
             <!-- Flickity carousel -->
-            <div class="col-lg-12 col-sm-12">
+            <div class="custom-col col-lg-12 col-sm-12">
                 <div class="carousel" data-flickity='{ "wrapAround": true }'>
                     <div class="carousel-cell">
                    
