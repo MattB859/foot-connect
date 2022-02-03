@@ -159,12 +159,10 @@ def delete_product(request, product_id):
 
 @login_required
 def wish_list(request):
-
     """ View wishlist """
 
     template = "products/wish_list.html"
     return render(request, template)
-
 
 
 @login_required

@@ -130,11 +130,9 @@ body {
 
 
 .title{
-    font-size: 35px;
+    font-size: 45px;
     margin-top: 60px;
-    font-weight: 600;
     font-family: 'Squada One', cursive;
-    text-decoration: underline;
     text-transform: uppercase;
 }
 
@@ -804,7 +802,6 @@ form textarea:focus {
     z-index: 10;
     font-size: 12px;
     bottom: 40px;
-    
 }
 
 .success-icon,
@@ -836,7 +833,11 @@ form textarea:focus {
     width: 10%;
 }
 
-/* -------------------------------- Media Queries */
+.cat-top {
+   width: 100%; 
+}
+
+/* -------------------- Media Queries */
 @media (max-width: 1370px) {
     .font-size a{
         width: 100px;
@@ -940,10 +941,8 @@ form textarea:focus {
     .navbar-nav {
         position: relative;
         padding: 0;
-    
     }
 
-    
     .nav-overlay-content {
         width: 450px !important;
         padding: 0 ;
@@ -960,17 +959,6 @@ form textarea:focus {
         padding: 0;
         margin-top: 10px;
     }
-
-    /*.home{
-        position: relative;
-        background: url('/media/streetware-8.jpg') no-repeat center center;
-        background-size: cover;
-        max-width: 100% !important;
-        height: 60%; 
-        width: 100%; 
-        font-family: Arial, Helvetica, sans-serif;
-        
-    }*/
 
     .fa-user{
         position: relative;
@@ -995,6 +983,33 @@ form textarea:focus {
         font-size: 10px;
     }
 
+    /* Code sorced from Bootstrap and 
+    customize to fit the projects needs.*/
+    .carousel-control-next-icon, 
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .carousel-indicators li {
+        height: 5px;
+        width: 50px;
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+ 
+    }
+
+    ol{
+        margin-bottom: 6rem;
+    }
+    
+    /* end ------------- */
+
     .navbar-toggler {
         padding: 0;
     }
@@ -1010,9 +1025,10 @@ form textarea:focus {
     }
 
     .logo-font strong {
+        position: relative;
         text-transform: uppercase;
-        font-size: 25px;
-        top: 4px;
+        font-size: 45px;
+        top: 10px;
         padding: 2px 20px;
         width: 100%;
         color: var(--bs-body-color) !important;
@@ -1217,13 +1233,19 @@ form textarea:focus {
         margin-top: 60px !important;
     }
 
-    .banner{
+    .banner h4{
         margin: 20px 0;
+    }
+
+    #delivery-banner{
+        margin-top: 18px;
     }
 
     .banner-font{
         font-size: 14px;
+
     }
+
 
     .btn{
         width: 100%;
@@ -1283,29 +1305,83 @@ form textarea:focus {
 
     .cell-hero p{
         position: absolute;
-        top: 10%; right: 50%;
+        top: 6%; right: 70%;
         transform: translate(50%,-50%);
-        width: 80%;
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+        z-index: 99999;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        /* code sorced from css-tricks.com ----*/
+        -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.541);
+    }
+
+    .cell-hero span-1{
+        position: absolute;
+        top: 6%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 100%;
         text-align: center;
         font-size: 65px;
         z-index: 99999;
-        color: #ffffff;
         text-transform: uppercase;
-        font-family: 'Squada One', cursive;
-    
+        font-family: 'Archivo Black', sans-serif;
+        /* code sorced from css-tricks.com ----*/
+        -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.808);
+    }
+    .cell-hero span-2{
+        position: absolute;
+        top: 6%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 65px;
+        z-index: 99999;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        color: rgb(255, 255, 255);
+
+         /* code sorced from css-tricks.com ----*/
+         -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+         -webkit-text-stroke-width: 1px;
+         -webkit-text-stroke-color: rgba(75, 75, 75, 0.445)
     }
 
-    .cell-hero span{
+
+    .cell-hero small{
         position: absolute;
-        top: 80%; right: 50%;
+        top: 15%; right: 50%;
         transform: translate(50%,-50%);
-        width: 60%;
+        width: 100%;
         text-align: center;
-        font-size: 30px;
+        font-size: 70px;
         z-index: 99999;
-        padding: 15px;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        color: white;
     }
-  
+
+    .cell-hero span a{
+        position: absolute;
+        top: 75%; right: 50%;
+        transform: translate(50%,-50%);
+        text-align: center;
+        font-size: 25px;
+        z-index: 99999;
+        width: 35%;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    .custom-col{
+        padding: 0 5px;
+    }
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -1333,9 +1409,30 @@ form textarea:focus {
 
     ul {
         padding: 0;
-
     }
 
+    /* Code sorced from Bootstrap and 
+    customize to fit the projects needs.*/
+    .carousel-control-next-icon, 
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .carousel-indicators li {
+        height: 3px;
+        width: 40px;
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+    }
+    /* end ------------- */
+
+    /* sidebar menu overlay */
     .nav-overlay-content {
        width: 250px !important;
         padding: 0 ;
@@ -1361,6 +1458,12 @@ form textarea:focus {
         padding: 0;
         margin: 7px 0;
     }
+
+    ol{
+        margin-bottom: 5rem;
+    
+    }
+    
 
     .footer{
         width: 100%;
@@ -1396,9 +1499,13 @@ form textarea:focus {
         font-size: 12px;
     }
 
+    #delivery-banner{
+        margin-top: 0;
+    }
+
     .title{
         margin: 20px 0 0;
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
     }
    
@@ -1591,12 +1698,12 @@ form textarea:focus {
 
     .cell-hero span a{
         position: absolute;
-        top: 90%; right: 50%;
+        top: 75%; right: 50%;
         transform: translate(50%,-50%);
         text-align: center;
-        font-size: 20px;
+        font-size: 17px;
         z-index: 99999;
-        width: 80%;
+        width: 40%;
         padding: 10px;
         text-decoration: none;
     }
@@ -1613,7 +1720,9 @@ form textarea:focus {
 
 @media (max-width: 360px) {
     .logo-font strong {
-        font-size: 15px;   
+        position: relative;
+        top: 2px;
+        font-size: 16px;   
     }
 
     .menu-app{
@@ -1647,27 +1756,75 @@ form textarea:focus {
 
     .cell-hero p{
         position: absolute;
-        top: 10%; right: 50%;
+        top: 8%; right: 70%;
         transform: translate(50%,-50%);
-        width: 70%;
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        z-index: 99999;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        /* code sorced from css-tricks.com ----*/
+        -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.541);
+    }
+
+    .cell-hero span-1{
+        position: absolute;
+        top: 6%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 100%;
         text-align: center;
         font-size: 35px;
         z-index: 99999;
-        color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.329);
         text-transform: uppercase;
-        font-family: 'Squada One', cursive;
-    
+        font-family: 'Archivo Black', sans-serif;
+        /* code sorced from css-tricks.com ----*/
+        -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.808);
+    }
+    .cell-hero span-2{
+        position: absolute;
+        top: 6%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        z-index: 99999;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        color: rgb(255, 255, 255);
+
+         /* code sorced from css-tricks.com ----*/
+         -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+         -webkit-text-stroke-width: 1px;
+         -webkit-text-stroke-color: rgba(75, 75, 75, 0.445)
+    }
+
+
+    .cell-hero small{
+        position: absolute;
+        top: 20%; right: 50%;
+        transform: translate(50%,-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        z-index: 99999;
+        text-transform: uppercase;
+        font-family: 'Archivo Black', sans-serif;
+        color: white;
     }
 
     .cell-hero span a{
         position: absolute;
-        top: 90%; right: 50%;
+        top: 75%; right: 50%;
         transform: translate(50%,-50%);
         text-align: center;
         font-size: 15px;
         z-index: 99999;
-        width: 80%;
+        width: 40%;
         padding: 8px;
         text-decoration: none;
     }
@@ -1682,11 +1839,28 @@ form textarea:focus {
    
     .carousel-hero-img{
         width: 100%;
-        height: 420px;
+        height: 450px;
     }
 
     .col-sm-6{
         padding: 0 5px;
     }
+
+    
+    ol{
+        margin-bottom: 2rem;
+    }
+
+    .offers {
+        margin-top: 60px;
+        padding: 5px;
+        width: 100%;
+        height: 35px;
+    }
+
+    .offers p{
+       font-size: 18px;
+    }
+    
  
 }

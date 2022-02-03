@@ -113,6 +113,48 @@
             </div>
         </div>
     </div>
+
+    <section class="comment">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col col-lg-4">
+                    <h4>Add Comments (no of comments)</h4>
+                    Add Comments ({{ num_comments }})
+                    <br>
+                    <hr>
+                    
+                    {% if not product.comments.all %}
+
+                    <p>No comments added yet...</p>
+                    <p><a class="btn btn-primary" href="#"> Add Comment </a></p>
+
+                    {% else %}
+
+                    {% for comment in product.comments.all %}
+
+                    
+                    <h5><strong>{{ comment.comment_name }}</strong></h5>
+                    <p>{{ comment.comment_title }}</p>
+                    <p>rating: {{ comment.rating }}</p>
+                    <p>{{ comment.comment_body }}</p>
+                    <p>{{ comment.image }}</p>
+                    <p><small>{{ comment.date_added }}</small></p>
+
+                    {% if request.user.username == comment.comment_name %}
+
+                    <p><a class="btn btn-primary" href="{% url 'add-comment' eachProduct.id %}">  Add Comment </a></p>
+                    <p><a class="btn btn-danger" href="{% url 'delete-comment' eachProduct.id %}">  Delete Comment </a></p>
+                  
+                    {% endif %}
+
+                    {% endfor %}
+
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+    </section>
 {% endblock %}
 
 {% block postloadjs %}
