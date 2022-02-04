@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <div class="max-width mx-auto">
+        <!--onsubmit="return sendMail(this);-->
+        <form class="contact-form container col-12 input-border"
+            action="" method="POST">
+            {% csrf_token %}
+            <h2 class="text-center title-font mt-4">Add Comment</h2>
+            <hr>
+            <p class="text-center">Share your thoughts with us! <a href="{% url 'home' %}">Home</a></p>
+           
+            <div class=" col-lg-12 col-sm-12 col-xs-12 mb-3">
+                <input type="text" name="comment_name" class="form-control" id="comment_name"
+                    placeholder="Title.." required/>
+            </div>
+
+            <div class="col-lg-12 col-sm-12 col-xs-12  form-actions">
+                <textarea rows="6" name="comment_body" class="form-control" id="comment_body"
+                    placeholder="Write a message.." required></textarea>
+               
+                <button id="submit" type="submit" class=" btn btn-black w-100">Add your comment here</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

@@ -6,8 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Comment
+from .forms import ProductForm, CommentForm
 
 
 def all_products(request):
@@ -143,7 +143,6 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-
     """
     Delete a product from the store
     """
@@ -155,6 +154,39 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_comment(request, product_id):
+    """
+    Allow users to add comments
+    """
+    product = Product.objects.get(id=product_id)
+
+    form = CommentForm(instance=product)
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST, instance=product)
+        if form.is_valid():
+            name = request.user.username
+            body = form.cleaned_data['comment_body']
+            c = Comment(product=product, comment_name=name, comment_body=body)
+            c.save()
+            messages.success(request, 'Comment Added Successfully')
+            return redirect('products')
+        else:
+            messages.error(request, 'Sorry, comment not sent')
+            print('form is invalid')    
+    else:
+        form = CommentForm()
+        
+
+    context = {
+        'form': form
+    }
+   
+    template = "products/add_comment.html"
+    return render(request, template, context)
 
 
 @login_required
