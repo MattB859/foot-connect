@@ -121,7 +121,7 @@
                 aria-controls="collapseOne" id="headingOne">
                 <h5 class="mb-0">
                     <button class="btn">
-                        <h4>Reviews
+                        <h4>({{ num_comments }}) Reviews
                             <small><i class="fas fa-star mr-1"></i></small>
                             <small><i class="fas fa-star mr-1"></i></small>
                             <small><i class="fas fa-star mr-1"></i></small>
@@ -135,10 +135,8 @@
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <div class="col col-lg-6">
-                        <h4>Add Comments (no of comments)</h4>
-                        Add Comments ({{ num_comments }})
+                       
                         <br>
-                        <hr>
 
                         {% if not product.comments.all %}
 
@@ -166,6 +164,8 @@
                                 <a class="btn btn-danger " href="#"> Delete Comment </a>  
                             </div>
                         </div>
+
+                        <hr>
                         
 
                         {% endif %}

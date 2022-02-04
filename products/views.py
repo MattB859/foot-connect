@@ -69,8 +69,11 @@ def product_detail(request, product_id):
     """
     product = get_object_or_404(Product, pk=product_id)
 
+    num_comments = Comment.objects.filter(product=product).count()
+
     context = {
         'product': product,
+        'num_comments': num_comments,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -159,9 +162,9 @@ def delete_product(request, product_id):
 @login_required
 def add_comment(request, product_id):
     """
-    Allow users to add comments
+    Add comments to a product
     """
-    product = Product.objects.get(id=product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     form = CommentForm(instance=product)
 
@@ -172,20 +175,18 @@ def add_comment(request, product_id):
             body = form.cleaned_data['comment_body']
             c = Comment(product=product, comment_name=name, comment_body=body)
             c.save()
-            messages.success(request, 'Comment Added Successfully')
+            messages.success(request, 'Comment added successfully!')
             return redirect('products')
         else:
-            messages.error(request, 'Sorry, comment not sent')
-            print('form is invalid')    
+            messages.error(request, 'Sorry, comment not sent')  
     else:
         form = CommentForm()
         
-
+    template = "products/add_comment.html"
     context = {
-        'form': form
+        'form': form,
     }
    
-    template = "products/add_comment.html"
     return render(request, template, context)
 
 
