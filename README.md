@@ -402,7 +402,9 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
     - John Traas
     - Ed Bradley
     - Jo Heyndels
+    - Fatima
     - Sheryl Goldberg
     - Alan Mc Gee
+    - Scott
 
     

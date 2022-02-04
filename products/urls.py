@@ -12,4 +12,6 @@ urlpatterns = [
         views.delete_product, name='delete_product'),
     path(
         'product/<int:product_id>/add-comment', views.add_comment, name='add-comment'),
+    path(
+        'product/<int:product_id>/delete-comment', views.delete_comment, name='delete-comment'),
 ]

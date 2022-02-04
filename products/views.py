@@ -162,7 +162,7 @@ def delete_product(request, product_id):
 @login_required
 def add_comment(request, product_id):
     """
-    Add comments to a product
+    Add comments 
     """
     product = get_object_or_404(Product, pk=product_id)
 
@@ -192,6 +192,18 @@ def add_comment(request, product_id):
     }
    
     return render(request, template, context)
+
+
+@login_required
+def delete_comment(request, product_id):
+    """
+    Delete comments 
+    """
+    comment = Comment.objects.filter(product=product_id).last()
+    product_id = comment.product.id
+    comment.delete()
+    messages.success(request, 'Successfully deleted! comment')
+    return redirect(reverse('products'))
 
 
 @login_required
