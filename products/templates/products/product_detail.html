@@ -135,39 +135,32 @@
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <div class="col col-lg-6">
-                       
                         <br>
-
                         {% if not product.comments.all %}
 
                         <p>No comments added yet...</p>
-                        <p><a class="btn btn-primary" href="{% url 'add-comment' product.id %}"> Add Comment </a></p>
+                        <p><a class="btn btn-primary" href="{% url 'add-comment' product.id %}">  Add Comment </a></p>
 
                         {% else %}
 
                         {% for comment in product.comments.all %}
 
-
-                        <h5><strong>{{ comment.comment_name }}</strong></h5>
-                        <p>{{ comment.comment_title }}</p>
-                        <p>rating: {{ comment.rating }}</p>
+                        <p><strong>{{ comment.comment_name }}</strong> - {{ comment.date_added }}</p>
+                        <p><strong>{{ comment.comment_title }}</strong></p>
+                        <!--<p>rating: {{ comment.rating }}</p>-->
                         <p>{{ comment.comment_body }}</p>
-                        <img src="{{ comment.image }}" alt="{{ product.name }}"></p>
-                        <p><small>{{ comment.date_added }}</small></p>
-
+                     
+                       
                         {% if request.user.username == comment.comment_name %}
                         <div class="row mb-2">
                             <div class="col col-lg-4 col-sm-6">
-                                <a class="btn btn-primary" href="{% url 'add-comment' product.id %}"> Add Comment</a>
+                                <a class="btn btn-info" href="{% url 'add-comment' product.id %}"> Add Comment</a>
                             </div>
                             <div class="col col-lg-4 col-sm-6">
                                 <a class="btn btn-danger " href="#"> Delete Comment </a>  
                             </div>
                         </div>
-
                         <hr>
-                        
-
                         {% endif %}
 
                         {% endfor %}
@@ -187,14 +180,9 @@
                 </h5>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body mt-2">
                     <div class="col col-lg-6">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                       <p>{{ product.description }}</p>
                     </div>
                 </div>
             </div>
@@ -209,14 +197,26 @@
                 </h4>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body mt-4">
                     <div class="col col-lg-6">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <h5><strong> Standard Delivery</strong> - £3.95</h5>
+                        <p>Receive within 2 - 4 working days (Excludes bank holidays).
+                        Includes door to door tracking.
+                        Free with all orders over £49.</p>
+
+                        <h5><strong> Track My Order</strong></h5>
+                        <p>You can track your order via the link 
+                        included in your dispatch email 
+                        (make sure you double-check this 
+                        hasn't ended up in your junk folder).
+                        Not received a dispatch email?
+                        The below might help:
+                        Orders placed before 11pm Monday - 
+                        Thursday using our Next Day Delivery 
+                        service can arrive at any time up to 8pm the following day.
+                        Orders placed after 11pm Thursday, 
+                        Friday and Saturday will be dispatched on Sunday.
+                        Standard Delivery can take up to 4 working days.</p> 
                     </div>
                 </div>
             </div>

@@ -172,8 +172,12 @@ def add_comment(request, product_id):
         form = CommentForm(request.POST, instance=product)
         if form.is_valid():
             name = request.user.username
+            title = form.cleaned_data['comment_title']
             body = form.cleaned_data['comment_body']
-            c = Comment(product=product, comment_name=name, comment_body=body)
+            c = Comment(product=product, 
+                        comment_name=name, 
+                        comment_title=title, 
+                        comment_body=body)
             c.save()
             messages.success(request, 'Comment added successfully!')
             return redirect('products')
