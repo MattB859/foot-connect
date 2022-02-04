@@ -837,6 +837,23 @@ form textarea:focus {
    width: 100%; 
 }
 
+/* Bootstrap Accordion*/
+
+.card-header {
+   
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.comments{
+    margin-top: 10rem;
+}
+
+#accordion{
+    width: 60%;
+}
+
 /* -------------------- Media Queries */
 @media (max-width: 1370px) {
     .font-size a{
@@ -1092,12 +1109,9 @@ form textarea:focus {
     }
 
     .social-media {
-        padding: 8px;
         position: relative;
         margin: 0 10px !important;
-        top: 75%; 
-        color: rgb(0, 92, 197);
-        
+        color: rgb(255, 255, 255);
     }
 
     .mobile-menu-header{
@@ -1135,7 +1149,6 @@ form textarea:focus {
         font-size: 6vw;
     }
 
-   
     .line-white{
         color: white;
         background: white;
@@ -1380,6 +1393,10 @@ form textarea:focus {
 
     .custom-col{
         padding: 0 5px;
+    }
+
+    #accordion{
+        width: 100%;
     }
 
 }
@@ -1715,6 +1732,21 @@ form textarea:focus {
     .card-title{
         font-size: 30px;
         font-weight: 200;
+    }
+
+    #accordion{
+        width: 100%;
+    }
+
+    .card-header {
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    .card-header h4{
+        font-size: 20px;
+        float: left;
     }
 }
 

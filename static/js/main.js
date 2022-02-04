@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('.carousel').carousel({
         interval: false,
       });
+    $('.collapse').collapse('hide') 
     $('.scroll-up-btn').click(function () {
     $('html').animate({
         scrollTop: 0
