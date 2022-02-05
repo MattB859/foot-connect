@@ -58,6 +58,7 @@ and customized by the developer to fit the projects needs*/
 
 html {
     height: 100%;
+ 
 }
 
 body {
@@ -79,26 +80,21 @@ body {
     z-index: 2;
 }
 
-.home{
+.home img{
     position: relative;
-    background: url('/media/womens-banner.jpg') no-repeat center center;
-    background-size: cover;
-    height: calc(700px - 20%);
     width: 100%;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ------------ Header styling */
 .offers{
     width: 100%;
-    padding: 5px;
+    padding: 0;
     background: rgb(199, 31, 64);
 }
 
 .offers p{
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
     color: var(--bs-light);
     text-transform: uppercase;
@@ -130,10 +126,11 @@ body {
 
 
 .title{
-    font-size: 45px;
+    font-size: 25px;
     margin-top: 60px;
-    font-family: 'Squada One', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .banner-font{
@@ -667,7 +664,7 @@ figure {
 
 .app {
 	width: 100%;
-	background: #f5f5f5;
+	background: none;
 	padding: 10px;}
 
 .app h1{
@@ -881,21 +878,12 @@ form textarea:focus {
         padding: 0.5rem 0.6rem;
     }
 
-    .app-logo img{
-        width: 40px;
-    }
-
     .footer ul li{
         font-size: 15px;
     }
 
     .pad {
         padding: 0 5px;
-      
-    }
-
-    .app-store-logo img{
-        width: 25%;
     }
 
     .app p{
@@ -903,10 +891,32 @@ form textarea:focus {
         margin-top: 10px;
         font-size: 25px;
     }
+
     .app h1{
         font-size: 60px;
     }
 
+   
+    .hover1 img{
+        height: 300px;
+    }
+    
+    .app{
+        background: none;
+        padding: 10px;
+    }
+    
+    .app-store-logo img{
+        width: 14%;
+    }
+    
+    .app-store h1{
+        font-size: 40px;
+    }
+    
+    .app p{
+        font-size: 18px;
+    }
 
 }
 
@@ -924,7 +934,10 @@ form textarea:focus {
         position: relative;
         width: 50%;  
     }
+    
 }
+
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -1018,7 +1031,7 @@ form textarea:focus {
         border-bottom: 10px solid transparent;
         opacity: .5;
         transition: opacity .6s ease;
- 
+
     }
 
     ol{
@@ -1065,7 +1078,6 @@ form textarea:focus {
     
     .dropdown-item {
         font-size: 15px !important;
-      
     }
 
     .home{
@@ -1082,7 +1094,6 @@ form textarea:focus {
 
     .offers p{
         font-size: 25px;
-
     }
 
     /* ---------- nav menu curtain*/
@@ -1167,8 +1178,7 @@ form textarea:focus {
         padding: 8px;
         text-decoration: none;
         font-size: 36px;
-        display: block;
-       
+        display: block;  
     }
      
     .nav-overlay a:hover, .overlay a:focus {
@@ -1184,7 +1194,6 @@ form textarea:focus {
         top: 0;
         font-size: 38.5px;
     }
-
 
     #specials-link,
     #accessories-link,
@@ -1202,8 +1211,10 @@ form textarea:focus {
 
     /* ----------------- footer accordion */
     .card-header{
-        background: #000;
+        background: rgb(255, 255, 255);
+        border: none;
     }
+
 
     .collapse{
         border-radius: 0 !important;
@@ -1256,9 +1267,7 @@ form textarea:focus {
 
     .banner-font{
         font-size: 14px;
-
     }
-
 
     .btn{
         width: 100%;
@@ -1301,7 +1310,7 @@ form textarea:focus {
         margin-bottom: 4rem;
         height: 100%; 
         width: 100%; 
-  }
+    }
   
     .cell-hero {
         width: 100%;
@@ -1310,7 +1319,6 @@ form textarea:focus {
         counter-increment: carousel-cell;
     }
   
-   
     .carousel-hero-img{
         width: 100%;
         height: 900px;
@@ -1347,6 +1355,7 @@ form textarea:focus {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: rgba(255, 255, 255, 0.808);
     }
+
     .cell-hero span-2{
         position: absolute;
         top: 6%; right: 50%;
@@ -1364,7 +1373,6 @@ form textarea:focus {
          -webkit-text-stroke-width: 1px;
          -webkit-text-stroke-color: rgba(75, 75, 75, 0.445)
     }
-
 
     .cell-hero small{
         position: absolute;
@@ -1399,6 +1407,9 @@ form textarea:focus {
         width: 100%;
     }
 
+    .hover1 img{
+        height: 400px;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -1599,7 +1610,6 @@ form textarea:focus {
     .app-store-logo img{
         width: 30%;
     }
-
 
     .app p{
         color: #494949;
