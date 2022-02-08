@@ -4,31 +4,46 @@
 <div class="container">
     <div class="max-width mx-auto">
         <!--onsubmit="return sendMail(this);-->
-        <form class="contact-form container col-12 input-border"
-            action="" method="POST">
-            {% csrf_token %}
-            <h2 class="text-center font-weight-bold  mt-4">Leave Us a Review</h2>
-            <hr>
-            <p class="text-center">Share your thoughts with us! <a href="{% url 'home' %}">Home</a></p>
-           
-            <div class=" col-lg-12 col-sm-12 col-xs-12 mb-3">
-                <input type="text" name="comment_name" class="form-control" id="comment_name"
-                    placeholder="Add a name.." required/>
-            </div>
+        <form class="contact-form container col-12 input-border" action="" method="POST">
+            <fieldset>
+                {% csrf_token %}
+                <h2 class="text-center font-weight-bold mt-4">Leave Us a Review</h2>
+                <hr>
+                <p class="text-center">Share your thoughts with us! <a href="{% url 'home' %}">Home</a></p>
 
-            <div class=" col-lg-12 col-sm-12 col-xs-12 mb-3">
-                <input type="text" name="comment_title" class="form-control" id="comment_title"
-                    placeholder="Add a title.." required/>
-            </div>
+                <div class="col-lg-12 col-sm-12 col-xs-12 ">
+                    <div class="rating">
+                        <p class="mb-0">Rate this product</p>
+                        <input class="input" type="radio" id="star5" name="rating" value="5"><label for="star5" class="full label"></label>
+                        <input class="input" type="radio" id="star4.5" name="rating" value="4.5"><label for="star4.5" class="half label"></label>
+                        <input class="input" type="radio" id="star4"name="rating" value="4"><label for="star4" class="full label"></label>
+                        <input class="input" type="radio" id="star3.5" name="rating" value="3.5"><label for="star3.5" class="half label"></label>
+                        <input class="input" type="radio" id="star3" name="rating" value="3"><label for="star3" class="full label"></label>
+                        <input class="input" type="radio" id="star2.5" name="rating" value="2.5"><label for="star2.5" class="half label"></label>
+                        <input class="input" type="radio" id="star2" name="rating" value="2"><label for="star2" class="full label"></label>       
+                        <input class="input" type="radio" id="star1.5" name="rating" value="1.5"><label for="star1.5" class="half label"></label>
+                        <input class="input" type="radio" id="star1" name="rating" value="1" required /><label for="star1" class="full label"></label>
+                    </div>
+                </div>
+    
+                <!-- Review Title -->
+                <div class="col-lg-12 col-sm-12 col-xs-12 ">
+                    <label for="comment_title">Add a title</label>
+                    <input type="text" name="comment_title" class="form-control" id="comment_title"
+                        placeholder="Write here.." required />
+                </div>
 
-            <div class="col-lg-12 col-sm-12 col-xs-12  form-actions">
-                <textarea rows="6" name="comment_body" class="form-control" id="comment_body"
-                    placeholder="Add your comment.." required></textarea>
+                <div class="col-lg-12 col-sm-12 col-xs-12  form-actions">
+                    <label for="comment_body">Add a review</label>
+                    <textarea rows="6" name="comment_body" class="form-control" id="comment_body"
+                        placeholder="Comment here.." required></textarea>
 
-                <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                <button id="submit" class="btn btn-info rounded-0" type="submit">Send Comment</button>
-            </div>
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                    <button id="submit" class="btn btn-info rounded-0" type="submit">Send Comment</button>
+                </div>
+            </fieldset>
         </form>
+
     </div>
 </div>
 {% endblock %}

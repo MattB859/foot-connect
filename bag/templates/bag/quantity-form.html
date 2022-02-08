@@ -27,7 +27,7 @@
                     </span>
                 </button>
             </div>
-            {% if item.product.has_sizes %}
+            {% if item.product.has_sizes or item.product.shoe_sizes %}
                 <input type="hidden" name="product_size" value="{{ item.size }}">
             {% endif %}
         </div>

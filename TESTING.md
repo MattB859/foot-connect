@@ -112,6 +112,19 @@ Friends and family members were asked to review the site and documentation to po
 </p>
 </details>
 
+
+- ### The Bug in this code was causing shoe sizes not to display.
+
+```
+ {% if item.product.has_sizes %}
+
+```
+- ### I overcome the issue by adding further conditions
+
+```
+ {% if item.product.has_sizes or item.product.shoe_sizes %} 
+```
+
 - ### The bug in this code was causing carousel img width to be over stretched and unresponsive
 
 ```

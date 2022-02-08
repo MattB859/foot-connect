@@ -26,10 +26,7 @@ class CommentForm(forms.ModelForm):
 
     class Meta:
         model = Comment
-        fields = ('comment_name', 'comment_title', 'comment_body')
-        
-        image = forms.ImageField(
-        label='Image', required=False, widget=CustomClearableFileInput)
+        fields = ('comment_title', 'comment_body')
         widgets = {
             'comment_body': forms.Textarea(attrs={'class': 'form-control'}),
             'comment_title': forms.Textarea(attrs={'class': 'form-control'}),

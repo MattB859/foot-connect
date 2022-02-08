@@ -1,5 +1,4 @@
-/* The code in this file has been sourced from the code institute tutorial 
-and customized by the developer to fit the projects needs*/
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -126,7 +125,7 @@ body {
 
 
 .title{
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -419,7 +418,7 @@ figure {
     font-size: 30px;
     text-transform: capitalize;
     color: var(--bs-body-color);
-    font-family: 'Squada One', cursive;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -844,11 +843,44 @@ form textarea:focus {
 }
 
 .comments{
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 #accordion{
-    width: 60%;
+    width: 67%;
+}
+
+/* ----------- Star ratting */
+ 
+.input{
+    display: none;
+}
+
+.rating label::before{
+    content: '\f005';
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    font-style: solid;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating .half::before{
+    content: '\f089';
+    position: absolute;
+    cursor: pointer;
+}
+
+.rating label{
+    color: #ddd;
+    float: left;
+    cursor: pointer;
+}
+
+.rating .input:checked  label,
+.rating:not(:checked)  label::before,
+.rating:not(:checked)  label:hover label{
+    color: #0d6efd;
 }
 
 /* -------------------- Media Queries */
@@ -917,7 +949,6 @@ form textarea:focus {
     .app p{
         font-size: 18px;
     }
-
 }
 
 /* Slightly larger container on xl screens */
@@ -934,10 +965,7 @@ form textarea:focus {
         position: relative;
         width: 50%;  
     }
-    
 }
-
-
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -1532,9 +1560,8 @@ form textarea:focus {
     }
 
     .title{
-        margin: 20px 0 0;
-        font-size: 30px;
-        text-align: center;
+        margin: 20px 0 0 0;
+        font-size: 20px;
     }
    
     .title-font,
@@ -1552,9 +1579,7 @@ form textarea:focus {
         font-size: 3vw;
     }
 
-    .card-title{
-        font-size: 4vw;
-    }
+   
 
     .hover1 img{
         height: 190px;
@@ -1719,7 +1744,7 @@ form textarea:focus {
     }
 
     .cat-top{
-        height: 250px !important;
+        height: 225px !important;
         width: 100%;
     }
 
@@ -1740,8 +1765,13 @@ form textarea:focus {
     }
 
     .card-title{
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 200;
+    }
+
+    .card-body p{
+        font-size: 15px;
+        line-height: 1;
     }
 
     #accordion{

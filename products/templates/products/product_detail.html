@@ -46,9 +46,22 @@
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            {% with product.has_sizes as s %}
-                            {% if s %}
-                            <!-- Clothing Size-->
+                           
+                            {% if product.shoe_sizes %}
+                            <!-- Footwear size -->
+                            <div class="col-12">
+                                <p><strong>Size:</strong></p>
+                                <select class="form-control rounded-0 w-50 mobile-width-100" name="product_size" id='id_product_size'>
+                                    <option value="7"> uk 7</option>
+                                    <option value="8">uk 8</option>
+                                    <option value="9" selected>uk 9</option>
+                                    <option value="10">uk 10</option>
+                                    <option value="11">uk 11</option>
+                                </select>
+                            </div>
+                           
+                            {% else %}
+                             <!-- Clothing Size-->
                             <div class="col-12">
                                 <p><strong>Size:</strong></p>
                                 <select class="form-control rounded-0 w-50 mobile-width-100" name="product_size" id='id_product_size'>
@@ -57,17 +70,6 @@
                                     <option value="m" selected>M</option>
                                     <option value="l">L</option>
                                     <option value="xl">XL</option>
-                                </select>
-                            </div>
-                            <!-- Footwear size -->
-                            <div class="col-12">
-                                <br>
-                                <select class="form-control rounded-0 w-50 mobile-width-100" name="product_size" id='id_product_size'>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9" selected>9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
                                 </select>
                             </div>
                             {% endif %}
@@ -106,7 +108,7 @@
                                 <input type="submit" class="btn btn-black btn-mobile rounded-0 text-uppercase w-50 mt-3" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            {% endwith %}
+                         
                         </div>
                     </form>
                 </div>
@@ -121,7 +123,7 @@
                 aria-controls="collapseOne" id="headingOne">
                 <h5 class="mb-0">
                     <button class="btn">
-                        <h4>({{ num_comments }}) Reviews
+                        <h4>Reviews ({{ num_comments }})
                             <small><i class="fas fa-star mr-1"></i></small>
                             <small><i class="fas fa-star mr-1"></i></small>
                             <small><i class="fas fa-star mr-1"></i></small>
