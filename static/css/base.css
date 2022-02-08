@@ -75,8 +75,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 10;
 }
 
 .home img{
@@ -117,10 +117,10 @@ body {
 
 .logo-font strong{
     text-transform: uppercase;
-    font-size: 45px;
-    padding: 1px 30px;
-    background-color: var(--bs-white) !important;
-    font-family: 'Squada One', cursive;
+    font-size: 35px;
+    padding: 0 20px;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 
@@ -169,6 +169,15 @@ body {
     color: var(--bs-white);
     z-index: 0 !important;
    
+}
+
+.btn-white{
+    border-radius: 0;
+    color: #000;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.397);
+    border: 1px solid rgb(155, 155, 155);
+    font-family: 'Archivo Black', sans-serif;
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-black2 {
@@ -654,7 +663,7 @@ figure {
 	
 .app-store h1{
 	margin-top: 20px;
-	font-family: var(--bs-body-font-family);
+    font-family: 'Archivo Black', sans-serif;
 	font-weight: 100;}
 
 .app-store-logo img{
@@ -834,9 +843,7 @@ form textarea:focus {
 }
 
 /* Bootstrap Accordion*/
-
-.card-header {
-   
+.card-header {   
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0.03);
@@ -1086,13 +1093,14 @@ form textarea:focus {
         position: relative;
         text-transform: uppercase;
         font-size: 45px;
-        top: 10px;
-        padding: 2px 20px;
+        top: 8px;
+        padding: 0 20px;
         width: 100%;
-        color: var(--bs-body-color) !important;
-        font-family: 'Squada One', cursive;
+        color: white;
+        font-family: 'Archivo Black', sans-serif;
     }
-    
+
+   
     .navbar{
         top: 0;
         position: fixed;
@@ -1139,12 +1147,14 @@ form textarea:focus {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 10;
         top: 0;
         left: 0;
-        background-color: var(--bs-white);
+        box-shadow: rgba(0, 0, 0, 0.767) 5px 10px 10px;
+        background-color: var(--bs-body-color);
+        color: white;
         overflow-x: hidden;
-        transition: 0.2s;
+        transition: ease 0.2s;
     }
 
     .social-media {
@@ -1212,10 +1222,11 @@ form textarea:focus {
     .nav-overlay a:hover, .overlay a:focus {
         color: #f1f1f1;
     }
-     
+    
+    /* ---------------- Sidebar menu styling*/
     .nav-overlay .closebtn{
         position: absolute;
-        color: black;
+        color: rgb(243, 243, 243);
         margin: 0;
         padding: 0;
         right: 20px;
@@ -1223,11 +1234,38 @@ form textarea:focus {
         font-size: 38.5px;
     }
 
+    .dropdown-menu {
+        font-size: 1rem;
+        color: #212529;
+        background-color: var(--bs-body-color);
+        background-clip: padding-box;
+        border: 1px solid rgba(223, 223, 223, 0.15);
+        border-radius: 0.25rem;
+    }
+
+    .dropdown-item {
+        color: #ffffff;
+    }
+
+    .sidebar-btn {
+        background: rgb(102, 102, 102);
+        z-index: 0 !important;
+        
+    }
+
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(238, 238, 238, 0.1);
+    }
+    /* ----------------- end*/
+
     #specials-link,
     #accessories-link,
     #clothing-link,
     #all-products-link {
-        color: black !important;
+        color: rgb(243, 243, 243) !important;
         font-size: 17px;
         padding: 0;
     }
@@ -1438,6 +1476,25 @@ form textarea:focus {
     .hover1 img{
         height: 400px;
     }
+
+    /* -------------  sidebar accordian */
+    .accordion {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+       
+    .accordion:after {
+        content: '\002B';
+        color: rgb(230, 230, 230);
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
 }
 
 /* fixed top navbar only on medium and up */
@@ -1501,10 +1558,7 @@ form textarea:focus {
         width: 270px;
     }
 
-    .navbar-nav a{
-        padding: 0;
-        margin-top: 10px;
-    }
+ 
 
     .header-container {
         padding-top: 0;
@@ -1518,6 +1572,10 @@ form textarea:focus {
     ol{
         margin-bottom: 5rem;
     
+    }
+
+    .fa-search{
+        color: white;
     }
     
 
@@ -1536,11 +1594,11 @@ form textarea:focus {
         position: relative;
         width: 100%;
         text-transform: uppercase;
-        font-size: 25px;
-        bottom: 4px;
-        padding: 3px 15px;
-        background-color: var(--bs-white) !important;
-        font-family: 'Squada One', cursive;    
+        font-size: 19px;
+        padding: 0;
+        top: 5px;
+        color: white;
+        font-family: 'Archivo Black', sans-serif;
     }
 
     .pad {
@@ -1578,8 +1636,6 @@ form textarea:focus {
     .shop-now-button {
         font-size: 3vw;
     }
-
-   
 
     .hover1 img{
         height: 190px;
@@ -1639,14 +1695,14 @@ form textarea:focus {
     .app p{
         color: #494949;
         margin-top: 10px;
-        font-size: 10px;
+        font-size: 18px;
     }
     .app h1{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .app h1 span{
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .app{
@@ -1717,7 +1773,7 @@ form textarea:focus {
         transform: translate(50%,-50%);
         width: 100%;
         text-align: center;
-        font-size: 45px;
+        font-size: 40px;
         z-index: 99999;
         text-transform: uppercase;
         font-family: 'Archivo Black', sans-serif;
@@ -1794,8 +1850,10 @@ form textarea:focus {
     .logo-font strong {
         position: relative;
         top: 2px;
+        padding: 0;
         font-size: 16px;   
     }
+
 
     .menu-app{
         position: relative;
@@ -1932,6 +1990,17 @@ form textarea:focus {
 
     .offers p{
        font-size: 18px;
+    }
+
+    .menu-bar {
+        width: 27px;
+        height: 2px;
+        background-color: var(--bs-white);
+        margin: 6px 0;
+    }
+
+    .navbar{
+        padding: 1px 10px;
     }
     
  

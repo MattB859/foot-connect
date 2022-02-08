@@ -31,7 +31,8 @@ $('.main-carousel').flickity({
     // options
     cellAlign: 'left',
     contain: true
-  });
+});
+
 
 // W3school
 function myFunction(x) {
@@ -60,7 +61,7 @@ function addwishList(){
         console.log("remove from wishlist");
     }
 
-    
+
 function openNav() {
     document.getElementById("myNav").style.width = "80%";
     const hide = document.getElementById("over-flow")
@@ -76,4 +77,3 @@ function closeNav() {
     const overlay = document.getElementById("sidebar-overlay");
     overlay.style.display = "none";
 }
-
