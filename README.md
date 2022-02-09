@@ -30,6 +30,10 @@ Foot Connect is a well-established online athletic footwear and apparel retailer
 |          | Shopper | Add a product to my wish list | Quickly find a product I've saved, <br> or purchase again |
 |          | Shopper | Search for a product by <br> name or description | Find a specific product I'd like to purchase. |
 |          | Shopper | Easily see what I've searched <br> for and the results |Decide if the product I'm after is available |
+|         |          | <h4 align="center"> **View and Leave Reviews**</h4> |       |
+|    | Site User | Read all reviews  | Decide if i want to purchase the product <br> based on good or bad reviews |
+|        | Site User | Add a review | Share my thoughts about a product in <br> order to help other shopper make a decision. |
+|         | Site User | Delete a review  | Remove reviews when needed. |
 |         |          | <h4 align="center"> **Purchasing and Checkout**</h4> |       |
 |         | Shopper | Easily select the size and quantity <br> of a product when purchasing it. | Can be assured I'm selecting <br> size and quantity I want |
 |         | Shopper | View items in my cart to <br> be purchased | Identify the total cost of the <br> items i want to purchase |
@@ -63,13 +67,20 @@ Foot Connect is a well-established online athletic footwear and apparel retailer
 
 ## Typography
 
--  ### [Google Fonts](https://fonts.google.com/specimen/Squada+One)
+-  ### [Google Fonts](https://fonts.google.com/)
 
-Squada One font has been selected to represent for the Foot Connect logo.
+- ### 'Archivo Black' font has been selected to represent the sites logo.
+- ### 'Archivo Black' has been used for sites title.
+- ### 'Helvetica' has been choosen as the sites default font 
 
 ## Imagery
 
--  ### All images on the site were sourced from 
+### Hero Image [view here](media/new-footconnect-hero.png)
+- For the website Imagery is very important. On entering the website shoppers are presented with a large hero image that is designed to capture the shoppers's attention. The banner is made up of four section each displaying product categories,
+to the left of the banner is the sites logo. When a shopper clicks on the banner they will be redirect to the all products page.
+
+-  ### All product images on the site were sourced from 
+
 -  ### [Laced](https://www.laced.co.uk/)
 -  ### [kaggle](https://www.kaggle.com/)
 -  ### [pexels](https://www.pexels.com/)
@@ -77,29 +88,27 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 # Features
 
-### Current
+## Current
 
-### Navigation 
+### Home Page - [view here](media/footconnect-home-page.png)
 
-<details><summary>Click to see</summary>
-    <p>
-<img align="center" src="media/navigation.png">
-</p>
-</details>
+- A background hero image can be seen.
+- website categories. 
+- Filtered footwear product cards when click will direct shoppers to the specific products brand page.
+- Product image carousel when clicked will direct shoppers to the products detail page.
+- A call-to-action 'Shop Now' button underneath product cards.
+- A scroll up button will display as users scroll down for easy access back to the top page.
+- Delivery offer can be seen at the bottom of home page.
+- app store banner can be seen at the bottom of every page.
+- Website footer can be seen displayed on every page
+
+### Navigation - [view here](media/footconnect-navbar.png)
 
 - As users entering the website, they are greeted with a clean and easy to read navigation bar which contains menu links and a search bar for quick and easy access to products.
 
 ### Search 
 
 - All can search the site using a search query to identify products by category or specific product details.
-
-### Home Page
-
-- A promotional add banner can be seen
-- Product cards showcasing the different footwear categories, 
-- Users will find a call-to-action button underneath the product cards that will direct them to the products page.
-- A scroll up button will display as users scroll down for easy access back to the top page.
-
 
 ### Registered User Profile
 
@@ -159,16 +168,26 @@ Squada One font has been selected to represent for the Foot Connect logo.
 - Input new delivery information if necessary or because they are checking out as a guest
 - Users are sent out order confirmation emails
 
+### Reviews
+
+### Users can:
+
+- Add or delete a review for each product they purchase, this feature is only available to registered users when logged in.
+
 
 ### Footer 
 
 - The footer can be seen on all pages and provides users additional link options.
 
 # Future Features
-    
 
 - Allow users to register with their social media accounts
-- Add photo Carousel on all product images
+
+# Database Design 
+
+- ### The database schema 
+
+<img align="center" src="media/database-design.png">
 
 # Wireframes
 
@@ -204,17 +223,21 @@ Squada One font has been selected to represent for the Foot Connect logo.
     
 
 -  ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - Used for the websites markup language.
 -  ### [CSS3](https://en.wikipedia.org/wiki/CSS)
+    - Used to style the website.
 -  ### [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - Used to make the web pages more interactive.
 -  ### [Python](https://en.wikipedia.org/wiki/Python)
+    - Used for the websites backend
 
 ### Frameworks
     
 -  ### [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/download/)
+    - Bootstrap was used to assist with the styling and responsiveness of the website.
 
 -  ### [Django](https://www.djangoproject.com/)
-
--  ### [jQuery](https://jquery.com/)
+    - High-level Python web framework that enables rapid development of secure and maintainable websites
 
 ### Packages
 
@@ -235,9 +258,13 @@ Squada One font has been selected to represent for the Foot Connect logo.
 ### Database
 
 -  ### [Heroku Postgres](https://www.heroku.com/postgres)
+    - PostgreSQL was used as an open source database for the website
    
-### Project Management
-    
+###  Tools 
+
+-  ### [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the GitPod terminal to commit to Git and Push to GitHub.
+
 -  ### [GitHub](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
    
@@ -246,11 +273,6 @@ Squada One font has been selected to represent for the Foot Connect logo.
 
 -  ### [Heroku](https://heroku.com/)
     - Heroku was used to deploy the website.
-
--  ### [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the GitPod terminal to commit to Git and Push to GitHub.
-
-###  Tools 
 
 -  ### [Google Fonts](https://fonts.google.com/)
     - Google fonts were used to import the 'Squada One' font into the style.css file which is used on all pages throughout the project.
@@ -261,23 +283,38 @@ Squada One font has been selected to represent for the Foot Connect logo.
 -  ### [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
 
+-  ### [jQuery](https://jquery.com/)
+    -  jQuery is a fast, small, and feature-rich JavaScript library    
+
 -  ### [Am I Responsive](http://ami.responsivedesign.is/)
     - Am I Responsive was used capture the websites design on different screen size.
+
+-  ### [CSS Gradient](https://cssgradient.io/)
+    - Used for the footwear product card background
+
+-  ### [compressor](https://compressor.io/)
+    - Used to compress the size of the websites images
 
 -  ### [Flickity](https://flickity.metafizzy.co/)
     - Flickity is used for the websites image carousels.
 
 -  ### [AWS](https://aws.amazon.com/) 
-    - A cloud application to hold media files
+    - A cloud application to hold media and static files
 
 -  ### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
     - Used to audit the site
 
 -  ### [PEP8 Online](http://pep8online.com/)   
-    - Used to check PEP8 compliance in the code
+    - Used to check PEP8 compliance in the code 
 
--  ### [Flake8](https://flake8.pycqa.org/en/latest/)   
-    - Used to check compliance in python the code    
+-  ### [W3C Markup Validator](https://validator.w3.org/)
+    - Markup validation for HTML
+
+- ### [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+    - Affinity Designer was used to create the hero background image for the website.
+
+- ### [Dbdiagram](https://dbdiagram.io/home)
+    - Used to draw Entity-Relationship Diagrams.
 
 
 # Testing
@@ -371,7 +408,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 # Credits
 
--   ### Code
+-   ## Code
 
     - The Code Institute material was the main source of information used to create this project.
 
@@ -379,13 +416,13 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
     - Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
--   ### Content
+-   ## Content
 
     -  All content was written by the developer.
 
     -  Psychological properties of colours text in the README.md was found - [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
--   ### Media
+-   ## Media
 
     - All Images on the site were sourced from 
 
@@ -395,7 +432,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
     - [unsplash](https://unsplash.com/)
 
     
--   ### Acknowledgements
+-   ## Acknowledgements
 
     - Tutor support at Code Institute for their support.
 
