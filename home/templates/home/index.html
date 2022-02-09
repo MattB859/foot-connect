@@ -7,7 +7,7 @@
         <p>sale - up to 60% off </p>
     </div>
 
-    <!-- home page section -->
+    <!-- hero section -->
     <section class="container d-none d-lg-block"></section>
     <div class="home d-none d-lg-block">
          <img src="{{ MEDIA_URL }}new-footconnect-hero.png" alt="hero-image">   
@@ -91,7 +91,7 @@
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
-                            <img src="{{ MEDIA_URL }}900.jpg" class="cat-top category-1" alt="footwear"></a>
+                            <img src="{{ MEDIA_URL }}category-05.jpg" class="cat-top category-1" alt="footwear"></a>
                         </figure>
                     </div>
                    
@@ -108,7 +108,7 @@
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans">
-                            <img src="{{ MEDIA_URL }}111.jpg" class="cat-top category-1" alt="womens category"></a>
+                            <img src="{{ MEDIA_URL }}110.jpg" class="cat-top category-1" alt="womens category"></a>
                         </figure>
                     </div>
                     <div class="card-body text-center">
@@ -125,7 +125,7 @@
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts">
-                            <img src="{{ MEDIA_URL }}404.jpg" class="cat-top category-1" alt="mens category"></a>
+                            <img src="{{ MEDIA_URL }}405.jpg" class="cat-top category-1" alt="mens category"></a>
                         </figure>
                     </div>
                     <div class="card-body text-center">
@@ -142,7 +142,7 @@
                     <div class="hover1">
                         <figure>
                             <a href="{% url 'products' %}?category=bags">
-                            <img src="{{ MEDIA_URL }}950.jpg" class="cat-top category-1" alt="bags"></a>
+                            <img src="{{ MEDIA_URL }}904.jpg" class="cat-top category-1" alt="bags"></a>
                         </figure>
                     </div>
                     <div class="card-body text-center">
@@ -155,6 +155,80 @@
                 </div>
             </div>
         </div>
+        
+        <!--- Categories 2-->
+        <h2 class="title text-center">footwear</h2> 
+        <div class="row align-items-start mt-4">
+            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+                <div class="card">
+                    <div class="hover1">
+                        <figure>
+                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
+                            <img src="{{ MEDIA_URL }}pngwing.com(28).png" style="height: 254px;" class="cat-top category-1" alt="footwear"></a>
+                        </figure>
+                    </div>
+                   
+                    <div class="card-body">
+                        <p class="card-text text-center m-0">Latest</p>
+                        <h5 class="card-title text-center">footwear</h5> 
+                        <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+                <div class="card">
+                    <div class="hover1">
+                        <figure>
+                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
+                            <img src="{{ MEDIA_URL }}pngwing.com(29).png" style="height: 250px;" class="cat-top category-1" alt="womens category"></a>
+                        </figure>
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text text-center m-0">Latest</p>
+                        <h5 class="card-title ">Footwear</h5>
+                        <p class="card-text"></p>
+                        <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+                <div class="card">
+                    <div class="hover1">
+                        <figure>
+                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
+                            <img src="{{ MEDIA_URL }}pngwing.com(30).png" style="height: 250px;" class="cat-top category-1" alt="mens category"></a>
+                        </figure>
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text text-center m-0">Latest</p>
+                        <h5 class="card-title">Footwear</h5>
+                        <p class="card-text"></p>
+                        <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-col h-100 col-sm-6 col-6 mt-4 mb-4 col-lg-3 pad">
+                <div class="card">
+                    <div class="hover1">
+                        <figure>
+                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
+                            <img src="{{ MEDIA_URL }}pngwing.com(35).png" style="height: 250px;" class="cat-top category-1" alt="bags"></a>
+                        </figure>
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text text-center m-0">Latest</p>
+                        <h5 class="card-title">
+                            Footwear</h5>
+                        <p class="card-text"></p>
+                        <a href="{% url 'products' %}?category=bags" class="shop-now-button d-none d-lg-block btn w-100 btn-dark">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         
         <div class="row align-items-start">
             <!-- Flickity carousel -->

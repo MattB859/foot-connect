@@ -49,6 +49,7 @@
     --bs-body-bg: #fff;
 }
 
+/* Custome code by developer */
 *{
     padding: 0;
     margin: 0;
@@ -132,6 +133,11 @@ body {
     font-family: 'Archivo Black', sans-serif;
 }
 
+.product-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .banner-font{
     font-size: 14px;
     line-height: 1.2;
@@ -146,9 +152,10 @@ body {
     text-align: center;
 }
 
-/* ---------------------- Category images */
+/* ---------------------- Styling for category images */
 .hover1 img{
     height: calc(500px - 10vh);
+    background: linear-gradient(0deg, rgb(105, 198, 248) 1%, rgb(57, 188, 221) 20%, rgba(241,251,255,1) 100%);
 }
 
 .card-body{
@@ -156,7 +163,7 @@ body {
 }
 
 
-/* -------------------------- all buttons */
+/* -------------------------- Styling for buttons */
 .shop-now-button {
     background: var(--bs-body-color);
     color: var(--bs-white);
@@ -168,7 +175,6 @@ body {
     background: rgb(0, 0, 0);
     color: var(--bs-white);
     z-index: 0 !important;
-   
 }
 
 .btn-white{
@@ -189,7 +195,6 @@ body {
     background: var(--bs-white);
     color: black !important;
     border: 1px solid black;
-  
 }
 
 .btn-outline-black:hover,
