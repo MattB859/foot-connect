@@ -4,9 +4,9 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p> | <p align="center">Testing </p> | <p align="center">Results </p> | Pass/Fail  |
 | -------------------------------- | -----------------------------  | ------------------------       | ---------------------------    | :--------: |
-| Nav links     | | 
-| Men/Women <br> Kids/Accessories <br> Special Offers |Show drop-down <br> menu category | Click nav links  | Drop-down menu seen | Pass |
-| Sportswear & <br> Essentials  |Redirect to Sportswear <br> product page| Click Sportswear<br>& Essentials   | Product page seen   | Pass |
+| 
+|  Nav links |Clicking nav-links will <br> show drop-down menu | Click nav links  | Drop-down menu seen | Pass |
+|   |Clicking drop-down menu <br> links will navigate users <br> to the links page | Click drop-down <br> menu  links   | Product page seen   | Pass |
 | Jeans  |Redirect to Jeans <br> product page| Click Jeans | Product page seen  | Pass |
 |     | Clicking Women will show <br> a drop-down menu <br>  for womens category  | Click Men  | Drop-down menu shows <br> Jeans, Shoes, Hoodies, <br> Tracksuits, Sweatshirt, Dresses, <br> All Clothing   | Pass |
 |     | Clicking Kids will show <br> a drop-down menu <br>  for kids category  | Click Men  | Drop-down menu shows <br> Jeans, Shoes, Hoodies, <br> Tracksuits, Sweatshirt, T-Shirts, <br> All Clothing   | Pass |
@@ -17,20 +17,18 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p> | <p align="center">Testing </p> | <p align="center">Results </p> | Pass/Fail  |
 | -------------------------------- | -----------------------------  | ------------------------       | ---------------------------    | :--------: |
-| Social Media <br> Links   | Redirect to Facebook <br> in a new tap    | Click Facebook Icon  | Facebook page opens in new tap | Pass       |
-|               | Redirects to Twitter <br> in new tap   | Click Twitter  Icon   | Twitter page opens <br> in new tap  | Pass       |
-|                 | Redirects to Instagram <br> in new tap     | Click Instagram Icon  | Instagram page opens <br> in new tab     | Pass     |
-| Customer Help <br> Links | Redirects to the <br> contact page | Click Contact Us | Contact Us page shown | Pass |
-
-
+| Social Media <br> Links  | Redirect to <br> Facebook in a new tab    | Click Facebook Icon  | Facebook page opens in new tab | Pass       |
+|               | Redirects to Twitter <br> in new tab   | Click Twitter  Icon   | Twitter page opens <br> in new tab  | Pass       |
+|                 | Redirects to Instagram <br> in new tab     | Click Instagram Icon  | Instagram page opens <br> in new tab     | Pass     |
+| Contact us <br> Link | Redirects to the <br> contact page | Click Contact us | Contact Us page shown | Pass |
 
 
 ## Buttons 
 
 | <p align="center">Feature</p>  | <p align="center">Expected</p> | <p align="center">Testing</p>    | <p align="center">Results </p>  | Pass/Fail  |
 | ------------------------------ | -----------------------------  | -------------------------------- | ------------------------------  | :--------: |
-| Buy Now       | Clicking Shop Now button will <br> direct users to products | page   | navigates products page   | Pass       |
-| Scroll Up     | Click the scroll up button <br> to redirect users back <br> to the top of the page    | Click Scroll Up | Takes users back to <br> the top of the page     | Pass     |
+| Shop Now       | Redirects users to the product | Click Shop Now   | Navigates to product page   | Pass       |
+| Scroll Up     | Redirect users back to <br> the top of the page    | Click the scroll <br> up button | Takes users back to <br> the top page     | Pass     |
 
 
 ## Log In 
@@ -64,6 +62,7 @@
 |          | "Easily recover my password  in <br> case i forget it" | At the bottom of the Login page <br> site users can find a link (Forgot Password?) <br> enter your registered e-mail address <br> click the link to reset your password | Password successfully changed | Pass |
 |      | "Receive an email confirmation <br> after registering." | A confirmation email is sent out <br> with every new registration. | Hello from Foot Connect! <br> You're receiving this e-mail because <br> user test has given your e-mail address <br> to register an account on <br> footconnect.com | Pass | 
 |      |  "Have a personalized user profile" | Registered users can Navigate to their <br> profile page, here they can view/update <br> personal delivery details, and order <br>  history summery | Navigate to My Account, <br> Click on My Profile | Pass |
+|        | "Add reviews" | Navigate to product detail page <br> click reviews and 'Add Comment' | Fill in the form and submit. <br> A message will display <br> 'Comment added successfully!' |  Pass |
 | Shopper | "Sort a specific category" | Shopper have access to a sort by... filter <br> which allows shoppers to sort by <br> category, name, rating, and price. | Navigate to the <br>products page  find sort by filter | Pass |
 | | "Sort a specific category" | Shoppers can sort by category <br> by clicking sort by... | Navigate to the products page. <br> Click sort by... Category (A-Z), Price (high to low), <br> Name (A-Z), and Rating (low to high) | Pass |
 | | "Add a product to my wish list" | | | |
@@ -83,14 +82,15 @@ Chrome Dev Tools was used for inspection of HTML, and CSS. It helped to diagnose
 
 ## Responsive Testing
 
--   The website was tested on a variety of devices to ensure all  pages render well on a variety of devices and window or screen sizes such as:
+-   The website was tested to ensure all pages render well on a variety of devices and screen sizes such as:
 
     - Desktop 
     - Laptop 
     - Motorola G4 
     - Galaxy S5/7
     - Pixel 2
-    - Pixel 2 XL 
+    - Pixel 2 XL
+    - Samsung Galaxy S20
     - iPhone 5/SE 
     - iPhone 6/7/8/Plus 
     - iPhone X, 
