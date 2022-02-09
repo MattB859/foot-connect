@@ -153,7 +153,7 @@ body {
 }
 
 /* ---------------------- Styling for category images */
-.hover1 img{
+.hover2 img{
     height: calc(500px - 10vh);
     background: linear-gradient(0deg, rgb(105, 198, 248) 1%, rgb(57, 188, 221) 20%, rgba(241,251,255,1) 100%);
 }
@@ -961,6 +961,11 @@ form textarea:focus {
     .app p{
         font-size: 18px;
     }
+
+    .hover2 img{
+        height: 190px !important;
+        background: linear-gradient(0deg, rgb(105, 198, 248) 1%, rgb(57, 188, 221) 20%, rgba(241,251,255,1) 100%);
+    }
 }
 
 /* Slightly larger container on xl screens */
@@ -977,6 +982,7 @@ form textarea:focus {
         position: relative;
         width: 50%;  
     }
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -1512,6 +1518,11 @@ form textarea:focus {
         z-index: 1030;
     }
 
+    .hover2 img{
+        height: 140px !important;
+        background: linear-gradient(0deg, rgb(105, 198, 248) 1%, rgb(57, 188, 221) 20%, rgba(241,251,255,1) 100%);
+    }
+
 /* -------------- code pen from flickity.com */
     .cell-hero {
         width: 100%;
@@ -2007,6 +2018,9 @@ form textarea:focus {
     .navbar{
         padding: 1px 10px;
     }
-    
- 
+
+    .hover2 img{
+        height: 110px !important;
+        background: linear-gradient(0deg, rgb(105, 198, 248) 1%, rgb(57, 188, 221) 20%, rgba(241,251,255,1) 100%);
+    }
 }

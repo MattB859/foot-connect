@@ -110,11 +110,11 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
 
 - All can search the site using a search query to identify products by category or specific product details.
 
-### Registered User Profile
+### User Profile - [view here](media/profile-page.png)
 
 - A users delivery information and order history are saved to their profile.
 - A user can view their order history.
-- A user can Update their delivery information.
+- A user can update their delivery information.
 
 
 ### Registration
@@ -122,7 +122,7 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
 - Users are able to register their details by providing an email address, username, and password to create an account.
 
 
-### Log In
+### Sign In - [view here](media/sign-in.png)
 
 - Users can log in to access their profile page, order history, and make any changes to their delivery information.
 
@@ -170,10 +170,8 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
 
 ### Reviews
 
-### Users can:
-
-- Add or delete a review for each product they purchase, this feature is only available to registered users when logged in.
-
+- Shoppers can view all reviews
+- Registered users can Add or delete reviews when logged in.
 
 ### Footer 
 
