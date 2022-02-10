@@ -46,7 +46,7 @@ function validateEmail(x) {
   var symbols = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (symbols.test(document.getElementById(x).value)) {
     // Style green border
-    document.getElementById("emailaddress").style.border = "2px solid green";
+    document.getElementById("email").style.border = "2px solid green";
     // Hide error prompt
     document.getElementById("emailError").style.display = "none";
     // Show or hide success and falure icons
@@ -55,7 +55,7 @@ function validateEmail(x) {
 
     return true;
   } else {
-    document.getElementById("emailaddress").style.border = "2px solid red";
+    document.getElementById("email").style.border = "2px solid red";
     document.getElementById("emailError").style.display = "block";
     document.getElementById("emailFailureIcon").style.opacity = "1";
     document.getElementById("emailSuccessIcon").style.opacity = "0";
@@ -93,7 +93,7 @@ function validateForm() {
     document.getElementById("errorMsg").style.display = "block";
     error++;
   }
-  if (!validateEmail("emailaddress")) {
+  if (!validateEmail("email")) {
     document.getElementById("emailError").style.display = "block";
     error++;
   }
