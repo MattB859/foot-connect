@@ -67,6 +67,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Mobile Sidbar menu overlay */
 #sidebar-overlay{
     display: none;
     position: fixed; 
@@ -1513,6 +1515,15 @@ form textarea:focus {
         float: right;
         margin-left: 5px;
       }
+
+    .success-message{
+        margin-top: 200px;
+    }
+
+    .mt-5, .my-5 {
+        margin-top: 0rem!important;
+        padding: 5px 16px;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -1867,6 +1878,15 @@ form textarea:focus {
         font-size: 20px;
         float: left;
     }
+
+    .success-message{
+        margin-top: 120px;
+    }
+
+    .mt-5, .my-5 {
+        margin-top: 1rem!important;
+      
+    }
 }
 
 @media (max-width: 360px) {
@@ -1877,12 +1897,20 @@ form textarea:focus {
         font-size: 16px;   
     }
 
-
     .menu-app{
         position: relative;
         top: 34%;
         padding: 15px;
         font-family: 'Squada One', cursive;
+    }
+
+    .success-message{
+        margin-top: 80px;
+    }
+
+    .mt-5, .my-5 {
+        margin-top: 0rem!important;
+     
     }
     
     .btn{

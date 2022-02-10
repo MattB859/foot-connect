@@ -432,7 +432,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
     
 -   ## Acknowledgements
 
-    - Tutor support at Code Institute for their support.
+    - Tutor support at Code Institute 
+    - A big thank you to the team for their support.
 
     - John Traas
     - Ed Bradley
@@ -441,5 +442,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
     - Sheryl Goldberg
     - Alan Mc Gee
     - Scott
+    - Oisin
 
     
