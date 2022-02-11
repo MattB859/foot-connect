@@ -1,53 +1,69 @@
 # Testing
 
-## Navigation 
+## Testing Navigation 
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p> | <p align="center">Testing </p> | <p align="center">Results </p> | Pass/Fail  |
 | -------------------------------- | -----------------------------  | ------------------------       | ---------------------------    | :--------: |
-| 
-|  Nav links |Clicking nav-links will <br> show drop-down menu | Click nav links  | Drop-down menu seen | Pass |
+|  Nav links |Clicking nav-links will <br> shows drop-down menu | Click nav links  | Drop-down menu seen | Pass |
 |   |Clicking drop-down menu <br> links will navigate users <br> to the links page | Click drop-down <br> menu  links   | Product page seen   | Pass |
-| Jeans  |Redirect to Jeans <br> product page| Click Jeans | Product page seen  | Pass |
-|     | Clicking Women will show <br> a drop-down menu <br>  for womens category  | Click Men  | Drop-down menu shows <br> Jeans, Shoes, Hoodies, <br> Tracksuits, Sweatshirt, Dresses, <br> All Clothing   | Pass |
-|     | Clicking Kids will show <br> a drop-down menu <br>  for kids category  | Click Men  | Drop-down menu shows <br> Jeans, Shoes, Hoodies, <br> Tracksuits, Sweatshirt, T-Shirts, <br> All Clothing   | Pass |
-|     | Clicking Accessories will <br> show  a drop-down menu <br>  for accessories category  | Click accessories  | Drop-down menu shows <br> Hats & Caps, Bags & <br> Wallets, All Accessories   | Pass |
+| contact us | Directs to the contact page | Click contact us | page seen  [view](/media/contact.png) | Pass |
+|  |  |<h4 align="center">**My Account for registered users**</h4>    | 
+| My Profile | Directs to the Profile page | Click My Profile | Profile page seen [view](/media/profile.png)| Pass |
+| Logout | Log's a user out | Click Logout | User is logged out | Pass |
+|  |  |<h4 align="center">**My Account for shoppers**</h4>    |
+| Login | Log's a user in to their account | Click Login | User is logged in | Pass |
+| Logout | Log's a user out | Click Logout | User is logged out | Pass |
+|  |  |<h4 align="center">**My Account for admin users**</h4>    | 
+| Product Management  | Directs to the Product <br> Management page | Click Product Management | Page seen [view](/media/Management-page.png) |  Pass |
 
 
-## Footer
+
+## Testing Footer
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p> | <p align="center">Testing </p> | <p align="center">Results </p> | Pass/Fail  |
 | -------------------------------- | -----------------------------  | ------------------------       | ---------------------------    | :--------: |
-| Social Media <br> Links  | Redirect to <br> Facebook in a new tab    | Click Facebook Icon  | Facebook page opens in new tab | Pass       |
-|               | Redirects to Twitter <br> in new tab   | Click Twitter  Icon   | Twitter page opens <br> in new tab  | Pass       |
-|                 | Redirects to Instagram <br> in new tab     | Click Instagram Icon  | Instagram page opens <br> in new tab     | Pass     |
-| Contact us <br> Link | Redirects to the <br> contact page | Click Contact us | Contact Us page shown | Pass |
+| |  | <h4 align="center">**Social Media**</h4>    | 
+| Facbook | Directs to <br> Facebook in a new tab    | Click Facebook Icon or link  | Facebook page opens in a new tab | Pass    |
+|  Twitter  | Directs to Twitter <br> in new tab   | Click Twitter Icon or link   | Twitter page opens <br> in new tab  | Pass       |
+|  Instagram | Directs to Instagram <br> in new tab     | Click Instagram Icon or link  | Instagram page opens <br> in new tab     | Pass     |
+|  Youtube | Directs to Youtube <br> in new tab     | Click Youtube Icon or link  | Youtube page opens <br> in new tab     | Pass     |
+|  |  |<h4 align="center">**Useful Links**</h4>    | 
+| Coupons  | Redirects to wikipedia | Click Coupons link | wikipedia page shown | Pass |
+| Blog Post  | Redirects to wikipedia | Click Blog Post link | wikipedia page shown | Pass |
+| Careers  | Redirects to wikipedia | Click Careers link | wikipedia page shown | Pass |
+| Blog Post  | Redirects to wikipedia | Click Blog Post link | wikipedia page shown | Pass |
+| Affiliates  | Redirects to wikipedia | Click Affiliates link  | wikipedia page shown | Pass |
 
 
-## Buttons 
+
+## Testing All Buttons 
 
 | <p align="center">Feature</p>  | <p align="center">Expected</p> | <p align="center">Testing</p>    | <p align="center">Results </p>  | Pass/Fail  |
 | ------------------------------ | -----------------------------  | -------------------------------- | ------------------------------  | :--------: |
-| Shop Now       | Redirects users to the product | Click Shop Now   | Navigates to product page   | Pass       |
+|  |  |<h4 align="center">**Categories Shop Now**</h4>    |
+| Footwear | Directs shoppers to the <br> footwear product page | Click Footwear | Page seen [view](/media/footwear.png) | Pass |
+| Men's   | Directs shoppers to the mens <br> product page | Click Shop Now   | Men's product page seen   | Pass       |
 | Scroll Up     | Redirect users back to <br> the top of the page    | Click the scroll <br> up button | Takes users back to <br> the top page     | Pass     |
 
 
-## Log In 
+## Testing Login/Logout 
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | ------------------------------   | -----------------------------     | ------------------------------     | ----------------------------   | :--------: |
-| Log In         | Enter the correct user, password, <br> email address will direct users <br> to their home   | Log in with correct <br> username/password/ <br> email address | home page  | Pass       |
-|                | Incorrect username/password/ <br> email address | Error showing "incorrect <br> username/password" | Flash message <br> displaying error | Pass|
+|  |  |<h4 align="center">**User Login**</h4>   |
+| Login   | Log's users into their account| Enter the correct username or e-mail, and password | user is signed in [view](/media/sign-in.png) | Pass |
+|  |  |<h4 align="center">**User Logout**</h4> |
+| Logout   | Log's a user out of their account | Click Logout | Logout page seen with a<br> message  "Are you sure you want to sign out?" [view](/media/logout.png) <br> "success! You have signed out" [view](/media/signout-success-2.png)  | Pass |
 
 
 
-## Registration
+
+## Testing Registration
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
-| Register   | Username and Password must <br> have a minimum length <br> of 5 characters | Attempt to enter username <br> and password with less than <br> 5 characters | error displays "please match the <br> requested formate" | Pass |
-|          | Username and Password must <br> have a maximum length <br> of 15 characters | Attempt to enter username <br> and password with more <br> than 15 characters | Form restrcits the user from <br> using more than 15 characters | Pass |
-|          | Users can not register <br> with an existing username | Attempt to register with <br> an existing username | error flash message <br> "Username already exists" | Pass |
-
+|  |  |<h4 align="center">**Create an Account**</h4> |
+| Register   | Create an Account | Enter a email, username, and password | Account created | 
 
 ## Testing User Stories from User Experience (UX)
 
