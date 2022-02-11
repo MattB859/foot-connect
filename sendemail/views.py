@@ -24,26 +24,30 @@ from .forms import ContactForm
             #return redirect('success')
     #return render(request, "contacts/email.html", {'form': form})
 
-
+# Custom coded by the developer 
 def contact_view(request):
     if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
 
-        data = {
-            'name': name,
-            'email': email,
-            'message': message
-        }
-        message = '''
-        New message: {}
+        form = ContactForm(request.POST)
+       
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
 
-        From: {}
-        '''.format(data['message'], data['email'])
-        send_mail(data['name'], message, settings.DEFAULT_FROM_EMAIL, ['mattburrellmusic@gmail.com'])
+            data = {
+                'name': name,
+                'email': email,
+                'message': message
+            }
+            message = '''
+            New message: {}
 
-        return redirect('success')
+            From: {}
+            '''.format(data['message'], data['email'])
+            send_mail(data['name'], message, settings.DEFAULT_FROM_EMAIL, ['mattburrellmusic@gmail.com'])
+
+            return redirect('success')
     return render(request, "contacts/email.html", {})
 
 

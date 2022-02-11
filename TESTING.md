@@ -4,8 +4,9 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p> | <p align="center">Testing </p> | <p align="center">Results </p> | Pass/Fail  |
 | -------------------------------- | -----------------------------  | ------------------------       | ---------------------------    | :--------: |
-|  Nav links |Clicking nav-links will <br> shows drop-down menu | Click nav links  | Drop-down menu seen | Pass |
-|   |Clicking drop-down menu <br> links will navigate users <br> to the links page | Click drop-down <br> menu  links   | Product page seen   | Pass |
+|  |  |<h4 align="center">**Navigation Links**</h4> |
+|  Nav links |Shows a drop-down menu | Click nav links  | Drop-down menu seen | Pass|
+|  Product Categories |Directs shoppers to the <br> product page |  Click on a category |  Product page seen   | Pass |
 | contact us | Directs to the contact page | Click contact us | page seen  [view](/media/contact.png) | Pass |
 |  |  |<h4 align="center">**My Account for registered users**</h4>    | 
 | My Profile | Directs to the Profile page | Click My Profile | Profile page seen [view](/media/profile.png)| Pass |
@@ -14,7 +15,7 @@
 | Login | Log's a user in to their account | Click Login | User is logged in | Pass |
 | Logout | Log's a user out | Click Logout | User is logged out | Pass |
 |  |  |<h4 align="center">**My Account for admin users**</h4>    | 
-| Product Management  | Directs to the Product <br> Management page | Click Product Management | Page seen [view](/media/Management-page.png) |  Pass |
+| Product <br> Management  | Directs to the Product <br> Management page | Click Product Management | Page seen [view](/media/Management-page.png) |  Pass |
 
 
 
@@ -23,27 +24,34 @@
 | <p align="center">Feature</p>    | <p align="center">Expected</p> | <p align="center">Testing </p> | <p align="center">Results </p> | Pass/Fail  |
 | -------------------------------- | -----------------------------  | ------------------------       | ---------------------------    | :--------: |
 | |  | <h4 align="center">**Social Media**</h4>    | 
-| Facbook | Directs to <br> Facebook in a new tab    | Click Facebook Icon or link  | Facebook page opens in a new tab | Pass    |
+| Facebook | Directs to <br> Facebook in a new tab    | Click Facebook Icon or link  | Facebook page opens in a new tab | Pass    |
 |  Twitter  | Directs to Twitter <br> in new tab   | Click Twitter Icon or link   | Twitter page opens <br> in new tab  | Pass       |
 |  Instagram | Directs to Instagram <br> in new tab     | Click Instagram Icon or link  | Instagram page opens <br> in new tab     | Pass     |
-|  Youtube | Directs to Youtube <br> in new tab     | Click Youtube Icon or link  | Youtube page opens <br> in new tab     | Pass     |
+|  YouTube | Directs to YouTube <br> in new tab     | Click YouTube Icon or link  | YouTube page opens <br> in new tab     | Pass     |
 |  |  |<h4 align="center">**Useful Links**</h4>    | 
-| Coupons  | Redirects to wikipedia | Click Coupons link | wikipedia page shown | Pass |
-| Blog Post  | Redirects to wikipedia | Click Blog Post link | wikipedia page shown | Pass |
-| Careers  | Redirects to wikipedia | Click Careers link | wikipedia page shown | Pass |
-| Blog Post  | Redirects to wikipedia | Click Blog Post link | wikipedia page shown | Pass |
-| Affiliates  | Redirects to wikipedia | Click Affiliates link  | wikipedia page shown | Pass |
+| Coupons  | Redirects to Wikipedia | Click Coupons link | Wikipedia page shown | Pass |
+| Blog Post  | Redirects to Wikipedia | Click Blog Post link | Wikipedia page shown | Pass |
+| Careers  | Redirects to Wikipedia | Click Careers link | Wikipedia page shown | Pass |
+| Blog Post  | Redirects to Wikipedia | Click Blog Post link | Wikipedia page shown | Pass |
+| Affiliates  | Redirects to Wikipedia | Click Affiliates link  | Wikipedia page shown | Pass |
 
 
 
-## Testing All Buttons 
+## Testing Buttons 
 
 | <p align="center">Feature</p>  | <p align="center">Expected</p> | <p align="center">Testing</p>    | <p align="center">Results </p>  | Pass/Fail  |
 | ------------------------------ | -----------------------------  | -------------------------------- | ------------------------------  | :--------: |
-|  |  |<h4 align="center">**Categories Shop Now**</h4>    |
-| Footwear | Directs shoppers to the <br> footwear product page | Click Footwear | Page seen [view](/media/footwear.png) | Pass |
-| Men's   | Directs shoppers to the mens <br> product page | Click Shop Now   | Men's product page seen   | Pass       |
-| Scroll Up     | Redirect users back to <br> the top of the page    | Click the scroll <br> up button | Takes users back to <br> the top page     | Pass     |
+|  |  |<h4 align="center">**Categories Buttons**</h4>    |
+| Footwear | Directs shoppers to the <br> footwear product page | Click Shop Now | Page seen [view](/media/footwear.png) | Pass |
+| Women's   | Directs shoppers to the women's <br> product page | Click Shop Now   | Women's product page seen   | Pass    |
+| Men's   | Directs shoppers to the men's <br> product page | Click Shop Now   | Men's product page seen   | Pass    |
+| Accessories   | Directs to the Accessories <br> product page | Click Shop Now   |  Accessories product page seen   | Pass |
+|  |  |<h4 align="center">**Shopping button**</h4>    |
+| Keep Shopping | Redirects shoppers back to the products page | Click KEEP SHOPPING | Product page seen | Pass |
+| Add to bag | Add's a product to the shopping bag | Click ADD TO BAG | Product added [view](/media/add-to-bag.png) | Pass|
+| Checkout | Directs shoppers to the checkout page | Click Secure Check | page seen [view](/media/checkout.png) | Pass |
+|  |  |<h4 align="center">**Scroll up button**</h4>    |
+| Scroll Up   | Redirect users back to <br> the top of the page  | Click the scroll <br> up button | Scrolls to the top page    | Pass     |
 
 
 ## Testing Login/Logout 
@@ -56,14 +64,20 @@
 | Logout   | Log's a user out of their account | Click Logout | Logout page seen with a<br> message  "Are you sure you want to sign out?" [view](/media/logout.png) <br> "success! You have signed out" [view](/media/signout-success-2.png)  | Pass |
 
 
-
-
 ## Testing Registration
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
 |  |  |<h4 align="center">**Create an Account**</h4> |
-| Register   | Create an Account | Enter a email, username, and password | Account created | 
+| Register   | Create an Account | Enter an email, username, and password | Users are then asked to "Verify Your E-mail Address" [view](/media/email-verify1.png)  | Pass |
+| Confirm E-mail | A link is sent to the email address provided [view](/media/email-link1.png) | Click the link in your email |  "Please confirm that `email` is  an e-mail<br> address for user `username`"  message <br>"Success! You have confirmed `email`" [view](/media/confirm.png) | Pass |
+
+## Testing Checkout
+
+| <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
+| -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
+|  |  |<h4 align="center">**Checkout**</h4> |
+| Checkout | Process a shopper's order | Fill in your details and a delivery <br> address, and enter your card number | Order confirmation Message can <br> be seen "Thank You For Your Order" [view](/media/order-confirmation.png) | Pass |
 
 ## Testing User Stories from User Experience (UX)
 
@@ -81,7 +95,6 @@
 |        | "Add reviews" | Navigate to product detail page <br> click reviews and 'Add Comment' | Fill in the form and submit. <br> A message will display <br> 'Comment added successfully!' |  Pass |
 | Shopper | "Sort a specific category" | Shopper have access to a sort by... filter <br> which allows shoppers to sort by <br> category, name, rating, and price. | Navigate to the <br>products page  find sort by filter | Pass |
 | | "Sort a specific category" | Shoppers can sort by category <br> by clicking sort by... | Navigate to the products page. <br> Click sort by... Category (A-Z), Price (high to low), <br> Name (A-Z), and Rating (low to high) | Pass |
-| | "Add a product to my wish list" | | | |
 | | "Search for a product by <br> name or description" | On entering the site at the top of <br> the page shoppers will find a search bar | Click to search by name or description | Pass | 
 |   | "Easily see what I've searched <br> for and the results" | Enter a name or product description <br> in the search bar | Shoppers can see the total number <br> of products found within a search result <br> 41 Products found for "Jordan"    | Pass |
 |   | "Easily select the size and quantity <br> of a product when purchasing it." | Navigate to the products detail page | Select your size by clicking the input field, <br> Select the quantity by clicking plus or minus <br> to increase/decrease the quantity | Pass |
@@ -118,7 +131,7 @@ A large amount of testing was done to ensure that all pages were linking correct
 
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-## Bug's found and fixed
+## Bugs found and fixed
 
 <details><summary>CLICK ME</summary>
 <p>
