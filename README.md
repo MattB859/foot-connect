@@ -18,7 +18,7 @@ Foot Connect is a well-established online athletic footwear and apparel retailer
 |              | Shopper  | View individual product details| Identify the price, description, <br> product rating, product image, available <br> sizes and read product reviews |
 |              | Shopper  | Quickly identify deals, clearance <br> items and special offers. | Take advantage of special savings <br> on products I'd like to purchase.     
 |              | Shopper  | Easily view the total of <br> my purchases at any time. | Avoid spending too much. |
-|              |          | <h4 align="center">**Registration and User Accounts** </h4>     |                 |      
+|              |          | <h4 align="left">**Registration and User Accounts** </h4>     |                 |      
 |              | Site User  | Easily register for an account | Have a personal account and view my profile. |
 |           | Site User | Login or Logout of my account |  Access my personal account information <br> and any previous order history | 
 |         | Site User | Easily recover my password <br> in case i forget it. | Recover access to my account. |
