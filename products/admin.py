@@ -31,7 +31,7 @@ class CommentAdmin(admin.ModelAdmin):
         'date_added',
         'rating',
         'image',
-    )    
+    )
 
 
 admin.site.register(Product, ProductAdmin)

@@ -162,7 +162,7 @@ def delete_product(request, product_id):
 @login_required
 def add_comment(request, product_id):
     """
-    Add comments 
+    Add comments
     """
     product = get_object_or_404(Product, pk=product_id)
 
@@ -174,72 +174,32 @@ def add_comment(request, product_id):
             name = request.user.username
             title = form.cleaned_data['comment_title']
             body = form.cleaned_data['comment_body']
-            c = Comment(product=product, 
-                        comment_name=name, 
-                        comment_title=title, 
+            c = Comment(product=product,
+                        comment_name=name,
+                        comment_title=title,
                         comment_body=body)
             c.save()
             messages.success(request, 'Comment added successfully!')
             return redirect('products')
         else:
-            messages.error(request, 'Sorry, comment not sent')  
+            messages.error(request, 'Sorry, comment not sent')
     else:
         form = CommentForm()
-        
+
     template = "products/add_comment.html"
     context = {
         'form': form,
     }
-   
     return render(request, template, context)
 
 
 @login_required
 def delete_comment(request, product_id):
     """
-    Delete comments 
+    Delete comments
     """
     comment = Comment.objects.filter(product=product_id).last()
     product_id = comment.product.id
     comment.delete()
     messages.success(request, 'Successfully deleted! comment')
     return redirect(reverse('products'))
-
-
-@login_required
-def wish_list(request):
-    """ View wishlist """
-
-    template = "products/wish_list.html"
-    return render(request, template)
-
-
-@login_required
-def add_to_wishlist(request):
-
-    """ Add to wishlist  """
-  
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            product = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(
-                request,
-                'Failed to add product. Please ensure the form is valid.')
-    else:
-        form = ProductForm()
-
-    template = 'products/add_product.html'
-    context = {
-        'form': form,
-    }
-
-    template = "products/wish_list.html"
-    return render(request, template)

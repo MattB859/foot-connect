@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = True
-#'DEVELOPMENT' in os.environ
+# 'DEVELOPMENT' in os.environ
 
 
 ALLOWED_HOSTS = ['foot-connect.herokuapp.com', 'localhost']

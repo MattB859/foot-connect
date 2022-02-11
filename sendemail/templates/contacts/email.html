@@ -4,7 +4,6 @@
 {% block content %}
     <div class="overlay-bg h-100">
         <div class="max-width mx-auto">
-            <!--onsubmit="return sendMail(this);-->
             <form id="form" onsubmit="return validateForm()" class="contact-form container col-12 input-border overlay-bg-2" action="{% url 'contact' %}" method="POST">
                 {% csrf_token %}
                 <h2 class="text-center title-font">Contact Us</h2>

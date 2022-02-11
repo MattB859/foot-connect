@@ -32,7 +32,7 @@ Foot Connect is a well-established online athletic footwear and apparel retailer
 |          | Shopper | Easily see what I've searched <br> for and the results |Decide if the product I'm after is available |
 |         |          | <h4 align="center"> **View and Leave Reviews**</h4> |       |
 |    | Site User | Read all reviews  | Decide if i want to purchase the product <br> based on good or bad reviews |
-|        | Site User | Add a review | Share my thoughts about a product in <br> order to help other shopper make a decision. |
+|        | Site User | Add a review | Share my thoughts about a product in <br> order to help other shoppers decide. |
 |         | Site User | Delete a review  | Remove reviews when needed. |
 |         |          | <h4 align="center"> **Purchasing and Checkout**</h4> |       |
 |         | Shopper | Easily select the size and quantity <br> of a product when purchasing it. | Can be assured I'm selecting <br> size and quantity I want |
@@ -71,13 +71,13 @@ Foot Connect is a well-established online athletic footwear and apparel retailer
 
 - ### 'Archivo Black' font has been selected to represent the sites logo.
 - ### 'Archivo Black' has been used for sites title.
-- ### 'Helvetica' has been choosen as the sites default font 
+- ### 'Helvetica' has been chosen as the sites default font 
 
 ## Imagery
 
 ### Hero Image [view here](media/new-footconnect-hero.png)
-- For the website Imagery is very important. On entering the website shoppers are presented with a large hero image that is designed to capture the shoppers's attention. The banner is made up of four section each displaying product categories,
-to the left of the banner is the sites logo. When a shopper clicks on the banner they will be redirect to the all products page.
+- For the website Imagery is very important. On entering the website shoppers are presented with a large hero image that is designed to capture the shopper's attention. The banner is made up of four section each displaying product categories,
+to the left of the banner is the sites logo. When a shopper clicks on the banner, they will be redirect to the all products page.
 
 -  ### All product images on the site were sourced from 
 
@@ -119,7 +119,7 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
 
 ### Registration
 
-- Users are able to register their details by providing an email address, username, and password to create an account.
+- Users can register their details by providing an email address, username, and password to create an account.
 
 
 ### Sign In - [view here](media/sign-in.png)
@@ -171,7 +171,16 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
 ### Reviews
 
 - Shoppers can view all reviews
-- Registered users can Add or delete reviews when logged in.
+- Registered users can add or delete reviews when logged in.
+
+
+### Contact us [view](/media/contact.png)
+
+- Shoppers can contact the store with any question or issues they may have
+
+### Custom form validation [view](/media/custom.png)
+
+- The contact us form has custom validation 
 
 ### Footer 
 
@@ -221,13 +230,13 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
     
 
 -  ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
-    - Used for the websites markup language.
+    - Used for the website's markup language.
 -  ### [CSS3](https://en.wikipedia.org/wiki/CSS)
     - Used to style the website.
 -  ### [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
     - Used to make the web pages more interactive.
 -  ### [Python](https://en.wikipedia.org/wiki/Python)
-    - Used for the websites backend
+    - Used for the website's backend
 
 ### Frameworks
     
@@ -237,26 +246,10 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
 -  ### [Django](https://www.djangoproject.com/)
     - High-level Python web framework that enables rapid development of secure and maintainable websites
 
-### Packages
-
--  ### [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
-
--  ### [django-countries](https://pypi.org/project/django-countries/)
-    
--  ### [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-
--  ### [pillow](https://pillow.readthedocs.io/en/stable/)
-    
--  ### [stripe](https://stripe.com/docs)
-
--  ### [boto3](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html)
-
--  ### [django-storages](https://django-storages.readthedocs.io/en/latest/)
-
 ### Database
 
 -  ### [Heroku Postgres](https://www.heroku.com/postgres)
-    - PostgreSQL was used as an open source database for the website
+    - PostgreSQL was used as an open-source database for the website
    
 ###  Tools 
 
@@ -291,7 +284,7 @@ to the left of the banner is the sites logo. When a shopper clicks on the banner
     - Used for the footwear product card background
 
 -  ### [compressor](https://compressor.io/)
-    - Used to compress the size of the websites images
+    - Used to compress the size of the website's images
 
 -  ### [Flickity](https://flickity.metafizzy.co/)
     - Flickity is used for the websites image carousels.

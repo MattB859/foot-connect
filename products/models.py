@@ -3,7 +3,6 @@ from django.db import models
 from datetime import datetime
 
 
-
 class Category(models.Model):
     """ Category models """
 
@@ -34,6 +33,7 @@ class Product(models.Model):
     description = models.TextField()
     has_sizes = models.BooleanField(
         default=False, null=True, blank=True)
+    """ Custom model field """
     shoe_sizes = models.BooleanField(
         default=False, null=True, blank=True)
     price = models.DecimalField(
@@ -48,6 +48,9 @@ class Product(models.Model):
 
 
 class Comment(models.Model):
+
+    """ Custom model that allows users to
+    leave reviews on products  """
 
     product = models.ForeignKey(
         Product, related_name="comments", on_delete=models.CASCADE)

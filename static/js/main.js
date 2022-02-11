@@ -39,7 +39,7 @@ function myFunction(x) {
     x.classList.toggle("change");
 }
 
-const triggers = document.querySelectorAll('.menu-trigger'),
+const triggers = document.querySelectorAll(".menu-trigger"),
     activeClass = 'active';
 triggers.forEach((trigger) => {
     trigger.addEventListener('click', (e) => {

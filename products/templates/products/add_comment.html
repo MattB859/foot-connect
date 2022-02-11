@@ -3,29 +3,12 @@
 {% block content %}
 <div class="container">
     <div class="max-width mx-auto">
-        <!--onsubmit="return sendMail(this);-->
-        <form class="contact-form container col-12 input-border" action="" method="POST">
+        <form class="contact-form container col-12 input-border" method="POST">
             <fieldset>
                 {% csrf_token %}
                 <h2 class="text-center font-weight-bold mt-4">Leave Us a Review</h2>
                 <hr>
                 <p class="text-center">Share your thoughts with us! <a href="{% url 'home' %}">Home</a></p>
-
-                <div class="col-lg-12 col-sm-12 col-xs-12 ">
-                    <div class="rating">
-                        <p class="mb-0">Rate this product</p>
-                        <input class="input" type="radio" id="star5" name="rating" value="5"><label for="star5" class="full label"></label>
-                        <input class="input" type="radio" id="star4.5" name="rating" value="4.5"><label for="star4.5" class="half label"></label>
-                        <input class="input" type="radio" id="star4"name="rating" value="4"><label for="star4" class="full label"></label>
-                        <input class="input" type="radio" id="star3.5" name="rating" value="3.5"><label for="star3.5" class="half label"></label>
-                        <input class="input" type="radio" id="star3" name="rating" value="3"><label for="star3" class="full label"></label>
-                        <input class="input" type="radio" id="star2.5" name="rating" value="2.5"><label for="star2.5" class="half label"></label>
-                        <input class="input" type="radio" id="star2" name="rating" value="2"><label for="star2" class="full label"></label>       
-                        <input class="input" type="radio" id="star1.5" name="rating" value="1.5"><label for="star1.5" class="half label"></label>
-                        <input class="input" type="radio" id="star1" name="rating" value="1" required /><label for="star1" class="full label"></label>
-                    </div>
-                </div>
-    
                 <!-- Review Title -->
                 <div class="col-lg-12 col-sm-12 col-xs-12 ">
                     <label for="comment_title">Add a title</label>

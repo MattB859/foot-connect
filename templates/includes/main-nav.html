@@ -46,7 +46,7 @@
                 <a href="{% url 'products' %}?category=tracksuits" class="dropdown-item">Tracksuits</a>
                 <a href="{% url 'products' %}?category=sweatshirts" class="dropdown-item">Sweatshirt</a>
                 <a href="{% url 'products' %}?category=mens_shirts" class="dropdown-item">Shirts</a>
-                <a href="{% url 'products' %}?category=mens_sportwear,mens_denim_jeans, mens_shoes,mens_shirts"
+                <a href="{% url 'products' %}?category=mens_sportwear,hoodies,sweatshirts,mens_denim_jeans, mens_shoes,mens_shirts"
                     class="dropdown-item">All Clothing</a>
                 </div>    
             </div>
@@ -66,7 +66,7 @@
                 <a href="{% url 'products' %}?category=womens_tracksuits" class="dropdown-item">Tracksuits</a>
                 <a href="{% url 'products' %}?category=womens_sweatshirts" class="dropdown-item">Sweatshirt</a>
                 <a href="{% url 'products' %}?category=womens_dresses" class="dropdown-item">Dresses</a>
-                <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans,womens_shoes"
+                <a href="{% url 'products' %}?category=womens_sportswear,womens_dresses,womens_tracksuits,womens_sweatshirts,womens_jeans,womens_shoes"
                     class="dropdown-item">All Clothing</a>
             </div>
         </li>
@@ -77,14 +77,14 @@
                 Kids
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Sportswear &amp; Essentials</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Shoes</a>
-                <a href="" class="dropdown-item">Hoodies</a>
-                <a href="" class="dropdown-item">Tracksuits</a>
-                <a href="" class="dropdown-item">Sweatshirt</a>
-                <a href="" class="dropdown-item">T-Shirts</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=kids_sportswear" class="dropdown-item">Sportswear &amp; Essentials</a>
+                <a href="{% url 'products' %}?category=kids_jeans" class="dropdown-item">Jeans</a>
+                <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="dropdown-item">Shoes</a>
+                <a href="{% url 'products' %}?category=kids_hoodies" class="dropdown-item">Hoodies</a>
+                <a href="{% url 'products' %}?category=kids_tracksuits" class="dropdown-item">Tracksuits</a>
+                <a href="{% url 'products' %}?category=kids_sweatshirts" class="dropdown-item">Sweatshirt</a>
+                <a href="{% url 'products' %}?category=kids_t-shirts" class="dropdown-item">T-Shirts</a>
+                <a href="{% url 'products' %}?category=kids_sportswear,kids_jeans,mens_shoes,womens_shoes,kids_hoodies,kids_tracksuits,kids_sweatshirts,kids_t-shirts" class="dropdown-item">All Clothing</a>
             </div>
         </li>
         <hr>
@@ -96,7 +96,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=caps_hats" class="dropdown-item">Hats &amp; Caps</a>
                 <a href="{% url 'products' %}?category=bags" class="dropdown-item">bags &amp; Wallets</a>
-                <a href="{% url 'products' %}?category=bags, deals" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=bags,caps_hats" class="dropdown-item">All Accessories</a>
             </div>
         </li>
         <hr>
@@ -107,10 +107,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
        <hr>

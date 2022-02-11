@@ -2,395 +2,351 @@
 {% load static %}
 
 {% block content %}
-    <!-- offer banner -->
-    <div class="col-lg-12 offers">
-        <p>sale - up to 60% off </p>
-    </div>
+<!-- offer banner -->
+<div class="col-lg-12 offers">
+    <p>sale - up to 60% off </p>
+</div>
 
-    <!-- hero section -->
-    <section class="container d-none d-lg-block"></section>
-    <div class="home d-none d-lg-block">
-         <img src="{{ MEDIA_URL }}new-footconnect-hero.png" alt="hero-image">   
-    </div>
-  
-        <section class="p-0">
-            <div id="carouselExampleIndicators" class="carousel slide d-lg-none d-sm-block" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="cell-hero carousel-item active">
-                        <img src="{{ MEDIA_URL }}pexels-erik-mclean-4234768.jpg" class="carousel-hero-img"
-                            alt="Sportswear">
-                        <p>Stay</p>
-                        <small>Fresh</small>
-                        <span>
-                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
-                                class="btn-lg btn btn-white w-50">SHOP NOW</a>
-                        </span>
-                    </div>
-                    <div class="cell-hero carousel-item">
-                        <img src="{{ MEDIA_URL }}pexels-keletso-mphuthi-9773257.jpg" class="carousel-hero-img"
-                            alt="Sportswear">
-                        <span-1 class="font-weight-bold">Sportswear</span-1>
-                        <span>
-                            <a href="{% url 'products' %}?category=womens_sportswear"
-                                class="btn-lg btn btn-white w-50">SHOP NOW</a>
-                        </span>
-                    </div>
-                    <div class="cell-hero carousel-item">
-                        <img src="{{ MEDIA_URL }}pexels-oleg-magni-3582260.jpg" class="carousel-hero-img"
-                            alt="Sportswear">
-                        <span-2 class="font-weight-bold">Latest Deals</span-2>
-                        <span>
-                            <a href="{% url 'products' %}?category=womens_sportswear"
-                                class="btn-lg btn btn-white w-50">SHOP NOW</a>
-                        </span>
-                    </div>
-                    <div class="cell-hero carousel-item">
-                        <img src="{{ MEDIA_URL }}pexels-ilyas-chabli-6545637.jpg" class="carousel-hero-img"
-                            alt="Sportswear">
-                        <span-1 class="font-weight-bold">Activewear</span-1>
-                        <span>
-                            <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts"
-                                class="btn-lg btn btn-white w-50">SHOP NOW</a>
-                        </span>
-                    </div>
-                    <div class="cell-hero carousel-item">
-                        <img src="{{ MEDIA_URL }}pexels-vitaliy-izonin-10046261.jpg" class="carousel-hero-img"
-                            alt="Sportswear">
-                        <span-2 class="font-weight-bold">Footwear</span-2>
-                       
-                        <span>
-                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
-                                class="btn-lg btn btn-white w-50">SHOP NOW</a>
-                        </span>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+<!-- custom coded by the developer -->
+
+<!-- hero image -->
+<div class="home d-none d-lg-block">
+    <a href="{% url 'products' %}">
+        <img src="{{ MEDIA_URL }}new-footconnect-hero.png" alt="hero-image"></a>
+</div>
+
+<div class="p-0">
+    <div id="carouselExampleIndicators" class="carousel slide d-lg-none d-sm-block" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="cell-hero carousel-item active">
+                <img src="{{ MEDIA_URL }}pexels-erik-mclean-4234768.jpg" class="carousel-hero-img" alt="Sportswear">
+                <p>Stay</p>
+                <small>Fresh</small>
+                <span>
+                    <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
+                        class="btn-lg btn btn-white w-50">SHOP NOW</a>
+                </span>
             </div>
-        </section>    
-  
-    <!-- category section -->
-    <h2 class="title text-center">categories</h2> 
-    <section class="container">
-        <div class="row align-items-start">
-            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover1">
-                        <figure>
-                            <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
+            <div class="cell-hero carousel-item">
+                <img src="{{ MEDIA_URL }}pexels-keletso-mphuthi-9773257.jpg" class="carousel-hero-img" alt="Sportswear">
+                <span-1 class="font-weight-bold">Sportswear</span-1>
+                <span>
+                    <a href="{% url 'products' %}?category=womens_sportswear" class="btn-lg btn btn-white w-50">SHOP
+                        NOW</a>
+                </span>
+            </div>
+            <div class="cell-hero carousel-item">
+                <img src="{{ MEDIA_URL }}pexels-oleg-magni-3582260.jpg" class="carousel-hero-img" alt="Sportswear">
+                <span-2 class="font-weight-bold">Latest Deals</span-2>
+                <span>
+                    <a href="{% url 'products' %}?category=womens_sportswear" class="btn-lg btn btn-white w-50">SHOP
+                        NOW</a>
+                </span>
+            </div>
+            <div class="cell-hero carousel-item">
+                <img src="{{ MEDIA_URL }}pexels-ilyas-chabli-6545637.jpg" class="carousel-hero-img" alt="Sportswear">
+                <span-1 class="font-weight-bold">Activewear</span-1>
+                <span>
+                    <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts"
+                        class="btn-lg btn btn-white w-50">SHOP NOW</a>
+                </span>
+            </div>
+            <div class="cell-hero carousel-item">
+                <img src="{{ MEDIA_URL }}pexels-vitaliy-izonin-10046261.jpg" class="carousel-hero-img" alt="Sportswear">
+                <span-2 class="font-weight-bold">Footwear</span-2>
+
+                <span>
+                    <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
+                        class="btn-lg btn btn-white w-50">SHOP NOW</a>
+                </span>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- category section -->
+<h2 class="title text-center">categories</h2>
+<section class="container">
+    <div class="row align-items-start">
+        <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover1">
+                    <figure>
+                        <a href="{% url 'products' %}?category=mens_shoes,womens_shoes">
                             <img src="{{ MEDIA_URL }}category-05.jpg" class="cat-top category-1" alt="footwear"></a>
-                        </figure>
-                    </div>
-                   
-                    <div class="card-body">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title text-center">footwear</h5> 
-                        <a href="{% url 'products' %}?category=mens_shoes,womens_shoes" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
+                    </figure>
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title text-center">footwear</h5>
+                    <a href="{% url 'products' %}?category=mens_shoes,womens_shoes"
+                        class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                 </div>
             </div>
+        </div>
 
-            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover1">
-                        <figure>
-                            <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans">
+        <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover1">
+                    <figure>
+                        <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans">
                             <img src="{{ MEDIA_URL }}110.jpg" class="cat-top category-1" alt="womens category"></a>
-                        </figure>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title ">women's</h5>
-                        <p class="card-text"></p>
-                        <a href="{% url 'products' %}?category=womens_sportswear,womens_jeans" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
+                    </figure>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title ">women's</h5>
+                    <p class="card-text"></p>
+                    <a href="{% url 'products' %}?category=womens_sportswear,womens_dresses,womens_tracksuits,womens_sweatshirts,womens_jeans,womens_shoes"
+                        class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                 </div>
             </div>
+        </div>
 
-            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover1">
-                        <figure>
-                            <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts">
+        <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover1">
+                    <figure>
+                        <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts">
                             <img src="{{ MEDIA_URL }}405.jpg" class="cat-top category-1" alt="mens category"></a>
-                        </figure>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title">Men's</h5>
-                        <p class="card-text"></p>
-                        <a href="{% url 'products' %}?category=mens_sportswear,mens_shirts" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
+                    </figure>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title">Men's</h5>
+                    <p class="card-text"></p>
+                    <a href="{% url 'products' %}?category=mens_sportwear,hoodies,sweatshirts,mens_denim_jeans, mens_shoes,mens_shirts"
+                        class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
                 </div>
             </div>
+        </div>
 
-            <div class="custom-col h-100 col-sm-6 col-6 mt-4 mb-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover1">
-                        <figure>
-                            <a href="{% url 'products' %}?category=bags">
+        <div class="custom-col h-100 col-sm-6 col-6 mt-4 mb-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover1">
+                    <figure>
+                        <a href="{% url 'products' %}?category=bags">
                             <img src="{{ MEDIA_URL }}904.jpg" class="cat-top category-1" alt="bags"></a>
-                        </figure>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title">
-                            Accessories</h5>
-                        <p class="card-text"></p>
-                        <a href="{% url 'products' %}?category=bags" class="shop-now-button d-none d-lg-block btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
+                    </figure>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title">
+                        Accessories</h5>
+                    <p class="card-text"></p>
+                    <a href="{% url 'products' %}?category=bags,caps_hats"
+                        class="shop-now-button d-none d-lg-block btn w-100 btn-dark">SHOP NOW</a>
                 </div>
             </div>
-        </div>
-        
-        <!--- Air Jordan Category -->
-        <h2 class="title text-center">air jordans</h2> 
-        <div class="row align-items-start mt-4">
-            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover2">
-                        <figure>
-                            <a href="{% url 'products' %}?q=jordan">
-                            <img src="{{ MEDIA_URL }}pngwing.com(28).png" style="height: 254px;" class="cat-top category-1" alt="footwear"></a>
-                        </figure>
-                    </div>
-                   
-                    <div class="card-body">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title text-center">footwear</h5> 
-                        <a href="{% url 'products' %}?q=jordan" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover2">
-                        <figure>
-                            <a href="{% url 'products' %}?q=jordan">
-                            <img src="{{ MEDIA_URL }}pngwing.com(29).png" style="height: 250px;" class="cat-top category-1" alt="womens category"></a>
-                        </figure>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title ">Footwear</h5>
-                        <p class="card-text"></p>
-                        <a href="{% url 'products' %}?q=jordan" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover2">
-                        <figure>
-                            <a href="{% url 'products' %}?q=jordan">
-                            <img src="{{ MEDIA_URL }}pngwing.com(30).png" style="height: 250px;" class="cat-top category-1" alt="mens category"></a>
-                        </figure>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title">Footwear</h5>
-                        <p class="card-text"></p>
-                        <a href="{% url 'products' %}?q=jordan" class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="custom-col h-100 col-sm-6 col-6 mt-4 mb-4 col-lg-3 pad">
-                <div class="card">
-                    <div class="hover2">
-                        <figure>
-                            <a href="{% url 'products' %}?q=jordan">
-                            <img src="{{ MEDIA_URL }}pngwing.com(35).png" style="height: 250px;" class="cat-top category-1" alt="bags"></a>
-                        </figure>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="card-text text-center m-0">Latest</p>
-                        <h5 class="card-title">
-                            Footwear</h5>
-                        <p class="card-text"></p>
-                        <a href="{% url 'products' %}?q=jordan" class="shop-now-button d-none d-lg-block btn w-100 btn-dark">SHOP NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Custom coded by the developer -->
-        <div class="row align-items-start">
-            <!-- Flickity carousel -->
-            <div class="custom-col col-lg-12 col-sm-12">
-                <h2 class="title mb-3 ">New Arrivals</h2>
-                <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-
-                        <a href="{% url 'products' %}140">
-                        <img src="{{ MEDIA_URL }}401.jpg" class="carousel-img" alt="Adidas Tracksuit"></a> 
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£50.00</p>
-                        <p class="lead mb-4 text-left ">Adidas Tracksuit</p>
-                    </div>     
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-
-                        <a href="{% url 'products' %}137">
-                        <img src="{{ MEDIA_URL }}402.jpg" class="carousel-img" alt="Puma Top"></a> 
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
-                        <p class="lead mb-4 text-left ">Puma Top</p>
-                    </div>
-            
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-
-                        <img src="{{ MEDIA_URL }}403.jpg" class="carousel-img" alt="Adidas Tacksuit">
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£55.00</p>
-                        <p class="lead mb-4 text-left ">Adidas Tacksuit</p>
-                    </div>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-
-                        <a href="{% url 'products' %}138">
-                        <img src="{{ MEDIA_URL }}404.jpg" class="carousel-img" alt="Puma Hoodie"></a> 
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
-                        <p class="lead mb-4 text-left ">Puma Hoodie</p>
-                    </div>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                        <a href="{% url 'products' %}139">
-                        <img src="{{ MEDIA_URL }}405.jpg" class="carousel-img" alt="Tacksuit"></a>
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£75.00</p>
-                        <p class="lead mb-4 text-left ">Puma Tacksuit</p>
-                    </div>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                        <a href="{% url 'products' %}116">
-                        <img src="{{ MEDIA_URL }}menwear-8.jpg" class="carousel-img" alt="Hugo Boss T-Shirt"></a>
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£45.00</p>
-                        <p class="lead mb-4 text-left ">Hugo Boss T-Shirt</p>
-                    </div>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                        <a href="{% url 'products' %}113">
-                        <img src="{{ MEDIA_URL }}menwear-1.jpg" class="carousel-img" alt="Emporio Armani T-Shirt"></a>
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£255.00</p>
-                        <p class="lead mb-4 text-left ">Emporio Armani</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row align-items-start">
-            <!-- Flickity carousel -->
-            <div class="custom-col col-lg-12 col-sm-12">
-                <h2 class="title mb-3 mt-0">Top Picks</h2>
-                <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                    <div class="carousel-cell">
-                   
-                            <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                            <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                   
-                        <a href="{% url 'products' %}101">
-                        <img src="{{ MEDIA_URL }}101.jpg" class="carousel-img" alt="Sportswear"></a> 
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£60.00</p>
-                        <p class="lead mb-4 text-left ">Adidas Tracksuit</p>
-                    </div>     
-                    <div class="carousel-cell">
-                  
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                      
-                        <a href="{% url 'products' %}101">
-                        <img src="{{ MEDIA_URL }}102.jpg" class="carousel-img" alt="Sportswear"></a> 
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
-                        <p class="lead mb-4 text-left ">Adidas Bottoms</p>
-                    </div>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                       
-                        <a href="{% url 'products' %}104">
-                        <img src="{{ MEDIA_URL }}108.jpg" class="carousel-img" alt="Sportswear"></a>
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
-                        <p class="lead mb-4 text-left ">Nike Sports Top</p>
-                    </div>
-                    <div class="carousel-cell">
-                       
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                    
-                        <a href="{% url 'products' %}102">
-                        <img src="{{ MEDIA_URL }}104.jpg" class="carousel-img" alt="Sportswear"></a>
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£30.00</p>
-                        <p class="lead mb-4 text-left ">Nike Hoodie</p>
-                    </div>
-                    <div class="carousel-cell">
-                       
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-                       
-                        <a href="{% url 'products' %}98">
-                        <img src="{{ MEDIA_URL }}121.jpg" class="carousel-img" alt="Sportswear"></a>
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
-                        <p class="lead mb-4 text-left ">Nike Hoodie</p>
-                    </div>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i> 
-
-                        <a href="{% url 'products' %}108">
-                        <img src="{{ MEDIA_URL }}125.jpg" class="carousel-img" alt="Sportswear"></a>
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£20.00</p>
-                        <p class="lead mb-4 text-left ">Puma t-shirt</p>
-                    </div>
-                    <div class="carousel-cell">
-
-                        <i class="far fa-heart" onclick="myWishList()" id="wishList"></i>
-                        <i class="fas fa-heart" onclick="addwishList()" id="addList"></i>
-
-                        <a href="{% url 'products' %}103">
-                        <img src="{{ MEDIA_URL }}107.jpg" class="carousel-img" alt="Sportswear"></a> 
-                        <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
-                        <p class="lead mb-4 text-left ">Nike Shirt</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section>
-
-    <div class="app-store">
-        <div class="app delivery-img">
-            <h1><span>Free Delivery When You Spend Over £50</span></h1>
-            <img src="{{ MEDIA_URL }}delivery.png"
-                alt="app logo">
         </div>
     </div>
+
+    <!--- Air Jordan Category -->
+    <h2 class="title text-center">air jordans</h2>
+    <div class="row align-items-start mt-4">
+        <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover2">
+                    <figure>
+                        <a href="{% url 'products' %}?q=jordan">
+                            <img src="{{ MEDIA_URL }}pngwing.com(28).png" style="height: 254px;"
+                                class="cat-top category-1" alt="footwear"></a>
+                    </figure>
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title text-center">footwear</h5>
+                    <a href="{% url 'products' %}?q=jordan"
+                        class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover2">
+                    <figure>
+                        <a href="{% url 'products' %}?q=jordan">
+                            <img src="{{ MEDIA_URL }}pngwing.com(29).png" style="height: 250px;"
+                                class="cat-top category-1" alt="womens category"></a>
+                    </figure>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title ">Footwear</h5>
+                    <p class="card-text"></p>
+                    <a href="{% url 'products' %}?q=jordan"
+                        class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-col col-sm-6 col-6 mt-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover2">
+                    <figure>
+                        <a href="{% url 'products' %}?q=jordan">
+                            <img src="{{ MEDIA_URL }}pngwing.com(30).png" style="height: 250px;"
+                                class="cat-top category-1" alt="mens category"></a>
+                    </figure>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title">Footwear</h5>
+                    <p class="card-text"></p>
+                    <a href="{% url 'products' %}?q=jordan"
+                        class="d-none d-lg-block shop-now-button btn w-100 btn-dark">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-col h-100 col-sm-6 col-6 mt-4 mb-4 col-lg-3 pad">
+            <div class="card">
+                <div class="hover2">
+                    <figure>
+                        <a href="{% url 'products' %}?q=jordan">
+                            <img src="{{ MEDIA_URL }}pngwing.com(35).png" style="height: 250px;"
+                                class="cat-top category-1" alt="bags"></a>
+                    </figure>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text text-center m-0">Latest</p>
+                    <h5 class="card-title">
+                        Footwear</h5>
+                    <p class="card-text"></p>
+                    <a href="{% url 'products' %}?q=jordan"
+                        class="shop-now-button d-none d-lg-block btn w-100 btn-dark">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom coded by the developer -->
+    <div class="row align-items-start">
+        <div class="custom-col col-lg-12 col-sm-12">
+            <h2 class="title mb-3 ">New Arrivals</h2>
+            <!-- Flickity carousel code sorced from flickity.metafizzy.co -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}140">
+                        <img src="{{ MEDIA_URL }}401.jpg" class="carousel-img" alt="Adidas Tracksuit"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£50.00</p>
+                    <p class="lead mb-4 text-left ">Adidas Tracksuit</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}137">
+                        <img src="{{ MEDIA_URL }}402.jpg" class="carousel-img" alt="Puma Top"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                    <p class="lead mb-4 text-left ">Puma Top</p>
+                </div>
+
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}204">
+                        <img src="{{ MEDIA_URL }}403.jpg" class="carousel-img" alt="Adidas Tacksuit"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£55.00</p>
+                    <p class="lead mb-4 text-left ">Adidas Tacksuit</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}138">
+                        <img src="{{ MEDIA_URL }}404.jpg" class="carousel-img" alt="Puma Hoodie"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                    <p class="lead mb-4 text-left ">Puma Hoodie</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}139">
+                        <img src="{{ MEDIA_URL }}405.jpg" class="carousel-img" alt="Tacksuit"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£75.00</p>
+                    <p class="lead mb-4 text-left ">Puma Tacksuit</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}116">
+                        <img src="{{ MEDIA_URL }}menwear-8.jpg" class="carousel-img" alt="Hugo Boss T-Shirt"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£45.00</p>
+                    <p class="lead mb-4 text-left ">Hugo Boss T-Shirt</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}113">
+                        <img src="{{ MEDIA_URL }}menwear-1.jpg" class="carousel-img" alt="Emporio Armani T-Shirt"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£255.00</p>
+                    <p class="lead mb-4 text-left ">Emporio Armani</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-start">
+        <div class="custom-col col-lg-12 col-sm-12">
+            <h2 class="title mb-3 mt-0">Top Picks</h2>
+            <!-- Flickity carousel code sorced from flickity.metafizzy.co -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}101">
+                        <img src="{{ MEDIA_URL }}101.jpg" class="carousel-img" alt="Sportswear"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£60.00</p>
+                    <p class="lead mb-4 text-left ">Adidas Tracksuit</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}101">
+                        <img src="{{ MEDIA_URL }}102.jpg" class="carousel-img" alt="Sportswear"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                    <p class="lead mb-4 text-left ">Adidas Bottoms</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}104">
+                        <img src="{{ MEDIA_URL }}108.jpg" class="carousel-img" alt="Sportswear"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                    <p class="lead mb-4 text-left ">Nike Sports Top</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}102">
+                        <img src="{{ MEDIA_URL }}104.jpg" class="carousel-img" alt="Sportswear"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£30.00</p>
+                    <p class="lead mb-4 text-left ">Nike Hoodie</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}98">
+                        <img src="{{ MEDIA_URL }}121.jpg" class="carousel-img" alt="Sportswear"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                    <p class="lead mb-4 text-left ">Nike Hoodie</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}108">
+                        <img src="{{ MEDIA_URL }}125.jpg" class="carousel-img" alt="Sportswear"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£20.00</p>
+                    <p class="lead mb-4 text-left ">Puma t-shirt</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="{% url 'products' %}103">
+                        <img src="{{ MEDIA_URL }}107.jpg" class="carousel-img" alt="Sportswear"></a>
+                    <p class="lead mb-0 text-left font-weight-bold mt-2">£35.00</p>
+                    <p class="lead mb-4 text-left ">Nike Shirt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="app-store">
+    <div class="app delivery-img">
+        <h1><span>Free Delivery When You Spend Over £50</span></h1>
+        <img src="{{ MEDIA_URL }}delivery.png" alt="app logo">
+    </div>
+</div>
 {% endblock %}

@@ -1,22 +1,3 @@
-/*function sendMail(contactForm) {
-  emailjs.send("service_eq7h9b1", "foot_connect", {
-      "from_name": contactForm.name.value,
-      "from_email": contactForm.emailaddress.value,
-      "message": contactForm.message.value
-    })
-    .then(
-      function (response) {
-        console.log("Message sent successful..", response.status, response.text); 
-      },
-      function (error) {
-        console.log("Message has failed...", error);
-      }
-    );
-    contactForm.reset();
- return false;
-}*/
-
-
 // ------------- Email form validation //
 function validateName(x) {
   var expression = /[A-Za-z -']$/;

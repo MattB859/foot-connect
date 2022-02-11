@@ -6,13 +6,12 @@
     <div class="container-fluid">
         <div class="row ">
             <div class="col text-center mt-2">
-                <h2 class="title-font"></h2>
+                <div class="title-font"></div>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span-1>
+                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-          
             </div>
         </div>
         <div class="row">
@@ -48,10 +47,6 @@
                         <div class="products-width col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0" data-aos="fade-up">
                                 {% if product.image %}
-                                <a href="#">
-                                    <i class="heart far fa-heart" onclick="myWishList()" id="wishList"></i>
-                                    <i class="heart fas fa-heart" onclick="addwishList()" id="addList"></i>
-                                </a>
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>

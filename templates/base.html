@@ -52,9 +52,7 @@
     </script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
-    <!-- emailjs -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     {% endblock %}
@@ -82,9 +80,8 @@
         <div class="row list">
             <ul class="mb-0 col-12 d-none d-sm-block-none d-lg-block col-lg-12 ">
                 <li><a href="{% url 'contact' %}">contact us</a></li>
-                <li><a href="{% url 'contact' %}">help & info</a></li>
-                <li><a href="{% url 'contact' %}">deliver & returns</a></li>
-                <li><a href="{% url 'contact' %}">find a store</a></li>
+               
+                
                 {% if request.user.is_authenticated %}
                 <li><a href="{% url 'profile' %}">Hi, {{ user }}</a></li>
                 {% else %}
@@ -132,7 +129,6 @@
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'wish_list' %}" class="dropdown-item">My Wish List</a>
                                 <hr class="dropdown-divider">
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>                   
                             {% else %}
