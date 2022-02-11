@@ -104,6 +104,13 @@
 |      | "Receive an email confirmation upon checkout" |  A success message is displayed upon checkout  | Order successfully processed! <br> Your  order number  is <br> ********. A confirmation email will be sent to test@gmail.com <br> | Pass |
 | Admin User | "Add a product" | Navigate to my account and select <br> product management from the drop-down menu. | Users will need to fill <br> in the form to add a product to the store | Pass |
 
+# Validation Testing 
+
+   - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. 
+
+   - Python was checked to PEP8 compliance and passed with no errors 
+
+   - JSHint was used to validate JavaScript with no major issues.
 
 # Chrome Developer Tools
 

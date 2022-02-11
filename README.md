@@ -409,7 +409,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 -   ## Content
 
-    -  All content was written by the developer.
+    -  All content was found using google search.
 
     -  Psychological properties of colours text in the README.md was found - [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
