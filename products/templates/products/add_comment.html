@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="container mt-4">
     <div class="max-width mx-auto">
         <form class="contact-form container col-12 input-border" method="POST">
             <fieldset>
                 {% csrf_token %}
-                <h2 class="text-center font-weight-bold mt-4">Leave Us a Review</h2>
+                <h2 class="text-center font-weight-bold comment_header">Leave Us a Review</h2>
                 <hr>
                 <p class="text-center">Share your thoughts with us! <a href="{% url 'home' %}">Home</a></p>
                 <!-- Review Title -->
@@ -22,7 +22,7 @@
                         placeholder="Comment here.." required></textarea>
 
                     <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                    <button id="submit" class="btn btn-info rounded-0" type="submit">Send Comment</button>
+                    <button id="submit" class="btn btn-info rounded-0 mt-3" type="submit">Send Comment</button>
                 </div>
             </fieldset>
         </form>
